@@ -1,4 +1,41 @@
 # Data Science con Impacto Social
+
 Curso práctico sobre la ciencia de los datos y su aplicación al estudios de fenómenos sociales mediante el uso de datos abiertos. El curso ofrece una introducción a las principales conceptos, técnicas, y herramientas necesarios para extraer conocimiento de los datos. En el curso se aprenderá a colectar y pre-procesar datos, plantear preguntas de investigación, responder a estas preguntas, y visualizar los resultados.
 
+## Objetivos
 
+1. Aprender los conceptos básicos sobre ciencia y análisis de datos
+2. Aprender y aplicar técnicas para la obtención y pre-procesamiento de datos en bruto
+3. Aplicar herramientas estadísticas básicas para el análisis exploratorio de datos
+4. Aprender y aplicar técnicas de inferencia estadística que permitan derivar conclusiones a partir de muestras de datos
+5. Aprender y aplicar técnicas de aprendizaje supervisado que permitan explorar relaciones en los datos y derivar predicciones
+
+## Requisitos
+
+* Experiencia en programación orientada a objetos (Para alumnos de Ing. Informática de la UC, haber aprobado la asignatura Lenguaje de Programación II)
+* Conocimientos básicos de estadística (Para alumnos de Ing. Informática de la UC, haber aprobado la asignatura Estadística)
+* Manejo operativo de Linux/Unix
+* Conocimientos de base de datos
+
+## Carga Horaria
+14 clases de 3 horas por semana
+
+## Día y hora de lección
+Martes de 9 a 12
+
+## Dedicación y créditos
+* 2 créditos (Asistencia a 80% de las clases + proyecto)
+* Se otorgarán créditos adicionales a aquellos alumnos cuyos proyectos que deriven en artículos científicos publicables en conferencias internacionales
+
+## Fechas Importantes
+* Inicio: Martes 24/10/2017
+* Finalización: Jueves 07/12/2017
+* Limite de Inscripción: Viernes 13/10/2017
+
+## Tópicos del Curso
+1. Introducción a la ciencia de los datos y base teórica
+2. Herramientas para análistas y científicos de datos
+3. Colección y pre-procesamiento de datos
+4. Análisis Exploratorio de datos
+5. Inferencia Estadística
+6. Aprendizaje supervisado
