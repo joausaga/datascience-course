@@ -15,7 +15,6 @@ Curso práctico sobre la ciencia de los datos y su aplicación al estudios de fe
 * Experiencia en programación orientada a objetos (_para alumnos de Ing. Informática de la UC, haber aprobado la asignatura Lenguaje de Programación II_)
 * Conocimientos básicos de estadística (_para alumnos de Ing. Informática de la UC, haber aprobado la asignatura Estadística_)
 * Manejo operativo de Linux/Unix
-* Conocimientos de base de datos
 
  ## Datos del Curso
 
