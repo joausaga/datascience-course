@@ -28,7 +28,7 @@ Curso práctico sobre la ciencia de los datos y su aplicación al estudios de fe
 
 ## Inscripción
 
-Completar el formulario de inscripción al curso <a href="https://goo.gl/forms/tOsDDGlfnqG3Yb0r2" target="_blank">aquí</a> [aquí](https://goo.gl/forms/tOsDDGlfnqG3Yb0r2)
+Completar el formulario de inscripción al curso [aquí](https://goo.gl/forms/tOsDDGlfnqG3Yb0r2)
 
 ## Tópicos
 
