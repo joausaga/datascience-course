@@ -12,10 +12,8 @@ Curso práctico sobre la ciencia de los datos y su aplicación al estudios de fe
 
 ## Requisitos
 
-* Experiencia en programación orientada a objetos 
-_para alumnos de Ing. Informática de la UC, haber aprobado la asignatura Lenguaje de Programación II_
-* Conocimientos básicos de estadística
-_para alumnos de Ing. Informática de la UC, haber aprobado la asignatura Estadística_
+* Experiencia en programación orientada a objetos (_para alumnos de Ing. Informática de la UC, haber aprobado la asignatura Lenguaje de Programación II_)
+* Conocimientos básicos de estadística (_para alumnos de Ing. Informática de la UC, haber aprobado la asignatura Estadística_)
 * Manejo operativo de Linux/Unix
 * Conocimientos de base de datos
 
@@ -30,9 +28,9 @@ Martes de 9 a 12
 * Se otorgarán créditos adicionales a aquellos alumnos cuyos proyectos que deriven en artículos científicos publicables en conferencias internacionales
 
 ## Fechas Importantes
-* *Inicio:* Martes 24/10/2017
-* *Finalización:* Jueves 07/12/2017
-* *Limite de Inscripción:* Viernes 13/10/2017
+* _Inicio:_ Martes 24/10/2017
+* _Finalización:_ Jueves 07/12/2017
+* _Limite de Inscripción:_ Viernes 13/10/2017
 
 ## Tópicos del Curso
 1. Introducción a la ciencia de los datos y base teórica
