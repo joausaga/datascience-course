@@ -26,6 +26,9 @@ Curso práctico sobre la ciencia de los datos y su aplicación al estudios de fe
 * __Día y hora de Lección__: Martes de 9:00 a 12:00
 * __Dedicación y créditos__: 2 créditos por asistencia al 80% de las clases más presentación de proyecto. Se otorgarán créditos adicionales a aquellos alumnos cuyos proyectos deriven en artículos científicos publicables en conferencias internacionales
 
+## Inscripción
+
+Completar el formulario de inscripción al curso [aquí](https://goo.gl/forms/tOsDDGlfnqG3Yb0r2)
 
 ## Tópicos
 
