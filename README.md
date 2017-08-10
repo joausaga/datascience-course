@@ -19,17 +19,13 @@ Curso práctico sobre la ciencia de los datos y su aplicación al estudios de fe
 
 First Header | Second Header
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
-    |   
- -- | --
 Carga Horaria | 8 clases de 3 horas por semana
 Día y hora de Lección | Martes de 9 a 12
 Dedicación y créditos | Dos créditos por asistencia a 80% de las clases más presentación de proyecto. Se otorgarán créditos adicionales a aquellos alumnos cuyos proyectos que deriven en artículos científicos publicables en conferencias internacionales
 Inicio | 24/10/2017
 Finalización | 12/12/2017
 Limite de Inscripción | 20/10/2017
+
 
 ## Tópicos del Curso
 1. Introducción a la ciencia de los datos y base teórica
