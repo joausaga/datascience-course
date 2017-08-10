@@ -19,12 +19,13 @@ Curso práctico sobre la ciencia de los datos y su aplicación al estudios de fe
 
  ## Datos del Curso
 
-* __Carga Horaria__: 8 clases de 3 horas por semana
-* __Día y hora de Lección__: Martes de 9:00 a 12:00
-* __Dedicación y créditos__: 2 créditos por asistencia al 80% de las clases más presentación de proyecto. Se otorgarán créditos adicionales a aquellos alumnos cuyos proyectos deriven en artículos científicos publicables en conferencias internacionales
 * __Inicio__: 24-10-2017
 * __Finalización__: 12-12-2017
 * __Limite de Inscripción__: 20-10-2017
+* __Modalidad__: Presencial (8 clases de 3 horas por semana)
+* __Lugar__: Facultad de Ciencias y Tecnología – Universidad Católica “Nuestra Señora de la Asunción” – Campus Santa Librada – Asunción
+* __Día y hora de Lección__: Martes de 9:00 a 12:00
+* __Dedicación y créditos__: 2 créditos por asistencia al 80% de las clases más presentación de proyecto. Se otorgarán créditos adicionales a aquellos alumnos cuyos proyectos deriven en artículos científicos publicables en conferencias internacionales
 
 
 ## Tópicos
