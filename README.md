@@ -17,6 +17,11 @@ Curso práctico sobre la ciencia de los datos y su aplicación al estudios de fe
 * Manejo operativo de Linux/Unix
 * Conocimientos de base de datos
 
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
     |   
  -- | --
 Carga Horaria | 8 clases de 3 horas por semana
