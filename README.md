@@ -17,7 +17,7 @@ Curso práctico sobre la ciencia de los datos y su aplicación al estudios de fe
 * Manejo operativo de Linux/Unix
 * Conocimientos de base de datos
 
-  |  
+             |              
 ------------ | -------------
 Carga Horaria | 8 clases de 3 horas por semana
 Día y hora de Lección | Martes de 9 a 12
