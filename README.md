@@ -17,20 +17,12 @@ Curso práctico sobre la ciencia de los datos y su aplicación al estudios de fe
 * Manejo operativo de Linux/Unix
 * Conocimientos de base de datos
 
-## Carga Horaria
-14 clases de 3 horas por semana
-
-## Día y hora de Lección
-Martes de 9 a 12
-
-## Dedicación y créditos
-* 2 créditos (asistencia a 80% de las clases + proyecto)
-* Se otorgarán créditos adicionales a aquellos alumnos cuyos proyectos que deriven en artículos científicos publicables en conferencias internacionales
-
-## Fechas Importantes
-* _Inicio:_ Martes 24/10/2017
-* _Finalización:_ Jueves 07/12/2017
-* _Limite de Inscripción:_ Viernes 13/10/2017
+Carga Horaria | 8 clases de 3 horas por semana
+Día y hora de Lección | Martes de 9 a 12
+Dedicación y créditos | Dos créditos por asistencia a 80% de las clases más presentación de proyecto. Se otorgarán créditos adicionales a aquellos alumnos cuyos proyectos que deriven en artículos científicos publicables en conferencias internacionales
+Inicio | 24/10/2017
+Finalización | 12/12/2017
+Limite de Inscripción | 20/10/2017
 
 ## Tópicos del Curso
 1. Introducción a la ciencia de los datos y base teórica
