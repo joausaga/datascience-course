@@ -19,7 +19,6 @@ Introducción al curso
 	+ Inferencia Estadística
 	+ Aprendizaje supervisado
 6. Evaluación
-7. Bibliografía
 
 ## Tareas
 
