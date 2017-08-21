@@ -9,8 +9,8 @@ Lección sobre los conceptos teóricos básicos del curso
 	+ Discreto
 	+ Categórico
 	+ Binario
-2. Ordinal
-	+ Datos rectangulares
+	+ Ordinal
+2. Datos rectangulares
 	+ Data frame
 	+ Features
 	+ Outcome
