@@ -29,7 +29,7 @@ Base teórica del curso
 
 ## Tarea
 
-1. Ver charla TED ["The best stats you've ever seen"](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen), Has Rosling
+1. Ver charla TED ["The best stats you've ever seen"](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen), [Hans Rosling](https://en.wikipedia.org/wiki/Hans_Rosling)
 
 2. Responder las siguientes [preguntas]() relativas a la charla
 
