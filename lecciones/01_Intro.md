@@ -18,7 +18,7 @@ Lección introductoria al curso
 	+ Análisis Exploratorio de datos
 	+ Inferencia Estadística
 	+ Aprendizaje supervisado
-6. Evaluación
+6. Evaluación del curso
 
 ## Tareas
 
