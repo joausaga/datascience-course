@@ -1,6 +1,6 @@
 # Data Science con Impacto Social
 
-Base teórica del curso
+Lección sobre los conceptos teóricos básicos del curso
 
 ## Temas
 
