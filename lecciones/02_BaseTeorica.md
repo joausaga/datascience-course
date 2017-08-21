@@ -4,24 +4,24 @@ Lección sobre los conceptos teóricos básicos del curso
 
 ## Temas
 
-1. *Datos y medidas*
+1. __Datos y medidas__
 	+ Continuo
 	+ Discreto
 	+ Categórico
 	+ Binario
 	+ Ordinal
-2. *Datos rectangulares*
+2. __Datos rectangulares__
 	+ Data frame
 	+ Features
 	+ Outcome
 	+ Records
-3. *Tipos de preguntas*
+3. __Tipos de preguntas__
 	+ Descriptivas
 	+ Exploratorias
 	+ Inferenciales
 	+ Predictivas
 	+ Causales
-4. *Diseño de estudio*
+4. __Diseño de estudio__
 	+ Realizar preguntar de investigación
 	+ Exploración
 	+ Predicción
