@@ -2,7 +2,7 @@
 
 Lección sobre los conceptos teóricos básicos del curso
 
-## Temas
+## Temas de la lección
 
 1. __Datos y medidas__
 	+ Continuo

@@ -2,7 +2,7 @@
 
 Lección introductoria al curso
 
-## Temas
+## Temas de la lección
 
 1. ¿Por qué data science?
 2. Conceptos 
@@ -20,7 +20,7 @@ Lección introductoria al curso
 	+ Aprendizaje supervisado
 6. Evaluación del curso
 
-## Tareas
+## Tarea
 
 1. Instalar R y R studio ([R y R studio para Windows/Mac OSX/GNU-Linux](http://www.upm.es/sfs/Rectorado/Gabinete%20del%20Rector/Notas%20de%20Prensa/2015/05/documentos/Instrucciones%20de%20instalaci%C3%B3n%20de%20R%20y%20RStudio.pdf))
 
