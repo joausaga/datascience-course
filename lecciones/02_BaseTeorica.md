@@ -26,3 +26,9 @@ Base teórica del curso
 	+ Exploración
 	+ Predicción
 	+ Inferencia
+
+## Tarea
+
+1. Ver charla TED ["The best stats you've ever seen"](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen)
+
+2. Responder las siguientes [preguntas]() relativas a la charla 
