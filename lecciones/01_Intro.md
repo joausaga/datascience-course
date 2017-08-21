@@ -7,7 +7,7 @@ Lección introductoria al curso
 1. ¿Por qué data science?
 2. Conceptos 
 	+ Data
-	+ Data Science, 
+	+ Data Science
 	+ Big Data
 3. ¿Qué hace un científico de datos?
 4. Proyectos (Trabajos Prácticos)
