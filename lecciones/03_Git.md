@@ -2,7 +2,7 @@
 
 ### Git para Data Scientists
 
-Lección sobre control de versiones con Git. Introducción al lenguage markup [Markdown](https://en.wikipedia.org/wiki/Markdown)
+Lección sobre control de versiones con Git. Introducción al lenguage markup [Markdown](https://en.wikipedia.org/wiki/Markdown).
 
 ## Temas de la lección
 
@@ -32,7 +32,7 @@ Lección sobre control de versiones con Git. Introducción al lenguage markup [M
 
 4. _Basic Git Commands_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/02_07_01_basicGitCommands/index.Rmd)
 
-5. _Git Workflow)_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/02_07_02_gitWorkflow/index.Rmd)
+5. _Git Workflow_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/02_07_02_gitWorkflow/index.Rmd)
 
 6. _Basic Markdown_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/02_08_basicMarkdown/index.Rmd)
 
