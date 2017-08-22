@@ -1,6 +1,8 @@
 # Data Science con Impacto Social
 
-Lección sobre los conceptos teóricos básicos del curso
+### Base Conceptual
+
+Lección sobre los conceptos básicos del curso
 
 ## Temas de la lección
 
@@ -39,12 +41,12 @@ Lección sobre los conceptos teóricos básicos del curso
 
 2. _Data and Sampling Distribution_, [Practical Statistics for Data Scientist](https://www.amazon.com/Practical-Statistics-Data-Scientists-Essential/dp/1491952962)
 
-2. _Type of Questions_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/03_01_typesOfQuestions/index.md)
+3. _Type of Questions_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/03_01_typesOfQuestions/index.md)
 
-3. _Experimental Design_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/03_04_experimentalDesign/index.Rmd)
+4. _Experimental Design_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/03_04_experimentalDesign/index.Rmd)
 
-4. _Introduction to Inference_, [Data Analysis and Statistical Inference](https://www.dropbox.com/s/7rgna7g7alcklir/lecture_slides-unit1_part3_1_sim_inference.pdf?dl=0)
+5. _Introduction to Inference_, [Data Analysis and Statistical Inference](https://www.dropbox.com/s/7rgna7g7alcklir/lecture_slides-unit1_part3_1_sim_inference.pdf?dl=0)
 
-5. _Observation Studies and Experiments_, [Inferential Statistics](https://www.dropbox.com/s/a42e4owsvynvjrb/lecture_slides-unit1_part1_2_obs_study_exp.pdf?dl=0)
+6. _Observation Studies and Experiments_, [Inferential Statistics](https://www.dropbox.com/s/a42e4owsvynvjrb/lecture_slides-unit1_part1_2_obs_study_exp.pdf?dl=0)
 
-6. _Experimental Design_, [Inferential Statistics](https://www.dropbox.com/s/b5gq2ynmkb3p65a/lecture_slides-unit1_part1_4_exp_design.pdf?dl=0)
+7. _Experimental Design_, [Inferential Statistics](https://www.dropbox.com/s/b5gq2ynmkb3p65a/lecture_slides-unit1_part1_4_exp_design.pdf?dl=0)
