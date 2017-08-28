@@ -36,13 +36,16 @@ Lección sobre programación en el lenguaje [R](https://www.r-project.org/) e in
 	+ Histogramas
 	+ Scatterplots
 	+ Lines
+	+ Barras
 	+ Facets
 
-## Recursos
+## Referencias
 
 1. _Overview and History of R_ [R Programming](https://github.com/DataScienceSpecialization/courses/blob/master/02_RProgramming/OverviewHistoryR/index.Rmd)
 2. _Data Types and Basic Operations_ [R Programming](https://github.com/DataScienceSpecialization/courses/blob/master/02_RProgramming/DataTypes/index.Rmd)
 3. _Control Structures_ [R Programming](https://github.com/DataScienceSpecialization/courses/blob/master/02_RProgramming/ControlStructures/index.Rmd)
 4. _Reading Writing Data_ [R Programming](https://github.com/DataScienceSpecialization/courses/blob/master/02_RProgramming/reading_data_I/index.Rmd)
 5. _Plotting with ggplot2_ [Exploratory Analysis](https://github.com/DataScienceSpecialization/courses/blob/master/04_ExploratoryAnalysis/ggplot2/ppt/ggplot2.pdf)
-6. _Graphs with ggplot2_ [Graphs, Cookbook for R](http://www.cookbook-r.com/Graphs)
+
+## Recursos
+1. _Graphs with ggplot2_ [Graphs, Cookbook for R](http://www.cookbook-r.com/Graphs)

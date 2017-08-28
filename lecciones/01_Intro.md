@@ -32,7 +32,7 @@ Lección introductoria al curso
 
 4. Instalar Cliente Github ([Github para Windows/Mac OSX/GNU-Linux](https://help.github.com/desktop/guides/getting-started/installing-github-desktop/))
 
-## Recursos
+## Referencias
 
 1. _Series Motivation_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/01_01_seriesMotivation/index.Rmd)
 

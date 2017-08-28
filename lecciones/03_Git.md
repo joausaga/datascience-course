@@ -22,7 +22,7 @@ Lección sobre control de versiones con Git e introducción al lenguage markup [
 
 1. Actualizar README de repositorio creado durante la lección con información sobre proyecto de análisis a realizar
 
-## Recursos
+## Referencias
 
 1. _Intro to Git_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/02_04_01_introToGit/index.Rmd)
 
@@ -36,6 +36,8 @@ Lección sobre control de versiones con Git e introducción al lenguage markup [
 
 6. _Basic Markdown_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/02_08_basicMarkdown/index.Rmd)
 
-7. [Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+## Recursos
+
+1. [Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
 
 
