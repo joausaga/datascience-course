@@ -35,7 +35,7 @@ Lección sobre los conceptos básicos del curso
 
 2. Responder las siguientes [preguntas](https://goo.gl/forms/pXXU8kR6Pc1tn6iz2) relativas a la charla
 
-## Referencias
+## Recursos
 
 1. _Exploratory Data Analysis_, [Practical Statistics for Data Scientist](https://www.amazon.com/Practical-Statistics-Data-Scientists-Essential/dp/1491952962)
 
