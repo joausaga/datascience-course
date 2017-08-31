@@ -35,14 +35,14 @@ Utilizar los datasets sobre Producto Interno Bruto (PIB) e Inflación contenidos
 4. Agregar una variable al dataset unificado para contener la categoría de ingreso del país. La categoría de ingreso se determina de la siguiente manera: 
 
 | Categoría  | PIB (en trillones de USD) |
-| ------------- | ------------- |
+| -----------| ------------------------- |
 | Altos Ingresos  | PIB > 1.5  |
 | Medios Ingresos | 0.55 <= PIB <= 1.5 |
 | Bajos Ingresos  | PIB < 0.55 |
 
 5. Guardar el nuevo dataset en un archivo CSV
-6. Hacer push del nuevo dataset a github
-7. Enviar por mail el link github del archivo CSV generado
+6. Hacer push a github del nuevo dataset y del script R utilizado para generad el dataset
+7. Enviar por mail los links al script R y al archivo CSV generado
 
 ## Referencias
 
