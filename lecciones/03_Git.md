@@ -40,4 +40,6 @@ Lección sobre control de versiones con Git e introducción al lenguage markup [
 
 1. [Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
 
+2. [Writing on Github](https://help.github.com/categories/writing-on-github)
+
 
