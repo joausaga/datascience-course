@@ -41,7 +41,7 @@ Utilizar los datasets sobre Producto Interno Bruto (PIB) e Inflación contenidos
 | Bajos Ingresos  | PIB < 0.55 |
 
 5. Guardar el nuevo dataset en un archivo CSV
-6. Hacer push a github del nuevo dataset y del script R utilizado para generad el dataset
+6. Hacer push a github del nuevo dataset y del script R utilizado para generar el dataset
 7. Enviar por mail los links al script R y al archivo CSV generado
 
 ## Referencias
