@@ -35,14 +35,14 @@ Lección sobre técnicas para obtener y pre-procesar datos con el lenguaje R.
 Utilizar los datasets sobre Producto Interno Bruto e Inflación contenidos en el directorio data de este repositorio y realizar el siguiente reporte utilizando el lenguaje Mardown
 
 Secciones del reporte:
-	+ PIB de los países Sudamericanos en 2016
-		+ Resumen (min, max, mediana, promedio, quantiles) del PIB en sudamerica
-		+ Gráfica del PIB de los países sudamericanos agrupados por las siguientes categorias '_altos ingresos_' (PIB > 1.5 trillones USD), '_ingresos medios_' (0.55 trillones USD< PIB <= 1.5 trillones USD), '_ingresos bajos_' (PIB < 0.55 trillones USD)
-		+ Comentar cuales son los países con mayores y menores ingresos, ¿cuál es la situación de Paraguay?
-	+ Evolución del PIB en Paraguay
-		+ Gráfica con la evolución del PIB de Paraguay desde 1965 a 2016
-		+ Gráfica con la evolución del PIB de Paraguay (1965-2016) vs. la evolución de la inflación en Paraguay (1965-2016)
-		+ Comentar cuales fueron los períodos más productivos de Paraguay desde 1965 a 2016 en términos de PIB y cuál es el rol de la inflación en la evolución del PIB.
+1. PIB de los países Sudamericanos en 2016
+	+ Resumen (min, max, mediana, promedio, quantiles) del PIB en sudamerica
+	+ Gráfica del PIB de los países sudamericanos agrupados por las siguientes categorias '_altos ingresos_' (PIB > 1.5 trillones USD), '_ingresos medios_' (0.55 trillones USD< PIB <= 1.5 trillones USD), '_ingresos bajos_' (PIB < 0.55 trillones USD)
+	+ Comentar cuales son los países con mayores y menores ingresos, ¿cuál es la situación de Paraguay?
+2. Evolución del PIB en Paraguay
+	+ Gráfica con la evolución del PIB de Paraguay desde 1965 a 2016
+	+ Gráfica con la evolución del PIB de Paraguay (1965-2016) vs. la evolución de la inflación en Paraguay (1965-2016)
+	+ Comentar cuales fueron los períodos más productivos de Paraguay desde 1965 a 2016 en términos de PIB y cuál es el rol de la inflación en la evolución del PIB.
 
 Al finalizar hacer push del reporte a Github y enviar a jorge.saldivar [at] uc.edu.py el link github del reporte
 
