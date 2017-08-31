@@ -37,8 +37,8 @@ Utilizar los datasets sobre Producto Interno Bruto (PIB) e Inflación contenidos
 | Categoría  | PIB (en trillones de USD) |
 | ------------- | ------------- |
 | Altos Ingresos  | PIB > 1.5  |
-| Medios Ingresos | 0.55 < PIB <= 1.5 |
-| Bajos Ingresos  | PIB < 0.55 trillones USD |
+| Medios Ingresos | 0.55 <= PIB <= 1.5 |
+| Bajos Ingresos  | PIB < 0.55 |
 
 5. Guardar el nuevo dataset en un archivo CSV
 6. Hacer push del nuevo dataset a github
