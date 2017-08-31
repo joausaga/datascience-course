@@ -28,7 +28,21 @@ Lección sobre técnicas para obtener y pre-procesar datos con el lenguaje R.
 
 ## Tarea
 
-...
+Utilizar los datasets sobre Producto Interno Bruto (PIB) e Inflación contenidos en el directorio _data_ de este repositorio y realizar las siguientes actividades:
+1. Remover las dos primeras filas de ambos datasets (fecha de actualización y fuente)
+2. Seleccionar las variables _Country Name_, _Country Code_, además de todos los años de observación, esto es 1960 a 2016
+3. Generar un nuevo dataset unificando los datasets de PIB e inflación
+4. Agregar una variable al dataset unificado para contener la categoría de ingreso del país. La categoría de ingreso se determina de la siguiente manera: 
+
+| Categoría  | PIB (en trillones de USD) |
+| ------------- | ------------- |
+| Altos Ingresos  | PIB > 1.5  |
+| Medios Ingresos | 0.55 < PIB <= 1.5 |
+| Bajos Ingresos  | PIB < 0.55 trillones USD |
+
+5. Guardar el nuevo dataset en un archivo CSV
+6. Hacer push del nuevo dataset a github
+7. Enviar por mail el link github del archivo CSV generado
 
 ## Referencias
 
