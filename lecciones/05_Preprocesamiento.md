@@ -36,12 +36,12 @@ Con esta tarea se inician los trabajos en marco del proyecto del curso que busca
 * Utilizando R-studio crear un proyecto R llamado _becal_ y guardarlo en la carpeta _proyecto_;
 * Desde R-studio crear un script R y guardarlo dentro de la carpeta _proyecto_ con el nombre _preprocesamiento-becal.R_;
 * Utilizando el lenguaje R **realizar las siguientes tareas de limpieza y pre-procesamiento**:
-	1. Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, etc.)
-	2. Agregar columna _id/_becario_ para identificar becario. El contenido de la columna será de la siguiente forma: b/_xx (donde xx será remplazado por un número secuencia de dos digitos, p.ej., 00, 01, 02)
-	3. Eliminar la columna _ci_
+	1. Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, no /, etc.)
+	2. Agregar columna **id_becario** para identificar becario. El contenido de la columna será de la siguiente forma: b/_xx (donde xx será remplazado por un número secuencia de dos digitos, p.ej., 00, 01, 02)
+	3. Eliminar la columna **ci**
 	4. Eliminar los registros cuya condición es _no becario_
-	5. Convertir el contenido de la columna _Fecha de Adjudicación_ al formato dd/mm/yyyy
-	6. Convertir los registros cuyo contenido de la columna _Maestría / Doctorado_ sea de más de una línea (p.ej., 554) a contenido de una sola línea
+	5. Convertir el contenido de la columna **fecha_adjudicacion** al formato dd/mm/yyyy
+	6. Convertir los registros cuyo contenido de la columna **maestria_doctorado** sea de más de una línea (p.ej., 554) a contenido de una sola línea
 * Hacer push de los cambios a github;
 * Enviar por mail el link al script R creado.
 
