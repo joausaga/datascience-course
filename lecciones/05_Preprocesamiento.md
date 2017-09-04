@@ -36,7 +36,7 @@ Con esta tarea se inician los trabajos en marco del proyecto del curso que busca
 * Utilizando R-studio crear un proyecto R llamado _becal_ y guardarlo en la carpeta _proyecto_;
 * Desde R-studio crear un script R y guardarlo dentro de la carpeta _proyecto_ con el nombre _preprocesamiento-becal.R_;
 * Utilizando el lenguaje R **realizar las siguientes tareas de limpieza y pre-procesamiento**:
-	1. Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, no /, etc.)
+	1. Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, no /, etc.) Remplazar los espacios vacíos y barras por guión bajo
 	2. Agregar columna **id_becario** para identificar becario. El contenido de la columna será de la siguiente forma: b/_xx (donde xx será remplazado por un número secuencia de dos digitos, p.ej., 00, 01, 02)
 	3. Eliminar la columna **ci**
 	4. Eliminar los registros cuya condición es _no becario_
