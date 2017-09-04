@@ -12,14 +12,14 @@ Lección introductoria al curso
 	+ Data Science
 	+ Big Data
 3. ¿Qué hace un científico de datos?
-4. Proyectos (Trabajos Prácticos)
-5. Organización del curso
+4. Organización del curso
 	+ Introducción a la ciencia de los datos y base teórica
 	+ Herramientas para análistas y científicos de datos
 	+ Colección y pre-procesamiento de datos
 	+ Análisis Exploratorio de datos
 	+ Inferencia Estadística
 	+ Aprendizaje supervisado
+5. Proyectos (Trabajos Prácticos)
 6. Evaluación del curso
 
 ## Tarea
