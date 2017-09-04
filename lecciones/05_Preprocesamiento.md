@@ -30,20 +30,20 @@ Lección sobre técnicas para obtener y pre-procesar datos con el lenguaje R.
 ## Tarea: Entendiendo la política nacional de becas para estudios de posgrados en el exterior (BECAL)
 Con esta tarea se inician los trabajos en marco del proyecto del curso que busca entender la política nacional de becas para estudios en el extranjero. Para ello utilizaremos el dataset proveído por la institución BECAL sobre la adjudicación de becas.
 
-1. Dentro del repositorio local crear una carpeta llamada _proyecto_
-2. Dentro de la nueva carpeta _proyecto_ crear una carpeta llamada _data_;
-3. Copiar el dataset _becal2017.csv_ que se encuentra dentro de _data_ en la raíz del repositorio local;
-4. Utilizando R-studio crear un proyecto R llamado _becal_ y guardarlo en la carpeta _proyecto_;
-5. Desde R-studio crear un script R y guardarlo dentro de la carpeta _proyecto_ con el nombre _preprocesamiento-becal.R_;
-6. Utilizando el lenguaje R realizar las siguientes tareas de limpieza y pre-procesamiento:
-	+ Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, etc.)
-	+ Agregar columna _id/_becario_ para identificar becario. El contenido de la columna será de la siguiente forma: b/_xx (donde xx será remplazado por un número secuencia de dos digitos, p.ej., 00, 01, 02)
-	+ Eliminar la columna _ci_
-	+ Eliminar los registros cuya condición es _no becario_
-	+ Convertir el contenido de la columna _Fecha de Adjudicación_ al formato dd/mm/yyyy
-	+ Convertir los registros cuyo contenido de la columna _Maestría / Doctorado_ sea de más de una línea (p.ej., 554) a contenido de una sola línea
-7. Hacer push de los cambios a github;
-8. Enviar por mail el link al script R creado.
+* Dentro del repositorio local crear una carpeta llamada _proyecto_
+* Dentro de la nueva carpeta _proyecto_ crear una carpeta llamada _data_;
+* Copiar el dataset _becal2017.csv_ que se encuentra dentro de _data_ en la raíz del repositorio local;
+* Utilizando R-studio crear un proyecto R llamado _becal_ y guardarlo en la carpeta _proyecto_;
+* Desde R-studio crear un script R y guardarlo dentro de la carpeta _proyecto_ con el nombre _preprocesamiento-becal.R_;
+* Utilizando el lenguaje R **realizar las siguientes tareas de limpieza y pre-procesamiento**:
+	1. Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, etc.)
+	2. Agregar columna _id/_becario_ para identificar becario. El contenido de la columna será de la siguiente forma: b/_xx (donde xx será remplazado por un número secuencia de dos digitos, p.ej., 00, 01, 02)
+	3. Eliminar la columna _ci_
+	4. Eliminar los registros cuya condición es _no becario_
+	5. Convertir el contenido de la columna _Fecha de Adjudicación_ al formato dd/mm/yyyy
+	6. Convertir los registros cuyo contenido de la columna _Maestría / Doctorado_ sea de más de una línea (p.ej., 554) a contenido de una sola línea
+* Hacer push de los cambios a github;
+* Enviar por mail el link al script R creado.
 
 ## Referencias
 
