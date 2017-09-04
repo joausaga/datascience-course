@@ -20,7 +20,13 @@ Lección sobre control de versiones con Git e introducción al lenguage markup [
 
 ## Tarea
 
-1. Actualizar README de repositorio creado durante la lección con información sobre proyecto de análisis a realizar
+1. Realizar un fork de este repositorio 
+
+2. Actualizar README de repositorio creado durante la lección con información sobre proyecto BECAL a realizar
+
+3. Hacer commit y push de los cambios
+
+4. Enviar por mail el link al repositorio creado a partir del fork
 
 ## Referencias
 
