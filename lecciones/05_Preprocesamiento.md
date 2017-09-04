@@ -11,13 +11,14 @@ Lección sobre técnicas para obtener y pre-procesar datos con el lenguaje R.
 	+ Subconjunto de datos
 	+ Tratamiento de valores desconocidos
 	+ Ordenamiento de datos
-3. Creación de nuevas variables
+3. Renombrar variables
+4. Creación de nuevas variables
 	+ Secuencia
 	+ Creando variables binarias
 	+ Creando variables categoricas
-4. Merging de datos
+5. Merging de datos
 	+ Unificando datos con _merge()_
-5. Librería Dplyr
+6. Librería Dplyr
 	+ Select
 	+ Filter
 	+ Mutate
@@ -33,9 +34,16 @@ Con esta tarea se inician los trabajos en marco del proyecto del curso que busca
 2. Dentro de la nueva carpeta _proyecto_ crear una carpeta llamada _data_;
 3. Copiar el dataset _becal2017.csv_ que se encuentra dentro de _data_ en la raíz del repositorio local;
 4. Utilizando R-studio crear un proyecto R llamado _becal_ y guardarlo en la carpeta _proyecto_;
-5. Desde R-studio crear un archivo R y guardarlo dentro de la carpeta _proyecto_ con el nombre _preprocesamiento-becal.R_;
+5. Desde R-studio crear un script R y guardarlo dentro de la carpeta _proyecto_ con el nombre _preprocesamiento-becal.R_;
 6. Utilizando el lenguaje R realizar las siguientes tareas de limpieza y pre-procesamiento:
-	+ 
+	+ Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, etc.)
+	+ Agregar columna _id/_becario_ para identificar becario. El contenido de la columna será de la siguiente forma: b/_xx (donde xx será remplazado por un número secuencia de dos digitos, p.ej., 00, 01, 02)
+	+ Eliminar la columna _ci_
+	+ Eliminar los registros cuya condición es _no becario_
+	+ Convertir el contenido de la columna _Fecha de Adjudicación_ al formato dd/mm/yyyy
+	+ Convertir los registros cuyo contenido de la columna _Maestría / Doctorado_ sea de más de una línea (p.ej., 554) a contenido de una sola línea
+7. Hacer push de los cambios a github;
+8. Enviar por mail el link al script R creado.
 
 ## Referencias
 
