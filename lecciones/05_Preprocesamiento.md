@@ -26,23 +26,16 @@ Lección sobre técnicas para obtener y pre-procesar datos con el lenguaje R.
 	+ Group by
 	+ Rename
 
-## Tarea
+## Tarea: Entendiendo la política nacional de becas para estudios de posgrados en el exterior (BECAL)
+Con esta tarea se inician los trabajos en marco del proyecto del curso que busca entender la política nacional de becas para estudios en el extranjero. Para ello utilizaremos el dataset proveído por la institución BECAL sobre la adjudicación de becas.
 
-Utilizar los datasets sobre Producto Interno Bruto (PIB) e Inflación contenidos en el directorio _data_ de este repositorio y realizar las siguientes actividades:
-1. Remover las dos primeras filas de ambos datasets (fecha de actualización y fuente)
-2. Seleccionar las variables _Country Name_, _Country Code_, además de todos los años de observación, esto es 1960 a 2016
-3. Generar un nuevo dataset unificando los datasets de PIB e inflación
-4. Agregar una variable al dataset unificado para contener la categoría de ingreso del país. La categoría de ingreso se determina de la siguiente manera: 
-
-| Categoría  | PIB (en trillones de USD) |
-| -----------| ------------------------- |
-| Altos Ingresos  | PIB > 1.5  |
-| Medios Ingresos | 0.55 <= PIB <= 1.5 |
-| Bajos Ingresos  | PIB < 0.55 |
-
-5. Guardar el nuevo dataset en un archivo CSV
-6. Hacer push a github del nuevo dataset y del script R utilizado para generar el dataset
-7. Enviar por mail los links al script R y al archivo CSV generado
+1. Dentro del repositorio local crear una carpeta llamada _proyecto_
+2. Dentro de la nueva carpeta _proyecto_ crear una carpeta llamada _data_;
+3. Copiar el dataset _becal2017.csv_ que se encuentra dentro de _data_ en la raíz del repositorio local;
+4. Utilizando R-studio crear un proyecto R llamado _becal_ y guardarlo en la carpeta _proyecto_;
+5. Desde R-studio crear un archivo R y guardarlo dentro de la carpeta _proyecto_ con el nombre _preprocesamiento-becal.R_;
+6. Utilizando el lenguaje R realizar las siguientes tareas de limpieza y pre-procesamiento:
+	+ 
 
 ## Referencias
 
