@@ -30,6 +30,8 @@ Lección sobre técnicas para obtener y pre-procesar datos con el lenguaje R.
 ## Tarea: Entendiendo la política nacional de becas para estudios de posgrados en el exterior (BECAL)
 Con esta tarea se inician los trabajos en marco del proyecto del curso que busca entender la política nacional de becas para estudios en el extranjero. Para ello utilizaremos el dataset proveído por la institución BECAL sobre la adjudicación de becas.
 
+### Instrucciones
+
 * Dentro del repositorio local crear una carpeta llamada _proyecto_
 * Dentro de la nueva carpeta _proyecto_ crear una carpeta llamada _data_;
 * Copiar el dataset _becal2017.csv_ que se encuentra dentro de _data_ en la raíz del repositorio local;
