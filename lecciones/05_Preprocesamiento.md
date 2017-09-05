@@ -12,6 +12,7 @@ Lección sobre técnicas para obtener y pre-procesar datos con el lenguaje R.
 	+ Tratamiento de valores desconocidos
 	+ Ordenamiento de datos
 3. Renombrar variables
+4. Manejo de texto
 4. Creación de nuevas variables
 	+ Secuencia
 	+ Creando variables binarias
@@ -48,6 +49,7 @@ Con esta tarea se inician los trabajos en marco del proyecto del curso que busca
 	5. Convertir el contenido de la columna **fecha_adjudicacion** al formato dd/mm/yyyy
 	6. Convertir los registros cuyo contenido de la columna **maestria_doctorado** sea de más de una línea (p.ej., 554) a contenido de una sola línea
 	7. Agregar la columna **categoria_universidad** para contener la categoría de la universidad de acuerdo a su ranking. Las categorías a considerar son: top_10, top_50, top_100, top_150, top_200, mas_200
+	8. Unificar los nombres de los cursos (columna maestría_doctorado) aplicando las siguientes acciones: eliminar del nombre del curso las palabras Doctorado, PHD, PhD, Master, Maestría, y finalmente convertir el nombre al idioma español. 
 * Guardar el nuevo dataset en un archivo CSV en la carpeta _data_ dentro de _proyecto_;
 * Hacer push de los cambios a github;
 * Enviar por mail el link al script R creado y al nuevo dataset creado.
