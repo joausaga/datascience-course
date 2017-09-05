@@ -48,6 +48,7 @@ Con esta tarea se inician los trabajos en marco del proyecto del curso que busca
 	5. Convertir el contenido de la columna **fecha_adjudicacion** al formato dd/mm/yyyy
 	6. Convertir los registros cuyo contenido de la columna **maestria_doctorado** sea de más de una línea (p.ej., 554) a contenido de una sola línea
 	7. Agregar la columna **categoria_universidad** para contener la categoría de la universidad de acuerdo a su ranking. Las categorías a considerar son: top_10, top_50, top_100, top_150, top_200, mas_200
+* Guardar el nuevo dataset en un archivo CSV;
 * Hacer push de los cambios a github;
 * Enviar por mail el link al script R creado y al dataset modificado.
 
