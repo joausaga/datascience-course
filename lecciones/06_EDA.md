@@ -36,17 +36,21 @@ Lección sobre técnicas para la realización de análisis exploratorio de datos
 
 Con esta tarea realizaremos una primera aproximación a la la política nacional de becas para estudios en el extranjero. Por medio de una análisi exploratorio de los datos investigaremos los siguientes temas:
 
-* Distribución de becarios por edad, sexo, sector laboral (público/privado), con/sin goce de sueldo, ciudad y departamento de origen;
-* Distribución de becas por tipo (maestría/doctorado), áreas de la cienca, y disciplina;
-* Distribución de becas por país, ciudad, y universidad de destino;
-* Cantidad de becarios por rango de ranking de universidad de destino (top 10, top 50, top 100, top 150, top 200, ranking mayor a 200;
-* Resumen (min, max, mediana, promedio), quantiles (0.25, 0.75), desviación estándar del tiempo de duración de los estudios;
-* Percentiles de cobertura 25%, 50%, 75%, 100%;
-* Percentiles de completitud de estudios 25%, 50%, 75%, 100%
+1. Distribución de becarios por edad, sexo, sector laboral (público/privado), con/sin goce de sueldo, ciudad y departamento de origen;
+2. Distribución de becas por tipo (maestría/doctorado), áreas de la cienca, y disciplina;
+3. Distribución de becas por país, ciudad, y universidad de destino;
+4. Cantidad de becarios por rango de ranking de universidad de destino (top 10, top 50, top 100, top 150, top 200, ranking mayor a 200;
+5. Resumen (min, max, mediana, promedio), quantiles (0.25, 0.75), desviación estándar del tiempo de duración de los estudios;
+6. Percentiles de cobertura 25%, 50%, 75%, 100%;
+7. Percentiles de completitud de estudios 25%, 50%, 75%, 100%
 
 #### Instrucciones
 
-1. 
+* En R-studio y como parte del proyecto _Becal_ creado anteriormente crear un script R y guardarlo dentro de la carpeta _proyecto_ con el nombre _eda-becal.R_;
+* Utilizando el lenguaje R realizar los análisis mencionados más arriba;
+* Utilizando el lenguaje Markdown reportar los resultados en un documento llamado _reporte-eda-becal.md_;
+* Hacer push a github del script R y del reporte;
+* Enviar por mail el link al script R y al reporte creado.
 
 ## Referencias
 1. _Summarizing Data_ [Getting Data](https://github.com/DataScienceSpecialization/courses/blob/master/03_GettingData/03_02_summarizingData/index.Rmd)

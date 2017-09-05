@@ -38,7 +38,7 @@ Con esta tarea se inician los trabajos en marco del proyecto del curso que busca
 * Dentro del repositorio local crear una carpeta llamada _proyecto_
 * Dentro de la nueva carpeta _proyecto_ crear una carpeta llamada _data_;
 * Copiar el dataset _becal2017.csv_ que se encuentra dentro de _data_ en la raíz del repositorio local;
-* Utilizando R-studio crear un proyecto R llamado _becal_ y guardarlo en la carpeta _proyecto_;
+* Utilizando R-studio crear un proyecto R llamado _Becal_ y guardarlo en la carpeta _proyecto_;
 * Desde R-studio crear un script R y guardarlo dentro de la carpeta _proyecto_ con el nombre _preprocesamiento-becal.R_;
 * Utilizando el lenguaje R **realizar las siguientes tareas de limpieza y pre-procesamiento**:
 	1. Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, no /, etc.) Remplazar los espacios vacíos y barras por guión bajo
