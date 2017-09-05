@@ -32,8 +32,11 @@ Lección sobre técnicas que permiten sacar (inferir) conclusiones sobre una pob
 
 Con esta tarea buscaremos profundizar nuestro entendimiento sobre el programa de becas para estudios de posgrado del gobierno nacional. Utilizando técnicas de inferencia estadística analyzaremos los criterios de adjudicación y las principlaes características de los becados seleccionados. En particular investigaremos los siguientes temas:
 
-1.
-2.
+1. Diferencia entre cantidad de becas asignadas a hombre y mujeres;
+2. Diferencia entre cantidad de becas adjudicadas a funcionarios públicos y trabajadores del sector privado;
+3. Diferencia entre cantidad de becas por tipo (maestría/doctorado);
+4. Diferencia entre cantidad de becas adjudicadas a gente residente en la capital y gente residente en el interior;
+5. Diferencia entre becarios que residen en su ciudad de origen y aquellos que encuentran viviendo en otra ciudad (identificar la principal ciudad donde se trasladan a vivir);
 
 ### Instrucciones
 
