@@ -50,7 +50,7 @@ Con esta tarea se inician los trabajos en marco del proyecto del curso que busca
 	7. Agregar la columna **categoria_universidad** para contener la categoría de la universidad de acuerdo a su ranking. Las categorías a considerar son: top_10, top_50, top_100, top_150, top_200, mas_200
 * Guardar el nuevo dataset en un archivo CSV;
 * Hacer push de los cambios a github;
-* Enviar por mail el link al script R creado y al dataset modificado.
+* Enviar por mail el link al script R creado y al nuevo dataset creado.
 
 ## Referencias
 
