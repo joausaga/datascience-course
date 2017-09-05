@@ -20,12 +20,11 @@ Lección sobre técnicas que permiten sacar (inferir) conclusiones sobre una pob
 	+ Tamaño del efecto
 	+ Error Estándar
 	+ Muestras independientes
-5. Testeo multiple
-6. ANOVA
+5. ANOVA
 	+ Estadística F
 	+ ANOVA bidireccional
-7. Chi-Square Test
-8. Poder y tamaño de muestra
+6. Chi-Square Test
+7. Poder y tamaño de muestra
 
 ## Tarea
 
