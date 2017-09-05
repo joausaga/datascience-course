@@ -12,7 +12,7 @@ Lección sobre técnicas para obtener y pre-procesar datos con el lenguaje R.
 	+ Tratamiento de valores desconocidos
 	+ Ordenamiento de datos
 3. Renombrar variables
-4. Manejo de texto
+	+ Manejo de texto
 4. Creación de nuevas variables
 	+ Secuencia
 	+ Creando variables binarias

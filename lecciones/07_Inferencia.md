@@ -37,6 +37,7 @@ Con esta tarea buscaremos profundizar nuestro entendimiento sobre el programa de
 3. Diferencia entre cantidad de becas por tipo (maestría/doctorado);
 4. Diferencia entre cantidad de becas adjudicadas a gente residente en la capital y gente residente en el interior;
 5. Diferencia entre becarios que residen en su ciudad de origen y aquellos que encuentran viviendo en otra ciudad (identificar la principal ciudad donde se trasladan a vivir);
+6. Diferencia en monto adjudicado entre becarios que viven en Asunción y becarios que residen en el interior del país;
 
 ### Instrucciones
 
