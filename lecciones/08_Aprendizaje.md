@@ -28,7 +28,7 @@ Lección sobre técnicas de aprendizaje supervisado que permiten realizar predic
 
 ## Referencias
 
-1. _Regression and Prection_ [Practical Statistics for Data Scientists](https://www.amazon.com/Practical-Statistics-Data-Scientists-Essential/dp/1491952962/ref=sr_1_1?s=books&ie=UTF8&qid=1504535426&sr=1-1&keywords=practical+statistics+for+data+scientists)
+1. _Regression and Prediction_ [Practical Statistics for Data Scientists](https://www.amazon.com/Practical-Statistics-Data-Scientists-Essential/dp/1491952962/ref=sr_1_1?s=books&ie=UTF8&qid=1504535426&sr=1-1&keywords=practical+statistics+for+data+scientists)
 2. _Linear Regression_ [Regression Models](https://github.com/DataScienceSpecialization/courses/blob/master/07_RegressionModels/01_05_linearRegression/index.Rmd)
 3. _Multivariable Regression_ [Regression Models](https://github.com/DataScienceSpecialization/courses/blob/master/07_RegressionModels/02_01_multivariate/index.Rmd)
 4. _Multivariable Regression Examples_ [Regression Models](https://github.com/DataScienceSpecialization/courses/blob/master/07_RegressionModels/02_02_multivariateExamples/index.Rmd)
