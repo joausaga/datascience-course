@@ -51,3 +51,4 @@ Con esta tarea buscaremos profundizar nuestro entendimiento sobre el programa de
 1. _Introduction to Inference_ [Data Analysis and Statistical Inference](https://www.dropbox.com/s/7rgna7g7alcklir/lecture_slides-unit1_part3_1_sim_inference.pdf?dl=0)
 2. _Statistical Experiments and Significance Testing_ [Practical Statistics for Data Scientists](https://www.amazon.com/Practical-Statistics-Data-Scientists-Essential/dp/1491952962/ref=sr_1_1?s=books&ie=UTF8&qid=1504535426&sr=1-1&keywords=practical+statistics+for+data+scientists)
 3. _Introduction to Statistical Inference_ [Statistical Inference](https://github.com/DataScienceSpecialization/courses/blob/master/06_StatisticalInference/01_01_Introduction/index.Rmd)
+4. _Statistical Analysis_ [Research Methods in Human-Computer Interaction](https://www.amazon.com/Research-Methods-Human-Computer-Interaction-Second/dp/0128053909/ref=sr_1_1?ie=UTF8&qid=1504800385&sr=8-1&keywords=Research+Methods+in+Human-Computer+Interaction)
