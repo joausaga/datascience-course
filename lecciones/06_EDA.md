@@ -49,7 +49,7 @@ Con esta tarea realizaremos una primera aproximación a la la política nacional
 #### Instrucciones
 
 * En R-studio y como parte del proyecto _Becal_ creado anteriormente crear un documento R Markdown y guardarlo dentro de la carpeta _proyecto_ con el nombre _eda-becal.R_;
-* Utilizando el lenguaje R realizar los análisis mencionados más arriba y reportarlos en utilizando el lenguaje Markdown;
+* Utilizando el lenguaje R realizar los análisis mencionados más arriba y reportarlos en utilizando el lenguaje Markdown. La elección de los elementos de visualización (gráficos, tablas, etc) corre por parte del alumno;
 * Hacer push a github del reporte;
 * Enviar por mail el link al reporte creado.
 
