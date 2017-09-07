@@ -38,18 +38,23 @@ Con esta tarea se inician los trabajos en marco del proyecto del curso que busca
 
 * Dentro del repositorio local crear una carpeta llamada _proyecto_
 * Dentro de la nueva carpeta _proyecto_ crear una carpeta llamada _data_;
-* Copiar el dataset _becal2017.csv_ que se encuentra dentro de _data_ en la raíz del repositorio local;
+* Copiar los datasets _becal2017.csv_ y _becal-cobertura.csv_ que se encuentran dentro de _data_;
 * Utilizando R-studio crear un proyecto R llamado _Becal_ y guardarlo en la carpeta _proyecto_;
 * Desde R-studio crear un script R y guardarlo dentro de la carpeta _proyecto_ con el nombre _preprocesamiento-becal.R_;
-* Utilizando el lenguaje R **realizar las siguientes tareas de limpieza y pre-procesamiento**:
-	1. Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, no /, etc.) Remplazar los espacios vacíos y barras por guión bajo
-	2. Agregar la columna **id_becario** para identificar becario. El contenido de la columna será de la siguiente forma: b/_xx (donde xx será remplazado por un número secuencia de dos digitos, p.ej., 00, 01, 02)
-	3. Eliminar la columna **ci**
-	4. Eliminar los registros cuya condición es _no becario_
-	5. Convertir el contenido de la columna **fecha_adjudicacion** al formato dd/mm/yyyy
-	6. Convertir los registros cuyo contenido de la columna **maestria_doctorado** sea de más de una línea (p.ej., 554) a contenido de una sola línea
-	7. Agregar la columna **categoria_universidad** para contener la categoría de la universidad de acuerdo a su ranking. Las categorías a considerar son: top_10, top_50, top_100, top_150, top_200, mas_200
-	8. Unificar los nombres de los cursos (columna maestría_doctorado) aplicando las siguientes acciones: eliminar del nombre del curso las palabras Doctorado, PHD, PhD, Master, Maestría, y finalmente convertir el nombre al idioma español. 
+* Utilizando el lenguaje R importar ambos datasets y **realizar las siguientes tareas de limpieza y pre-procesamiento**:
+	+ Dataset: _becal2017.csv_
+		1. Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, no /, etc.) Remplazar los espacios vacíos y barras por guión bajo
+		2. Agregar la columna **id_becario** para identificar becario. El contenido de la columna será de la siguiente forma: b/_xx (donde xx será remplazado por un número secuencia de dos digitos, p.ej., 00, 01, 02)
+		3. Eliminar la columna **ci**
+		4. Eliminar los registros cuya condición es _no becario_
+		5. Convertir el contenido de la columna **fecha_adjudicacion** al formato dd/mm/yyyy
+		6. Convertir los registros cuyo contenido de la columna **maestria_doctorado** sea de más de una línea (p.ej., 554) a contenido de una sola línea
+		7. Agregar la columna **categoria_universidad** para contener la categoría de la universidad de acuerdo a su ranking. Las categorías a considerar son: top_10, top_50, top_100, top_150, top_200, mas_200
+		8. Unificar los nombres de los cursos (columna maestría_doctorado) aplicando las siguientes acciones: eliminar del nombre del curso las palabras Doctorado, PHD, PhD, Master, Maestría, y finalmente convertir el nombre al idioma español.
+	+ Dataset: _becal-cobertura.csv_
+		1. Renombrar las columnas **Total General** y **C.I.** siguiendo las reglas mencionadas anteriormente
+		2. Remover los signos de dolar y punto de las filas de la columna **total_general** y convertir la columna al tipo entero
+	+ Agregar al dataset _becal2017.csv_ la columna **total_general** utilizando la columna **ci** como referencia
 * Guardar el nuevo dataset en un archivo CSV en la carpeta _data_ dentro de _proyecto_;
 * Hacer push de los cambios a github;
 * Enviar por mail el link al script R creado y al nuevo dataset creado.
