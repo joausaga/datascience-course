@@ -27,8 +27,9 @@ Lección sobre técnicas para la realización de análisis exploratorio de datos
 	+ Z-score
 7. Distribucion normal
 	+ Tabla Z
-6. Distribución muestral
+8. Distribución muestral
 	+ Teorema central del límite
+9. Correlación
 
 ## Tarea
 
