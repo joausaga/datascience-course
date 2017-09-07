@@ -12,6 +12,7 @@ Lección sobre técnicas para la realización de análisis exploratorio de datos
 	+ Frecuencia
 	+ Linea
 	+ Box plots
+	+ Scatter plots
 3. Tendencia central
 	+ Promedio
 	+ Mediana
