@@ -54,7 +54,7 @@ Con esta tarea se inician los trabajos en marco del proyecto del curso que busca
 	+ Dataset: _becal-cobertura.csv_
 		1. Renombrar las columnas **Total General** y **C.I.** siguiendo las reglas mencionadas anteriormente
 		2. Remover los signos de dolar y punto de las filas de la columna **total_general** y convertir la columna al tipo entero
-	+ Agregar al dataset _becal2017.csv_ la columna **total_general** utilizando la columna **ci** como referencia
+	+ Agregar al dataset _becal2017.csv_ la columna **total_general** del dataset _becal-cobertura.csv_ utilizando la columna **ci** (disponible en ambos datasets) como referencia
 * Guardar el nuevo dataset en un archivo CSV en la carpeta _data_ dentro de _proyecto_;
 * Hacer push de los cambios a github;
 * Enviar por mail el link al script R creado y al nuevo dataset creado.
