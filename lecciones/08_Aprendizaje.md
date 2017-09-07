@@ -24,7 +24,9 @@ Lección sobre técnicas de aprendizaje supervisado que permitan explorar relaci
 
 ## Trabajo Práctico
 
-1.  
+### Entendiendo la política nacional de becas para estudios de posgrados en el exterior (BECAL)
+
+Con esta tarea buscaremos profundizar nuestro entendimiento sobre el programa de becas para estudios de posgrado del gobierno nacional. Utilizando técnicas de aprendizaje supervisado buscaremos... En particular investigaremos los siguientes temas:
 
 ## Referencias
 
