@@ -22,7 +22,7 @@ Lección sobre control de versiones con Git e introducción al lenguage markup [
 
 1. Realizar un fork de este repositorio 
 
-2. Actualizar README de repositorio creado durante la lección con información sobre proyecto BECAL a realizar
+2. Actualizar README del repositorio creado durante la lección con información sobre programa BECAL y sobre los datasets a utilizar. El archivo README debe contener dos secciones, una primera introductoria donde se explica en que consiste el programa de becas para estudios en el exterior (BECAL) y una segunda sección donde se presenta cada uno de los datasets con sus respectivas columnas, explicando el tipo y contenido de las mismas. Para un ejemplo sobre describir un dataset ver [Diccionario INGREFAM DE LA EPH 2016](http://www.dgeec.gov.py/microdatos/register/EPH/Eph2016/diccionario%20INGREFAM%202016.doc).
 
 3. Hacer commit y push de los cambios
 
