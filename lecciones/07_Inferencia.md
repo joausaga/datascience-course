@@ -2,7 +2,7 @@
 
 ### Inferencia Estadística
 
-Lección sobre técnicas que permiten sacar (inferir) conclusiones sobre una población a partir de una muestra.
+Lección sobre técnicas de inferencia estadística que permitan derivar conclusiones a partir de muestras de datos.
 
 ## Temas de la lección
 
@@ -26,7 +26,7 @@ Lección sobre técnicas que permiten sacar (inferir) conclusiones sobre una pob
 6. Chi-Square Test
 7. Poder y tamaño de muestra
 
-## Tarea
+## Trabajo Práctico
 
 ### Entendiendo la política nacional de becas para estudios de posgrados en el exterior (BECAL)
 

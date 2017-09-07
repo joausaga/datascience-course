@@ -2,7 +2,7 @@
 
 ### Aprendizaje Supervisado (Regresión Lineal)
 
-Lección sobre técnicas de aprendizaje supervisado que permiten realizar predicciones en base a características conocidas de los datos.
+Lección sobre técnicas de aprendizaje supervisado que permitan explorar relaciones en los datos y derivar predicciones.
 
 ## Temas de la lección
 
@@ -22,7 +22,7 @@ Lección sobre técnicas de aprendizaje supervisado que permiten realizar predic
 	+ Cross-validation
 	+ Selección de modelos
 
-## Tarea
+## Trabajo Práctico
 
 1.  
 

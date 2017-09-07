@@ -32,7 +32,7 @@ Lección sobre técnicas para la realización de análisis exploratorio de datos
 	+ Teorema central del límite
 9. Correlación
 
-## Tarea
+## Trabajo Práctico
 
 ### Entendiendo la política nacional de becas para estudios de posgrados en el exterior (BECAL)
 

@@ -18,7 +18,7 @@ Lección sobre control de versiones con Git e introducción al lenguage markup [
 5. Git workflow
 6. Introducción al lenguaje Markdown
 
-## Tarea
+## Trabajo Práctico
 
 1. Realizar un fork de este repositorio 
 

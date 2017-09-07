@@ -28,7 +28,7 @@ Lección sobre técnicas para obtener y pre-procesar datos con el lenguaje R.
 	+ Group by
 	+ Rename
 
-## Tarea
+## Trabajo Práctico
 
 ### Entendiendo la política nacional de becas para estudios de posgrados en el exterior (BECAL)
 
