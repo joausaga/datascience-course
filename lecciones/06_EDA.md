@@ -46,7 +46,10 @@ Con esta tarea realizaremos una primera aproximación a la la política nacional
 7. Percentiles de cobertura 25%, 50%, 75%, 100%;
 8. Percentiles de completitud de estudios 25%, 50%, 75%, 100%;
 9. Distribución de becas por nombre de curso de posgrado;
-10. Distribución de montos de cobertura.
+10. Distribución de montos de coberturas;
+11. Top-10 de mayores montos de coberturas;
+12. Análisis de correlación entre montos de cobertura y ranking de universidades.
+
 
 #### Instrucciones
 
