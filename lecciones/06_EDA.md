@@ -36,7 +36,7 @@ Lección sobre técnicas para la realización de análisis exploratorio de datos
 
 ### Entendiendo la política nacional de becas para estudios de posgrados en el exterior (BECAL)
 
-Con esta tarea realizaremos una primera aproximación a la la política nacional de becas para estudios en el extranjero. Por medio de una análisis exploratorio de los datos investigaremos los siguientes temas:
+Con este trabajo práctico realizaremos una primera aproximación a la la política nacional de becas para estudios en el extranjero. Por medio de una análisis exploratorio de los datos investigaremos los siguientes temas:
 
 1. Distribución de becarios por edad, sexo, sector laboral (público/privado), con/sin goce de sueldo, ciudad y departamento de origen, ciudad y departamento de residencia;
 2. Distribución de becas por tipo (maestría/doctorado) y disciplina;

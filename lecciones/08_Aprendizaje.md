@@ -24,9 +24,19 @@ Lección sobre técnicas de aprendizaje supervisado que permitan explorar relaci
 
 ## Trabajo Práctico
 
-### Entendiendo la política nacional de becas para estudios de posgrados en el exterior (BECAL)
+### Entendiendo los factores que inciden en la pobreza.
 
-Con esta tarea buscaremos profundizar nuestro entendimiento sobre el programa de becas para estudios de posgrado del gobierno nacional. Utilizando técnicas de aprendizaje supervisado buscaremos... En particular investigaremos los siguientes temas:
+En este trabajo práctico investigaremos como los factores habitacionales influyen en el nivel de pobreza de los barrios. En particular buscaremos responder como se relacionan la superficie y cantidad de viviendas en la pobreza del barrio.
+
+### Instrucciones
+
+* Copiar el dataset _pobreza.csv_ que se encuentran dentro de _data_;
+* Utilizando R-studio crear un proyecto R llamado _Pobreza_ y guardarlo en la carpeta _trabajos_practicos_;
+* Desde R-studio crear un script R y guardarlo dentro de la carpeta _trabajos_practicos_con el nombre _regresion-pobreza.R_;
+* Utilizando el lenguaje R importar el dataset _probreza.csv_ y implementar un modelo de regresion lineal que permita explorar la relación entre superficie y cantidad de viviendas en un barrio y su nivel de probreza;
+* Utilizando el lenguaje R Markdown reportar los resultados (modelo, método de validación, eficiencia del modelo);
+* Hacer push a github del reporte;
+* Enviar por mail el link al reporte creado.
 
 ## Referencias
 

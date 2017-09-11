@@ -32,15 +32,15 @@ Lección sobre técnicas para obtener y pre-procesar datos con el lenguaje R.
 
 ### Entendiendo la política nacional de becas para estudios de posgrados en el exterior (BECAL)
 
-Con esta tarea se inician los trabajos en marco del proyecto del curso que busca entender la política nacional de becas para estudios en el extranjero. Para ello utilizaremos el dataset proveído por la institución BECAL sobre la adjudicación de becas.
+Con este trabajo práctico se inician los trabajos en marco del proyecto del curso que busca entender la política nacional de becas para estudios en el extranjero. Para ello utilizaremos el dataset proveído por la institución BECAL sobre la adjudicación de becas.
 
 #### Instrucciones
 
-* Dentro del repositorio local crear una carpeta llamada _proyecto_
+* Dentro del repositorio local crear una carpeta llamada _trabajos_practicos_
 * Dentro de la nueva carpeta _proyecto_ crear una carpeta llamada _data_;
 * Copiar los datasets _becal2017.csv_ y _becal-cobertura.csv_ que se encuentran dentro de _data_;
-* Utilizando R-studio crear un proyecto R llamado _Becal_ y guardarlo en la carpeta _proyecto_;
-* Desde R-studio crear un script R y guardarlo dentro de la carpeta _proyecto_ con el nombre _preprocesamiento-becal.R_;
+* Utilizando R-studio crear un proyecto R llamado _Becal_ y guardarlo en la carpeta _trabajos_practicos_;
+* Desde R-studio crear un script R y guardarlo dentro de la carpeta _trabajos_practicos_con el nombre _preprocesamiento-becal.R_;
 * Utilizando el lenguaje R importar ambos datasets y **realizar las siguientes tareas de limpieza y pre-procesamiento**:
 	+ Dataset: _becal2017.csv_
 		1. Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, no /, etc.) Remplazar los espacios vacíos y barras por guión bajo

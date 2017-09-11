@@ -30,7 +30,7 @@ Lección sobre técnicas de inferencia estadística que permitan derivar conclus
 
 ### Entendiendo la política nacional de becas para estudios de posgrados en el exterior (BECAL)
 
-Con esta tarea buscaremos profundizar nuestro entendimiento sobre el programa de becas para estudios de posgrado del gobierno nacional. Utilizando técnicas de inferencia estadística analyzaremos los criterios de adjudicación y las principlaes características de los becados seleccionados. En particular investigaremos los siguientes temas:
+Con este trabajo práctico buscaremos profundizar nuestro entendimiento sobre el programa de becas para estudios de posgrado del gobierno nacional. Utilizando técnicas de inferencia estadística analyzaremos los criterios de adjudicación y las principlaes características de los becados seleccionados. En particular investigaremos los siguientes temas:
 
 1. Diferencia entre cantidad de becas asignadas a hombre y mujeres;
 2. Diferencia entre cantidad de becas adjudicadas a funcionarios públicos y trabajadores del sector privado;
