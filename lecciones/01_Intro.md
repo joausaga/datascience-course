@@ -41,5 +41,3 @@ Lección introductoria al curso
 3. _What about big data_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/03_03_whatAboutBigData/index.Rmd)
 
 4. _Toolbox Overview_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/01_01a_toolBoxOverview/index.Rmd)
-
-5. _Github_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/02_05_github/index.Rmd)
