@@ -31,7 +31,7 @@ Lección sobre los conceptos básicos del curso
 
 ## Tarea
 
-1. Ver charla TED ["The best stats you've ever seen"](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen), [Hans Rosling](https://en.wikipedia.org/wiki/Hans_Rosling)
+1. Ver charla TED [The best stats you've ever seen](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen), [Hans Rosling](https://en.wikipedia.org/wiki/Hans_Rosling)
 
 2. Responder las siguientes [preguntas](https://goo.gl/forms/pXXU8kR6Pc1tn6iz2) relativas a la charla
 
