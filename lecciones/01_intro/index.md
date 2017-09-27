@@ -19,7 +19,7 @@ knit        : slidify::knit2slides
 
 _Campo interdisciplinario que se basa y sintetiza una serie de disciplinas y áreas del conocimiento, incluyendo **estadística**, **informática**, **computación**, **comunicación**, **administración**, y **sociología**, con el objetivo descubrir conocimento a partir de los datos_
 
-<img class=center src="../assets/img/data_science.jpg" height=400 />
+<img class=center src="../assets/img/data_science_diagrama.png" height=400 />
 
 [Data Science: Challenges and Directions](https://cacm.acm.org/magazines/2017/8/219605-data-science/fulltext)
 
