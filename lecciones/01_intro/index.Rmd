@@ -85,15 +85,9 @@ _Datos con alto volumen, alta velocidad, alta variedad, y alta veracidad_ (Foste
 
 ---
 
-## ¿Qué hace un científico de datos?
-
-Test slide 5
-
----
-
 ## Sobre mi
 
-Test slide 6
+<img class=center src="../assets/img/aboutme.png" height=550 />
 
 ---
 
