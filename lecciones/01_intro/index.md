@@ -10,7 +10,7 @@ hitheme     : tomorrow      #
 url:
   lib: ../libraries
   assets: ../assets
-widgets     : []            # {mathjax, quiz, bootstrap}
+widgets     : [mathjax]     # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
@@ -23,29 +23,65 @@ _Campo interdisciplinario que se basa y sintetiza una serie de disciplinas y ár
 
 [Data Science: Challenges and Directions](https://cacm.acm.org/magazines/2017/8/219605-data-science/fulltext)
 
---- .class #id 
+--- &twocol 
 
-## ¿Por qué la ciencia de los datos?
+## Motivación
 
-Test slide 2
+*** =left
+
+Nunca antes tuvimos acceso a tantos datos (big data)
+
+<img class=left src="../assets/img/deluge.png" height=400 />
+
+[The Data Deluge](http://www.economist.com/node/15579717)
+
+*** =right
+
+El big data es el motor de la innovación actual (self-driving cars, real-time object classifiers, voice assistants, chatbots)
+
+<img class=left src="../assets/img/connectedcars-1.png" height=250 />
+
+[Big Data Hits the Road](http://www.businessinsider.com/connected-cars-2015-9)
 
 ---
 
-## Data
+## Motivación
 
-Test slide 2
+La demanda de científicos de datos ha crecido **exponencialmente** desde el 2011
 
----
+<img class=center src="../assets/img/chart-data-science.png" height=400 />
 
-## Data Science
-
-Test slide 3
+[Data Scientist: The Number One Job In America](http://blog.edx.org/the-importance-of-data-science-in-the-21st-century)
 
 ---
 
-## Big data
+## Datos (el nuevo petróleo)
 
-Test slide 4
+<img class=center src="../assets/img/data-new-oil.jpg" height=500 />
+
+[The world’s most valuable resource is no longer oil, but data](https://www.economist.com/news/leaders/21721656-data-economy-demands-new-approach-antitrust-rules-worlds-most-valuable-resource)
+
+--- 
+
+## Datos
+
+<q>Los datos son valores pertenecientes a un <redtext>conjuntos de items</redtext> y representados a través de `variables` **cualitativas o cuantitativas**.</q>
+
+<redtext>Conjunto de items</redtext>: Conjunto de objetos de interés, a veces llamado población
+
+`Variables`: Medida o característica de un item
+
+**Cualitativo**: Pais de origen, sexo, religión, **Cuantitativo**: Altura, peso, edad
+
+[Data (Wikipedia)](http://en.wikipedia.org/wiki/Data)
+
+---
+
+## Big data (las 4 Vs)
+
+_Datos con alto volumen, alta velocidad, alta variedad, y alta veracidad_ (Foster et al., Big Data and Social Science)
+
+<img class=center src="../assets/img/4-Vs-of-big-data.jpg" height=450 />
 
 ---
 
