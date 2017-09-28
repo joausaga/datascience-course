@@ -41,3 +41,17 @@ Lección introductoria al curso
 3. _What about big data_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/03_03_whatAboutBigData/index.Rmd)
 
 4. _Toolbox Overview_, [The Data Scientist’s Toolbox](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/01_01a_toolBoxOverview/index.Rmd)
+
+## Recursos
+
+1. [Data Science: Challenges and Directions](https://cacm.acm.org/magazines/2017/8/219605-data-science/fulltext)
+
+2. [The Data Deluge](http://www.economist.com/node/15579717)
+
+3. [Big Data Hits the Road](http://www.businessinsider.com/connected-cars-2015-9)
+
+4. [Data Scientist: The Number One Job In America](http://blog.edx.org/the-importance-of-data-science-in-the-21st-century)
+
+5. [The world’s most valuable resource is no longer oil, but data](https://www.economist.com/news/leaders/21721656-data-economy-demands-new-approach-antitrust-rules-worlds-most-valuable-resource)
+
+6. [Big Data and Social Science](https://www.amazon.com/Big-Data-Social-Science-Statistics/dp/1498751407/ref=sr_1_1?ie=UTF8&qid=1506629819&sr=8-1&keywords=big+data+and+social+science) 

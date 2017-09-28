@@ -65,13 +65,13 @@ La demanda de científicos de datos ha crecido **exponencialmente** desde el 201
 
 ## Datos
 
-<q>Los datos son valores pertenecientes a un <redtext>conjuntos de items</redtext> y representados a través de `variables` **cualitativas o cuantitativas**.</q>
+<q>Los datos son valores pertenecientes a un <redtext>conjuntos de items</redtext> y representados a través de <greentext>variables</greentext> <bluetext>cualitativas o cuantitativas</bluetext>.</q>
 
 <redtext>Conjunto de items</redtext>: Conjunto de objetos de interés, a veces llamado población
 
-`Variables`: Medida o característica de un item
+<greentext>Variables</greentext>: Medida o característica de un item
 
-**Cualitativo**: Pais de origen, sexo, religión, **Cuantitativo**: Altura, peso, edad
+<bluetext>Cualitativo</bluetext>: Pais de origen, sexo, religión, <bluetext>Cuantitativo</bluetext>: Altura, peso, edad
 
 [Data (Wikipedia)](http://en.wikipedia.org/wiki/Data)
 
@@ -79,7 +79,7 @@ La demanda de científicos de datos ha crecido **exponencialmente** desde el 201
 
 ## Big data (las 4 Vs)
 
-_Datos con alto volumen, alta velocidad, alta variedad, y alta veracidad_ (Foster et al., Big Data and Social Science)
+_Datos con alto volumen, alta velocidad, alta variedad, y alta veracidad_ [(Foster et al., Big Data and Social Science)](https://www.amazon.com/Big-Data-Social-Science-Statistics/dp/1498751407/ref=sr_1_1?ie=UTF8&qid=1506629819&sr=8-1&keywords=big+data+and+social+science)
 
 <img class=center src="../assets/img/4-Vs-of-big-data.jpg" height=450 />
 
@@ -104,10 +104,31 @@ _Datos con alto volumen, alta velocidad, alta variedad, y alta veracidad_ (Foste
 
 ## Proyecto (BECAL)
 
-Test slide 6
+BECAL es el programa nacional de becas de postgrados en el exterior del gobierno nacional. Hasta el momento el gobierno nacional lleva invertido en el mismo casi **120.000.000 millones de guaranies** en la financiación de cerca de **900 becarios**, sin embargo, poco se conoce del perfil de los beneficiarios (edad, sexo, nivel socio-económico, profesión, sector laboral, etc). Además, se sabe poco de las capacidades que estos beneficiarions adquieren en sus estudios y que ayudarán a potenciar la fuerza laboral local. Entonces, <redtext>_**hasta el momento es difícil cuantificar cual es el beneficio real del programa para el país**_</redtext>.
+
+En este proyecto utilizarremos técnicas de ciencia de los datos para conocer más en detalle la política de becas del gobierno nacional.
+
+<img class=center src="../assets/img/logo-becal.png" height=150 />
+
+[Informe BECAL - Marzo 2017](http://www.becal.gov.py/informe-becal-actualizacion/)
 
 ---
 
 ## Evaluación
 
-Test slide 7
+Para la obtención de los 2 créditos académicos es necesario cumplir con los siguientes requisitos.
+
+- Asistencia a 80% de la clases
+
+- Alcanzar el 70% del puntaje total de las tareas dentro del proyecto BECAL:
+
+  * Base conceptual: 5 pts.
+  * Git: 5 pts.
+  * Preprocesamiento: 20 pts.
+  * EDA: 30 pts.
+  * Inferencia: 25 pts.
+  * Aprendizaje: 15 pts.
+
+- Con la continuidad del proyecto posterior a la culminación del curso se podrán otorgar créditos adicionales si el resultado alcanzado deriva en una publicación científica.
+
+[Sitio del Curso](https://github.com/joausaga/datascience-course)
