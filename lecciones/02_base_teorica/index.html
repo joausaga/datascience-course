@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Base Conceptual</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Base Conceptual">
+  <meta name="author" content="Jorge Saldivar">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../libraries/frameworks/io2012/js/slides" 
+    src="../libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="../assets/img/logo-uca.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Base Conceptual</h1>
+    <h2>Curso de Data Science con Impacto Social</h2>
+    <p>Jorge Saldivar<br/>Universidad Católica &quot;Nuestra Señora de la Asunción&quot;</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Tipo de datos y medidas</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>En data science los tipo de datos tradicionales son:</p>
+
+<ul>
+<li><p><strong>Continuo</strong>: datos que pueden tomar cualquier valor en un intervalo determinado. Ej., Salario=10500.507$</p></li>
+<li><p><strong>Discreto</strong>: datos que pueden tomar solo valores enteros, como ser contadores. Ej., Edad=25</p></li>
+<li><p><strong>Categorico</strong>: datos que pueden tomar valores determinados en un conjunto finito de elementos o categorías. Ej., Sexo=Femenino, donde <em>Sexo</em> puede tomar valores solo los valores Masculino o Femenino</p></li>
+<li><p><strong>Binario</strong>: tipo especial de dato categórico que puede tomar solo dos valores, verdadero/falso, 0/1, si/no. Ej., Llueve=Si</p></li>
+<li><p><strong>Ordinal</strong>: tipo especial de dato categórico donde los valores tienen poseen un orden específico. Ej., PuntajeExamen=4 donde <em>PuntajeExamen</em> puede tomar los valores 1, 2, 3, 4, o 5.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Estructura y representación de los datos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>En data science los datos se estructuran comúnmente en <strong>data frames</strong>, los cuales se componen de filas y columnas </p>
+
+<p><img class=center src="../assets/img/dataframe-a.png" height=450 /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Tipos de pregunta - Descriptiva</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">summary(cars)
+</code></pre>
+
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Tipos de pregunta - Exploratorias</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Tipos de pregunta - Inferenciales</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Tipos de pregunta - Predictivas</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Tipos de pregunta - Causales</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Tipo de datos y medidas'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Estructura y representación de los datos'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Tipos de pregunta - Descriptiva'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Tipos de pregunta - Exploratorias'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Tipos de pregunta - Inferenciales'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Tipos de pregunta - Predictivas'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Tipos de pregunta - Causales'>
+         7
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="../libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="../libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
