@@ -132,3 +132,11 @@ Para la obtención de los 2 créditos académicos es necesario cumplir con los s
 - Con la continuidad del proyecto posterior a la culminación del curso se podrán otorgar créditos adicionales si el resultado alcanzado deriva en una publicación científica.
 
 [Sitio del Curso](https://github.com/joausaga/datascience-course)
+
+---
+
+## Libros de referencia
+
+- Bruce P. and Bruce A., _Practical Statistics for Data Scientists: 50 Essential Concepts_, O'Reilly
+
+- Foster I., Ghani R., Jarmin R., Kreuter F., Lane J., _Big Data and Social Science: A Practical Guide to Methods and Tools_, Chapman and Hall
