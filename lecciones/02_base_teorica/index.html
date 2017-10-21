@@ -77,20 +77,18 @@
 
 <slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Tipos de pregunta - Descriptiva</h2>
+    <h2>Tipos de análisis en proyectos de Data Science</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">summary(cars)
-</code></pre>
+    <p><strong>En orden (aproximado) de dificultad</strong></p>
 
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-</code></pre>
+<ul>
+<li>Descriptivo</li>
+<li>Exploratorio</li>
+<li>Inferencial</li>
+<li>Predictivo</li>
+<li>Causal</li>
+</ul>
 
   </article>
   <!-- Presenter Notes -->
@@ -98,45 +96,393 @@
 
 <slide class="" id="slide-4" style="background:;">
   <hgroup>
-    <h2>Tipos de pregunta - Exploratorias</h2>
+    <h2>Análisis descriptivo</h2>
   </hgroup>
   <article data-timings="">
-    <p class='..</p>
+    <p><strong>Objetivo</strong>: Describir el conjunto de datos de interés</p>
 
- '></article>
+<ul>
+<li>Normalmente es el primer tipo de análisis de datos realizado</li>
+<li>No es lo mismo la descripción de los datos que la interpretación de los mismos</li>
+<li>Las descripciones no se pueden generalizar sin modelos estadísticos adicionales</li>
+<li>Generalmente se estudian las variables de interés por separado</li>
+</ul>
+
+<p><img class=center src="../assets/img/descriptive_analysis.jpg" height=235 /></p>
+
+  </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-5" style="background:;">
   <hgroup>
-    <h2>Tipos de pregunta - Inferenciales</h2>
+    <h2>Caso de Uso: Censo</h2>
   </hgroup>
   <article data-timings="">
-    <p class='..</p>
+    <p>Un caso común de uso es la presentación de resultados de censos</p>
 
- '></article>
+<p><img class=center src="../assets/img/censopy2012.png" height=450 /></p>
+
+<p><a href="http://www.dgeec.gov.py/v1/Publicaciones/Biblioteca/indicadores/Triptico.pdf">Resultados Finales Censo 2012, Dirección General de Estadísticas, Encuestas, y Censos</a></p>
+
+  </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-6" style="background:;">
   <hgroup>
-    <h2>Tipos de pregunta - Predictivas</h2>
+    <h2>Análisis exploratorio</h2>
   </hgroup>
   <article data-timings="">
-    <p class='..</p>
+    <p><strong>Objetivo</strong>: Encontrar en los datos relaciones, conexiones, o patrones desconocidos</p>
 
- '></article>
+<ul>
+<li>Por si solos no deben utilizarse para generalizaciones/predicciones</li>
+<li>El resultado de los análisis exploratorios no son generalmente conclusivos</li>
+<li>Son útiles para definir futuros estudios</li>
+<li>Generalmente se combinan las variables para su estudio</li>
+</ul>
+
+<p><img class=center src="../assets/img/exploratory_analysis.png" height=320 /></p>
+
+  </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-7" style="background:;">
   <hgroup>
-    <h2>Tipos de pregunta - Causales</h2>
+    <h2>Caso de Uso: Edad y rendimiento deportivo</h2>
   </hgroup>
   <article data-timings="">
-    <p class='..</p>
+    <p><img class=center src="../assets/img/soccer-players-age.png" height=500 /></p>
 
- '></article>
+<p><a href="https://www.economist.com/blogs/gametheory/2014/07/player-age-football">The Clock Is Ticking</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Correlación no implica causalidad</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img class=center src="../assets/img/chocolate_nobel_prize.png" height=500 /></p>
+
+<p><a href="http://www.businessinsider.com/chocolate-consumption-vs-nobel-prizes-2014-4">There&#39;s A Shocking Connection Between Eating More Chocolate And Winning The Nobel Prize</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Análisis Inferencial</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><strong>Objetivo</strong>: Inferir conocimiento sobre una población a partir de una muestra de la misma</p>
+
+<ul>
+<li>Generalmente es el objetivo de los modelos probabilísticos</li>
+<li>La inferencia implica estimar tanto la cantidad como la incertidumbre de estimación</li>
+<li>Depende fuertemente tanto de la población como de la muestra</li>
+</ul>
+
+<p><img class=center src="../assets/img/inferential_analysis-m.png" height=320 /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Caso de Uso: Efecto del control de la polución ambiental en la expectativa de vida</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img class=center src="../assets/img/pollution.png" height=400 /></p>
+
+<p><a href="http://journals.lww.com/epidem/Fulltext/2013/01000/Effect_of_Air_Pollution_Control_on_Life_Expectancy.4.aspx">Correia et al. (2013) Epidemiology</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Muestreo Aleatorio</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Un elemento clave en el análisis inferencial es el muestreo</li>
+<li>La muestra debe ser siempre un representación aleatoria de la población</li>
+<li>Fallas en el muestro introducen errores en el estudio</li>
+<li><strong>Encuesta Presidencial (1936)</strong>: Literary Digest 10M (Al Landon) vs. Gallup Poll 2K (Roosevelt)</li>
+</ul>
+
+<p><img class=center src="../assets/img/literary-digest.jpg" height=300 /></p>
+
+<p><a href="https://www.jstor.org/stable/2749114?seq=1#page_scan_tab_contents">Why the 1936 Literary Digest Poll Failed</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Análisis Predictivo</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><strong>Objetivo</strong>: Utilizar datos conocidos para predecir valores desconocidos</p>
+
+<ul>
+<li>Si \(X\) predice \(Y\), eso no significa que exista una relación causal entre \(X\) e \(Y\)</li>
+<li>Lo que hace la diferencia en las predicciones no es tanto la complejidad del modelo sino la cantidad de datos</li>
+<li>Precidir eventos futuros no es trivial</li>
+</ul>
+
+<p><img class=center src="../assets/img/prediction.jpg" height=230 /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Caso de Uso: Predecir embarazo a través de compras</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img class=center src="../assets/img/target.png" height=400 /></p>
+
+<p><a href="http://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/">How Target Figured Out A Teen Girl Was Pregnant Before Her Father Did</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Análisis Causal</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><strong>Objetivo</strong>: Investigar que el comportamiento de una variable al realizar modificaciones sobre otras variables.</p>
+
+<ul>
+<li>Una condición fundamental para identificar causalidad es la <strong>asignación aleatoria</strong></li>
+<li>El control de la mayor cantidad posible de factores es también importante para inferir causalidad</li>
+<li>Las relaciones causales generalmente se identifican como efectos promedio, no se aplican a cada individuo</li>
+</ul>
+
+<p><img class=center src="../assets/img/random-sampling.png" height=300 /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Caso de Uso: Discriminación Laboral</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img class=center src="../assets/img/example-causal-analysis.png" height=450 /></p>
+
+<p><a href="http://fcrstemalgebra1.pbworks.com/w/file/fetch/82019231/1e.%20Sex%20role%20stereotypes.pdf">Inuence of sex role stereotypes on personnel decisions</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Experimentos vs. Estudios Observacionales</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Las principales diferencias: como se toman las muestras y como se hacen las asignaciones</li>
+</ul>
+
+<p><img class=center src="../assets/img/experimento-estudio.png" height=500 /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Experimentos vs. Estudios Observacionales</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Las principales diferencias: como se toman las muestras y como se hacen las asignaciones</li>
+</ul>
+
+<p><img class=center src="../assets/img/experimento-estudio-2.png" height=500 /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Proceso de Data Science</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br></p>
+
+<p><img class=center src="../assets/img/data_science_process.png" height=100 width=1000/></p>
+
+<p><br></p>
+
+<ol>
+<li>Establece pregunta de investigación</li>
+<li>Obtención y pre-procesamiento (limpieza, normalización) de datos</li>
+<li>Exploratorio de los datos</li>
+<li>Sacar conlusiones</li>
+<li>Comunicación</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Establecer pregunta de investigación</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img class=center src="../assets/img/data_science_process_pregunta.png" height=100 width=1000/></p>
+
+<p>¿Ayudaría un cambio en el diseño del sitio a mejorar las donaciones? </p>
+
+<p><img class=center src="../assets/img/Obama_Homepage_original.png" height=300 /></p>
+
+<p><a href="https://blog.optimizely.com/2010/11/29/how-obama-raised-60-million-by-running-a-simple-experiment/">How Obama Raised $60 Million by Running a Simple Experiment</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Obtención y pre-procesamiento de datos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img class=center src="../assets/img/data_science_process_procesamiento.png" height=100 width=1000/></p>
+
+<p><strong>Normalmente esta etapa incluye los siguientes pasos:</strong></p>
+
+<ul>
+<li>Generar datos por medio de estudios o experimentos, o extraer datos de fuentes existentes (open-data por ejemplo)</li>
+<li>Limpiar los datos, descartando registros inválidos, eliminando duplicados, normalizando valores de variables</li>
+<li>Ajustar el formato de los datos a los requeridos para el análisis</li>
+</ul>
+
+<p>Es la etapa que normalmente lleva más tiempo y trabajo</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Exploración</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img class=center src="../assets/img/data_science_process_analisis.png" height=100 width=1000/></p>
+
+<p>En esta etapa se realiza un análisis exploratorio de los datos con la internción de identificar patrones o encontrar relaciones entre los datos</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Conclusiones</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img class=center src="../assets/img/data_science_process_conclusion.png" height=100 width=1000/></p>
+
+<p><strong>Una vez familiarizados con los datos, usualmente:</strong></p>
+
+<ul>
+<li>Se sacan conclusiones sobre los datos por medio análisis inferenciales o causales (por ejemplo, Facebook podría concluir que posts son más atractivos para sus usuarios)</li>
+<li>Se realizan estimaciones sobre información desconocida por medio de análisis predictivos (por ejemplo, Netflix podría predicir que películas sugerir a sus usuarios)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>Comunicación</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img class=center src="../assets/img/data_science_process_comunicacion.png" height=100 width=1000/></p>
+
+<p>Los resultados son útiles únicamente en cuanto estos son comunicados. Existen varias maneras de comunicar los resultados de un proceso de data science:</p>
+
+<ul>
+<li>Blog posts</li>
+<li>Paper (artículo científico)</li>
+<li>Presentación de Powerpoint</li>
+<li>Email</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>Proceso no lineal</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br></p>
+
+<p><img class=center src="../assets/img/data_science_process2.png" height=200 width=1000/></p>
+
+<p><br></p>
+
+<p>Interacción entre las etapas de exploración y pre-procesamiento de datos porque es difícil a-priori resolver todos los problemas con los datos antes de explorarlos</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>Proceso no lineal</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br></p>
+
+<p><img class=center src="../assets/img/data_science_process4.png" height=300 width=1000/></p>
+
+<p><br></p>
+
+<p>A lo largo del proceso es muy común volver a revisar la pregunta de investigación y refinarla, adaptandola a los datos con que se cuentan</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>Proceso no lineal</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br></p>
+
+<p><img class=center src="../assets/img/data_science_process3.png" height=200 width=1000/></p>
+
+<p><br></p>
+
+<ul>
+<li>Muchas veces la obtención de los datos se realiza antes de establecer la pregunta de investigación (como en nuestro caso), adaptando la misma a los datos con que se cuenta</li>
+</ul>
+
+  </article>
   <!-- Presenter Notes -->
 </slide>
 
@@ -158,32 +504,146 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Tipos de pregunta - Descriptiva'>
+        data-slide=3 title='Tipos de análisis en proyectos de Data Science'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Tipos de pregunta - Exploratorias'>
+        data-slide=4 title='Análisis descriptivo'>
          4
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Tipos de pregunta - Inferenciales'>
+        data-slide=5 title='Caso de Uso: Censo'>
          5
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='Tipos de pregunta - Predictivas'>
+        data-slide=6 title='Análisis exploratorio'>
          6
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='Tipos de pregunta - Causales'>
+        data-slide=7 title='Caso de Uso: Edad y rendimiento deportivo'>
          7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Correlación no implica causalidad'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Análisis Inferencial'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Caso de Uso: Efecto del control de la polución ambiental en la expectativa de vida'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Muestreo Aleatorio'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Análisis Predictivo'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Caso de Uso: Predecir embarazo a través de compras'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Análisis Causal'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Caso de Uso: Discriminación Laboral'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Experimentos vs. Estudios Observacionales'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Experimentos vs. Estudios Observacionales'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Proceso de Data Science'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Establecer pregunta de investigación'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Obtención y pre-procesamiento de datos'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Exploración'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Conclusiones'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Comunicación'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Proceso no lineal'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Proceso no lineal'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Proceso no lineal'>
+         26
       </a>
     </li>
   </ul>
