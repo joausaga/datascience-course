@@ -98,7 +98,7 @@ SourceTree es un cliente Git que nos ayudará a gestionar nuestro repositorios l
 
 ---
 
-## Agregar archivos (stage)
+## Agregar archivos (staging)
 
 * Clic en **File Status** en la margen derecha superior de la interfaz
 
@@ -110,36 +110,58 @@ SourceTree es un cliente Git que nos ayudará a gestionar nuestro repositorios l
 
 ---
 
-## Registrar cambios (commit)
+## Registrar cambios (commiting)
+
+Luego de agregar los archivos, agregar un mensaje en el textbox de la parte inferior de la pantalla y hacer clic en el botón **Commit**
+
+<img class=center src="../assets/img/commit_sourcetree.png" height=450 />
+
+---
+
+## Enviar cambios (pushing)
+
+Hacer clic en el botón **Push** del menú superior y luego clic en el botón **OK**
+
+<img class=center src="../assets/img/push_sourcetree.png" height=400 />
+
+---
+
+## Github, servicio web Git
+
+<q>GitHub es un servicio web para alojar proyectos de desarrollo de software que utiliza el sistema de control de revisiones Git.</q>
+
+[http://en.wikipedia.org/wiki/GitHub](http://en.wikipedia.org/wiki/GitHub)
+
+--- &twocol
+
+## Github, servicio web Git
+
+*** =left
+
+* Permite a los usuarios hacer push (y pull) de sus repositorios locales hacia (y desde) repositorios remotos en la web, respaldandolos en el servidor de GitHub en caso de que algo ocurra con las copias locales
+* Proporciona a los usuarios una página de inicio que muestra sus repositorios públicos
+* Aspectos sociales de la plataforma permiten compartir proyectos entre usuarios
+
+[Github](https://github.com)
+
+*** =right
+
+<img class=center src="../assets/img/profile_github.png" height=450 />
+
+---
+
+## Fork
 
 ...
 
 ---
 
-## Push
-
-...
-
----
-
-## Pull
+## Recibir cambios (pull)
 
 ...
 
 ---
 
 ## Markdown
-
-...
-
----
-
-## Github, cliente web Git
-
-...
-
----
-
-## Fork
 
 ...
