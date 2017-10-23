@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Git para Data Scientists</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Git para Data Scientists">
+  <meta name="author" content="Jorge Saldivar">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../libraries/frameworks/io2012/js/slides" 
+    src="../libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="../assets/img/logo-uca.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Git para Data Scientists</h1>
+    <h2>Curso de Data Science con Impacto Social</h2>
+    <p>Jorge Saldivar<br/>Universidad Católica &quot;Nuestra Señora de la Asunción&quot;</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>¿Qué es un sistema de control de versiones?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br></p>
+
+<ul>
+<li>Muchos de nosotros constantemente creamos algo, lo guardamos, lo cambiamos y luego lo guardamos de nuevo</li>
+<li><strong>El sistema de control de versiones es un medio para gestionar este proceso de manera eficiente</strong></li>
+<li>Es particularmente importante en trabajos colaborativos, como el desarrollo de software</li>
+</ul>
+
+<p><br></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Revision_control">http://en.wikipedia.org/wiki/Revision_control</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>¿Qué es Git?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br></p>
+
+<p><strong>Git es un sistema de control de versiones distribuido, de código abierto, y gratuito diseñado para manejar desde proyectos pequeños a muy grandes, con velocidad y eficiencia.</strong></p>
+
+<p><br></p>
+
+<ul>
+<li>Creado por las mismas personas que desarrollaron Linux</li>
+<li>Es hoy en día, la implementación más utilizada del control de versiones</li>
+<li>En Git todo está almacenado en repositorios locales</li>
+</ul>
+
+<p><a href="http://git-scm.com/">http://git-scm.com/</a></p>
+
+<p><a href="http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git">http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>SourceTree, cliente local Git</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>SourceTree es un cliente Git que nos ayudará a gestionar nuestro repositorios locales por medio de una simple y amigable interfaz gráfica.</p>
+
+<p><img class=center src="../assets/img/sourcetree.png" height=400 /></p>
+
+<p><a href="https://www.sourcetreeapp.com">SourceTree</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Git workflow</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img class=center src="../assets/img/gitworkflow.png" height=500 /></p>
+
+<p><a href="https://www.edureka.co/blog/git-tutorial">Git Tutorial – Commands And Operations In Git</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Git, 5 operaciones básicas con SourceTree</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Crear repositorio local</p></li>
+<li><p>Agregar archivos (stage)</p></li>
+<li><p>Registrar cambios (commit)</p></li>
+<li><p>Enviar cambios (push)</p></li>
+<li><p>Recibir cambios (pull)</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Crear repositorio local</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Clic en <strong>+ New Repository</strong>, luego clic en <strong>Create Local Repository</strong></li>
+</ul>
+
+<p><img class=center src="../assets/img/crear_repo_sourcetree.png" height=180 /></p>
+
+<ul>
+<li>Ingrese la ruta de destino y el nombre del depósito, luego clic en Crear.</li>
+</ul>
+
+<p><img class=center src="../assets/img/crear_repo_sourcetree_2.png" height=180 /></p>
+
+<p><a href="https://confluence.atlassian.com/get-started-with-sourcetree/create-a-local-repository-847359103.html">Create a local repository</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Agregar archivos (stage)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Clic en <strong>File Status</strong> en la margen derecha superior de la interfaz</li>
+</ul>
+
+<p><img class=center src="../assets/img/file_status_sourcetree.png" height=200 /></p>
+
+<ul>
+<li>Clic en el checkbox de los archivos que se desean agregar</li>
+</ul>
+
+<p><img class=center src="../assets/img/add_file_sourcetree.png" height=200 /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Commit</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Push</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Pull</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Markdown</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Github, cliente web Git</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Fork</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='¿Qué es un sistema de control de versiones?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='¿Qué es Git?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='SourceTree, cliente local Git'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Git workflow'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Git, 5 operaciones básicas con SourceTree'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Crear repositorio local'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Agregar archivos (stage)'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Commit'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Push'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Pull'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Markdown'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Github, cliente web Git'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Fork'>
+         13
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="../libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="../libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
