@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programación en R</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Programación en R">
+  <meta name="author" content="Jorge Saldivar">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../libraries/frameworks/io2012/js/slides" 
+    src="../libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="../assets/img/logo-uca.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Programación en R</h1>
+    <h2>Curso de Data Science con Impacto Social</h2>
+    <p>Jorge Saldivar<br/>Universidad Católica &quot;Nuestra Señora de la Asunción&quot;</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>¿Qué es R?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p><strong>R es un lenguaje y entorno open-soure para computación y gráficos estadísticos</strong></p></li>
+<li><p>R proporciona una amplia variedad de funcionalidades que permiten llevar adelante diferentes estudios estadísticos (modelado lineal y no lineal, pruebas estadísticas clásicas, análisis de series temporales, clasificación, agrupamiento) y visualizarlos a través de gráficos. </p></li>
+<li><p>Es altamente extensible por lo que existen una importante cantidad de paquetes de software (4000) que extendienden su funcionalidad</p></li>
+</ul>
+
+<p><a href="https://www.r-project.org/about.html">What is R?</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Tipos de datos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>R maneja cinco tipo de básicos de objetos:</p>
+
+<ul>
+<li><p>carácteres (letras)</p></li>
+<li><p>numérico (números reales)</p></li>
+<li><p>entero</p></li>
+<li><p>complejo</p></li>
+<li><p>lógico (True/False)</p></li>
+</ul>
+
+<p>El conjunto de objetos más básico es el vector</p>
+
+<ul>
+<li><p>El vector es un conjunto de objetos y puede contener solo objetos del mismo tipo</p></li>
+<li><p><strong>Excepción</strong>: La única excepción son las <strong>listas</strong>, que son vectores que pueden contener diferentes tipos de objetos</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Tipos de datos</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">  c &lt;- &#39;hola&#39; # esto es un objeto de tipo carácter
+  print(class(c))
+</code></pre>
+
+<pre><code>## [1] &quot;character&quot;
+</code></pre>
+
+<pre><code class="r">  n = 10 # esto es un objeto del tipo númerico
+  print(class(n))
+</code></pre>
+
+<pre><code>## [1] &quot;numeric&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Tipos de datos</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">  e = 20L # esto es un objeto del tipo entero (agregar L al final)
+  print(class(e))
+</code></pre>
+
+<pre><code>## [1] &quot;integer&quot;
+</code></pre>
+
+<pre><code class="r">  l = TRUE # esto es un objeto del tipo lógico
+  print(class(l))
+</code></pre>
+
+<pre><code>## [1] &quot;logical&quot;
+</code></pre>
+
+<pre><code class="r">  v = vector()  # esto es un objeto del tipo vector
+  print(class(v))
+</code></pre>
+
+<pre><code>## [1] &quot;logical&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Operaciones básicas</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Estructuras de control</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Lectura de datos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Visualización con ggplot2</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Gramática</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Histograma</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Scatter plots</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Bar charts</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Línea</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Box plots</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='¿Qué es R?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Tipos de datos'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Tipos de datos'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Tipos de datos'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Operaciones básicas'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Estructuras de control'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Lectura de datos'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Visualización con ggplot2'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Gramática'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Histograma'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Scatter plots'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Bar charts'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Línea'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Box plots'>
+         14
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="../libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="../libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
