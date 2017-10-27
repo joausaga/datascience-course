@@ -48,4 +48,7 @@ Lección sobre programación en el lenguaje [R](https://www.r-project.org/) e in
 5. _Plotting with ggplot2_ [Exploratory Analysis](https://github.com/DataScienceSpecialization/courses/blob/master/04_ExploratoryAnalysis/ggplot2/ppt/ggplot2.pdf)
 
 ## Recursos
+
 1. _Graphs with ggplot2_ [Graphs, Cookbook for R](http://www.cookbook-r.com/Graphs)
+
+2. _Ggplo2 Package_ [The R Graph Gallery](http://www.r-graph-gallery.com/portfolio/ggplot2-package/)
