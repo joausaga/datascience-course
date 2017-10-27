@@ -35,7 +35,7 @@ En data science los tipo de datos tradicionales son:
 
 ## Estructura y representación de los datos
 
-En data science los datos se estructuran comúnmente en **data frames**, los cuales se componen de filas y columnas 
+En data science los datos se estructuran comúnmente de manera tabular en filas y columnas 
 
 <img class=center src="../assets/img/dataframe-a.png" height=450 />
 
