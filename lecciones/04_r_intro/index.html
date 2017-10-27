@@ -65,21 +65,21 @@
     <h2>Tipos de datos</h2>
   </hgroup>
   <article data-timings="">
-    <p>R maneja cinco tipo de básicos de objetos:</p>
+    <p>R maneja cinco clases básicas de objetos:</p>
 
 <ul>
-<li><p>carácteres (letras)</p></li>
-<li><p>numérico (números reales)</p></li>
-<li><p>entero</p></li>
-<li><p>complejo</p></li>
-<li><p>lógico (True/False)</p></li>
+<li><p>carácteres (letras) o <strong>character</strong> en inglés</p></li>
+<li><p>numérico (números reales de doble precisión) o <strong>numeric</strong> en inglés</p></li>
+<li><p>entero o <strong>integer</strong> en inglés</p></li>
+<li><p>complejo o <strong>complex</strong> en inglés</p></li>
+<li><p>lógico (True/False) o <strong>logic</strong> en inglés</p></li>
 </ul>
 
-<p>El conjunto de objetos más básico es el vector</p>
+<p>El objeto más básico en R es el <strong>vector</strong></p>
 
 <ul>
-<li><p>El vector es un conjunto de objetos y puede contener solo objetos del mismo tipo</p></li>
-<li><p><strong>Excepción</strong>: La única excepción son las <strong>listas</strong>, que son vectores que pueden contener diferentes tipos de objetos</p></li>
+<li><p>El vector es un contenedor de objectos que puede alojar objetos del mismo tipo</p></li>
+<li><p><strong>Excepción</strong>: La única excepción son las <strong>listas</strong> (o list en inglés), que son vectores que pueden contener diferentes tipos de objetos</p></li>
 </ul>
 
   </article>
@@ -91,19 +91,25 @@
     <h2>Tipos de datos</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">  c &lt;- &#39;hola&#39; # esto es un objeto de tipo carácter
-  print(class(c))
+    <pre><code class="r">  c &lt;- &#39;hola&#39; # vector del tipo character
+  class(c)
 </code></pre>
 
 <pre><code>## [1] &quot;character&quot;
 </code></pre>
 
-<pre><code class="r">  n = 10 # esto es un objeto del tipo númerico
-  print(class(n))
+<p>El caracter # indica que lo que está a la derecha es un comentario y por tanto es ignorado</p>
+
+<pre><code class="r">  n = 10 # vector del tipo númerico
+  class(n)
 </code></pre>
 
 <pre><code>## [1] &quot;numeric&quot;
 </code></pre>
+
+<p>El <code>[1]</code> indica que el objeto es un vector y que 10 es su primer elemento</p>
+
+<p><a href="http://www.win-vector.com/blog/2013/04/prefer-for-assignment-in-r/">Prefer = for assignment in R</a></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -114,25 +120,21 @@
     <h2>Tipos de datos</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">  e = 20L # esto es un objeto del tipo entero (agregar L al final)
-  print(class(e))
+    <pre><code class="r">  e = 20L # vector del tipo entero (agregar L al final)
+  class(e)
 </code></pre>
 
 <pre><code>## [1] &quot;integer&quot;
 </code></pre>
 
-<pre><code class="r">  l = TRUE # esto es un objeto del tipo lógico
-  print(class(l))
+<pre><code class="r">  l = TRUE # vector del tipo lógico
+  class(l)
 </code></pre>
 
 <pre><code>## [1] &quot;logical&quot;
 </code></pre>
 
-<pre><code class="r">  v = vector()  # esto es un objeto del tipo vector
-  print(class(v))
-</code></pre>
-
-<pre><code>## [1] &quot;logical&quot;
+<pre><code class="r">  v = vector()  # vector vacío
 </code></pre>
 
   </article>

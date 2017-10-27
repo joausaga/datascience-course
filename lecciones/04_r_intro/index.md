@@ -31,23 +31,23 @@ knit        : slidify::knit2slides
 
 ## Tipos de datos
 
-R maneja cinco tipo de básicos de objetos:
+R maneja cinco clases básicas de objetos:
 
--   carácteres (letras)
+- carácteres (letras) o **character** en inglés
 
--   numérico (números reales)
+- numérico (números reales de doble precisión) o **numeric** en inglés
 
--   entero
+- entero o **integer** en inglés
 
--   complejo
+- complejo o **complex** en inglés
 
--   lógico (True/False)
+- lógico (True/False) o **logic** en inglés
 
-El conjunto de objetos más básico es el vector
+El objeto más básico en R es el **vector**
 
--   El vector es un conjunto de objetos y puede contener solo objetos del mismo tipo
+- El vector es un contenedor de objectos que puede alojar objetos del mismo tipo
 
--   **Excepción**: La única excepción son las **listas**, que son vectores que pueden contener diferentes tipos de objetos
+- **Excepción**: La única excepción son las **listas** (o list en inglés), que son vectores que pueden contener diferentes tipos de objetos
 
 ---
 
@@ -55,22 +55,29 @@ El conjunto de objetos más básico es el vector
 
 
 ```r
-  c <- 'hola' # esto es un objeto de tipo carácter
-  print(class(c))
+  c <- 'hola' # vector del tipo character
+  class(c)
 ```
 
 ```
 ## [1] "character"
 ```
 
+El caracter # indica que lo que está a la derecha es un comentario y por tanto es ignorado
+
+
 ```r
-  n = 10 # esto es un objeto del tipo númerico
-  print(class(n))
+  n = 10 # vector del tipo númerico
+  class(n)
 ```
 
 ```
 ## [1] "numeric"
 ```
+
+El `[1]` indica que el objeto es un vector y que 10 es su primer elemento
+
+[Prefer = for assignment in R](http://www.win-vector.com/blog/2013/04/prefer-for-assignment-in-r/)
 
 ---
 
@@ -78,8 +85,8 @@ El conjunto de objetos más básico es el vector
 
 
 ```r
-  e = 20L # esto es un objeto del tipo entero (agregar L al final)
-  print(class(e))
+  e = 20L # vector del tipo entero (agregar L al final)
+  class(e)
 ```
 
 ```
@@ -87,8 +94,8 @@ El conjunto de objetos más básico es el vector
 ```
 
 ```r
-  l = TRUE # esto es un objeto del tipo lógico
-  print(class(l))
+  l = TRUE # vector del tipo lógico
+  class(l)
 ```
 
 ```
@@ -96,12 +103,7 @@ El conjunto de objetos más básico es el vector
 ```
 
 ```r
-  v = vector()  # esto es un objeto del tipo vector
-  print(class(v))
-```
-
-```
-## [1] "logical"
+  v = vector()  # vector vacío
 ```
 
 ---
