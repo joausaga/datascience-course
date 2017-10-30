@@ -228,6 +228,178 @@ as.logical(x)
 
 ---
 
+## Matrices
+
+Las matrices son un tipo especial de vectores donde los elementos se encuentran organizados en filas y columnas.
+
+
+```r
+m = matrix(1:6, nrow = 2, ncol = 3) # creando una matriz de 2 filas y 3 columnas
+m
+```
+
+```
+##      [,1] [,2] [,3]
+## [1,]    1    3    5
+## [2,]    2    4    6
+```
+
+En R las matrices son objetos que cuentan con el atributo **dimensión**.
+
+
+```r
+dim(m)  # opteniendo la dimensión de la matriz
+```
+
+```
+## [1] 2 3
+```
+
+---
+
+## Matrices
+
+Las matrices son construidas por columna. El primer elemento se encuentra en la esquina superior izquierda y a partir de ahí los siguientes van creandose a lo largo de las columnas
+
+
+```r
+m = matrix(1:6, nrow = 2, ncol = 3)
+m
+```
+
+```
+##      [,1] [,2] [,3]
+## [1,]    1    3    5
+## [2,]    2    4    6
+```
+
+Para acceder a los elementos de la matriz se debe indicar entre ```[]``` la fila y columna separado por ```,```
+
+
+```r
+m[2, 1] # elemento de la segunda fila primera columna 
+```
+
+```
+## [1] 3
+```
+
+---
+
+## Atributos
+
+La función ```attributes``` sirve para conocer los atributos de un objeto en R.
+
+
+```r
+attributes(m)
+```
+
+```
+## $dim
+## [1] 2 3
+```
+
+---
+
+## cbind-ing y rbind-ing
+
+Las matrices también pueden ser creadas acoplando vectores por columna o fila con las funciones `cbind()` and `rbind()`, respectivamente
+
+
+```r
+x = 1:3  # creando vector con la sequencia de enteros 1, 2, 3
+y = 10:12  # creando vector con la sequencia de enteros 10, 11, 12
+z = cbind(x, y)  # acoplando los vectores por columna para crear una matriz
+z
+```
+
+```
+##      x  y
+## [1,] 1 10
+## [2,] 2 11
+## [3,] 3 12
+```
+
+```r
+w = rbind(x, y) # acoplando los vectores por fila para crear una matriz
+```
+
+---
+
+## Listas
+
+Las listas son un tipo especial de vectores que pueden contener elementos de diferentes clases
+
+
+```r
+x = list(1, "a", TRUE, 1 + 4i) 
+x
+```
+
+```
+## [[1]]
+## [1] 1
+## 
+## [[2]]
+## [1] "a"
+## 
+## [[3]]
+## [1] TRUE
+## 
+## [[4]]
+## [1] 1+4i
+```
+
+---
+
+## Factores
+
+Los factores son usados en R para representar datos categóricos
+
+
+```r
+x = factor(c('yes', 'yes', 'no', 'yes', 'no')) 
+x
+```
+
+```
+## [1] yes yes no  yes no 
+## Levels: no yes
+```
+
+La función ```table``` muestra la frecuencia de cada categoría.
+
+
+```r
+table(x)
+```
+
+```
+## x
+##  no yes 
+##   2   3
+```
+
+---
+
+## Factores ordenados
+
+En R los datos ordinales se represetan a través de factores ordenados. El orden de los factores se establece utilizando el argumento `levels` de la función `factor()`
+
+
+```r
+x = factor(c('yes', 'yes', 'no', 'yes', 'no'), levels=c('yes', 'no'))
+x
+```
+
+```
+## [1] yes yes no  yes no 
+## Levels: yes no
+```
+
+---
+
 ## Atributos
 
 En R los objetos tienen los siguientes atributos
