@@ -355,7 +355,7 @@ x
 
 ## Factores
 
-Los factores son usados en R para representar datos categóricos
+Los factores son usados en R para representar **datos categóricos**
 
 
 ```r
@@ -385,7 +385,7 @@ table(x)
 
 ## Factores ordenados
 
-En R los datos ordinales se represetan a través de factores ordenados. El orden de los factores se establece utilizando el argumento `levels` de la función `factor()`
+En R los **datos ordinales** se represetan a través de factores ordenados. El orden de los factores se establece utilizando el argumento `levels` de la función `factor()`
 
 
 ```r
@@ -397,6 +397,78 @@ x
 ## [1] yes yes no  yes no 
 ## Levels: yes no
 ```
+
+---
+
+## Valores desconocidos
+
+En R los valores desconocidos se representan con los símbolos `NA` (o `NaN` para operaciones matemáticas indefinidas)
+
+- `is.na()` es usado para chequear si un objeto es `NA`
+
+- `is.nan()` es usado para comprobar la presencia de `NaN`
+
+- Un valor `NaN` es al mismo tiempo `NA` pero lo opuesto no se da
+
+
+```r
+x = c(1, 2, NA, 10, 3)
+is.na(x)
+```
+
+```
+## [1] FALSE FALSE  TRUE FALSE FALSE
+```
+
+---
+
+## Data Frames
+
+En R los data frames son usados para alojar datos en forma tabular
+
+- Son un tipo especial de matriz que puede contener elementos de diferentes clases (las matrices pueden tener solo elementos del mismo tipo)
+
+- Usualmente son creados mediante las funciones `data.frame`, `read.table()`, o `read.csv()`
+
+- Pueden ser convertido a una matriz por medio de la función `data.matrix()`
+
+
+```r
+x = data.frame(c1 = 1:5, c2 = c(T, T, F, F, T), c3 = c('a', 'b', 'c', 'd', 'e')) 
+x
+```
+
+```
+##   c1    c2 c3
+## 1  1  TRUE  a
+## 2  2  TRUE  b
+## 3  3 FALSE  c
+## 4  4 FALSE  d
+## 5  5  TRUE  e
+```
+
+---
+
+## Data Frames
+
+
+```r
+nrow(x)
+```
+
+```
+## [1] 5
+```
+
+```r
+ncol(x)
+```
+
+```
+## [1] 3
+```
+
+---
 
 ---
 

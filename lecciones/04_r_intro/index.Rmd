@@ -265,6 +265,51 @@ x
 
 ---
 
+## Valores desconocidos
+
+En R los valores desconocidos se representan con los símbolos `NA` (o `NaN` para operaciones matemáticas indefinidas)
+
+- `is.na()` es usado para chequear si un objeto es `NA`
+
+- `is.nan()` es usado para comprobar la presencia de `NaN`
+
+- Un valor `NaN` es al mismo tiempo `NA` pero lo opuesto no se da
+
+```{r, echo=T}
+x = c(1, 2, NA, 10, 3)
+is.na(x)
+```
+
+---
+
+## Data Frames
+
+En R los data frames son usados para alojar datos en forma tabular
+
+- Son un tipo especial de matriz que puede contener elementos de diferentes clases (las matrices pueden tener solo elementos del mismo tipo)
+
+- Usualmente son creados mediante las funciones `data.frame`, `read.table()`, o `read.csv()`
+
+- Pueden ser convertido a una matriz por medio de la función `data.matrix()`
+
+```{r, echo=T}
+x = data.frame(c1 = 1:5, c2 = c(T, T, F, F, T), c3 = c('a', 'b', 'c', 'd', 'e')) 
+x
+```
+
+---
+
+## Data Frames
+
+```{r, echo=T}
+nrow(x)
+ncol(x)
+```
+
+---
+
+---
+
 ## Atributos
 
 En R los objetos tienen los siguientes atributos

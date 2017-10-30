@@ -405,7 +405,7 @@ x
     <h2>Factores</h2>
   </hgroup>
   <article data-timings="">
-    <p>Los factores son usados en R para representar datos categóricos</p>
+    <p>Los factores son usados en R para representar <strong>datos categóricos</strong></p>
 
 <pre><code class="r">x = factor(c(&#39;yes&#39;, &#39;yes&#39;, &#39;no&#39;, &#39;yes&#39;, &#39;no&#39;)) 
 x
@@ -434,7 +434,7 @@ x
     <h2>Factores ordenados</h2>
   </hgroup>
   <article data-timings="">
-    <p>En R los datos ordinales se represetan a través de factores ordenados. El orden de los factores se establece utilizando el argumento <code>levels</code> de la función <code>factor()</code></p>
+    <p>En R los <strong>datos ordinales</strong> se represetan a través de factores ordenados. El orden de los factores se establece utilizando el argumento <code>levels</code> de la función <code>factor()</code></p>
 
 <pre><code class="r">x = factor(c(&#39;yes&#39;, &#39;yes&#39;, &#39;no&#39;, &#39;yes&#39;, &#39;no&#39;), levels=c(&#39;yes&#39;, &#39;no&#39;))
 x
@@ -449,6 +449,87 @@ x
 </slide>
 
 <slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Valores desconocidos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>En R los valores desconocidos se representan con los símbolos <code>NA</code> (o <code>NaN</code> para operaciones matemáticas indefinidas)</p>
+
+<ul>
+<li><p><code>is.na()</code> es usado para chequear si un objeto es <code>NA</code></p></li>
+<li><p><code>is.nan()</code> es usado para comprobar la presencia de <code>NaN</code></p></li>
+<li><p>Un valor <code>NaN</code> es al mismo tiempo <code>NA</code> pero lo opuesto no se da</p></li>
+</ul>
+
+<pre><code class="r">x = c(1, 2, NA, 10, 3)
+is.na(x)
+</code></pre>
+
+<pre><code>## [1] FALSE FALSE  TRUE FALSE FALSE
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Data Frames</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>En R los data frames son usados para alojar datos en forma tabular</p>
+
+<ul>
+<li><p>Son un tipo especial de matriz que puede contener elementos de diferentes clases (las matrices pueden tener solo elementos del mismo tipo)</p></li>
+<li><p>Usualmente son creados mediante las funciones <code>data.frame</code>, <code>read.table()</code>, o <code>read.csv()</code></p></li>
+<li><p>Pueden ser convertido a una matriz por medio de la función <code>data.matrix()</code></p></li>
+</ul>
+
+<pre><code class="r">x = data.frame(c1 = 1:5, c2 = c(T, T, F, F, T), c3 = c(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;)) 
+x
+</code></pre>
+
+<pre><code>##   c1    c2 c3
+## 1  1  TRUE  a
+## 2  2  TRUE  b
+## 3  3 FALSE  c
+## 4  4 FALSE  d
+## 5  5  TRUE  e
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Data Frames</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">nrow(x)
+</code></pre>
+
+<pre><code>## [1] 5
+</code></pre>
+
+<pre><code class="r">ncol(x)
+</code></pre>
+
+<pre><code>## [1] 3
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
   <hgroup>
     <h2>Atributos</h2>
   </hgroup>
@@ -469,7 +550,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-19" style="background:;">
+<slide class="" id="slide-23" style="background:;">
   <hgroup>
     <h2>Atributos</h2>
   </hgroup>
@@ -479,7 +560,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-20" style="background:;">
+<slide class="" id="slide-24" style="background:;">
   <hgroup>
     <h2>Operaciones básicas</h2>
   </hgroup>
@@ -490,7 +571,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-21" style="background:;">
+<slide class="" id="slide-25" style="background:;">
   <hgroup>
     <h2>Estructuras de control</h2>
   </hgroup>
@@ -501,7 +582,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-22" style="background:;">
+<slide class="" id="slide-26" style="background:;">
   <hgroup>
     <h2>Lectura de datos</h2>
   </hgroup>
@@ -512,7 +593,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-23" style="background:;">
+<slide class="" id="slide-27" style="background:;">
   <hgroup>
     <h2>Visualización con ggplot2</h2>
   </hgroup>
@@ -523,7 +604,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-24" style="background:;">
+<slide class="" id="slide-28" style="background:;">
   <hgroup>
     <h2>Gramática</h2>
   </hgroup>
@@ -534,7 +615,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-25" style="background:;">
+<slide class="" id="slide-29" style="background:;">
   <hgroup>
     <h2>Histograma</h2>
   </hgroup>
@@ -545,7 +626,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-26" style="background:;">
+<slide class="" id="slide-30" style="background:;">
   <hgroup>
     <h2>Scatter plots</h2>
   </hgroup>
@@ -556,7 +637,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-27" style="background:;">
+<slide class="" id="slide-31" style="background:;">
   <hgroup>
     <h2>Bar charts</h2>
   </hgroup>
@@ -567,7 +648,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-28" style="background:;">
+<slide class="" id="slide-32" style="background:;">
   <hgroup>
     <h2>Línea</h2>
   </hgroup>
@@ -578,7 +659,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-29" style="background:;">
+<slide class="" id="slide-33" style="background:;">
   <hgroup>
     <h2>Box plots</h2>
   </hgroup>
@@ -697,74 +778,98 @@ x
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=18 title='Atributos'>
+        data-slide=18 title='Valores desconocidos'>
          18
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=19 title='Atributos'>
+        data-slide=19 title='Data Frames'>
          19
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=20 title='Operaciones básicas'>
+        data-slide=20 title='Data Frames'>
          20
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=21 title='Estructuras de control'>
+        data-slide=21 title='NA'>
          21
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=22 title='Lectura de datos'>
+        data-slide=22 title='Atributos'>
          22
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=23 title='Visualización con ggplot2'>
+        data-slide=23 title='Atributos'>
          23
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=24 title='Gramática'>
+        data-slide=24 title='Operaciones básicas'>
          24
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=25 title='Histograma'>
+        data-slide=25 title='Estructuras de control'>
          25
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=26 title='Scatter plots'>
+        data-slide=26 title='Lectura de datos'>
          26
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=27 title='Bar charts'>
+        data-slide=27 title='Visualización con ggplot2'>
          27
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=28 title='Línea'>
+        data-slide=28 title='Gramática'>
          28
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=29 title='Box plots'>
+        data-slide=29 title='Histograma'>
          29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='Scatter plots'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='Bar charts'>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='Línea'>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='Box plots'>
+         33
       </a>
     </li>
   </ul>
