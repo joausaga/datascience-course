@@ -188,7 +188,15 @@ Al finalizar el proceso de clonación el repositorio recién clonado debería ap
 
 ## Sincronizar cambios (pull)
 
-Para sincronizar el reporitorio local con los últimos cambios del repositorio remoto (github) 
+Para sincronizar el reporitorio local con los últimos cambios en el repositorio original debemos primero agregar este repositorio, normalmente llamado **upstream**, a nuestro repositorio local
+
+<img class=center src="../assets/img/add_upstream_repo.png" height=500 />
+
+---
+
+## Sincronizar cambios (pull)
+
+Luego de agregar el repositorio upstream, seguir los siguientes pasos:
 
 1. Clic en el botón **Pull** del menú superior
 
