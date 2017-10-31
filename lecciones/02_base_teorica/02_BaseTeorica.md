@@ -55,4 +55,4 @@ Lección sobre los conceptos básicos del curso
 
 1. [The Hardest Thing In Data Science](https://buckwoody.wordpress.com/2015/12/30/the-hardest-thing-in-data-science)
 
-2. 
+2. [Tabular Format](https://www.youtube.com/watch?time_continue=102&v=5Vq530Lijb0)
