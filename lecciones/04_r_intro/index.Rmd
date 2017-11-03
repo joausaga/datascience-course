@@ -301,50 +301,126 @@ x
 
 ## Data Frames
 
+Número de filas del data frame
+
 ```{r, echo=T}
 nrow(x)
-ncol(x)
+```
+
+Número de columnas del data frame
+
+```{r, echo=T}
+ncol(x)  
 ```
 
 ---
 
----
+## Names
 
-## Atributos
+Nombre de las columnas del data frame
 
-En R los objetos tienen los siguientes atributos
-
--   names, dimnames
-
--   dimensions (e.g. arrays, matrices)
-
--   class
-
--   length
-
--   otros definidos por el usuario
-
-Mediante la función ```attributes()``` se puede acceder a los atributos de un objeto
-
----
-
-## Atributos
-
-```{r, echo = TRUE}
-
+```{r, echo=T}
+x
+names(x)
 ```
 
 ---
 
-## Operaciones básicas
+## Names
+
+Las listas pueden también tener nombre
+
+```{r, echo=T}
+x = list(a = 1, b = 2, c = 3)
+names(x)
+```
+
+---
+
+## Estructura de control: if
+
+```r
+if(<condicion>) {
+        ## hacer algo
+} else {
+        ## hacer otra cosa
+}
+if(<condicion1>) {
+        ## hacer algo
+} else if(<condicion2>)  {
+        ## hacer algo diferente
+} else {
+        ## hacer otra cosa
+}
+```
+
+---
+
+## Estructura de control: if
+
+Ejemplo
+
+```{r, echo=T}
+x = 2
+y = 0
+if (x > 3) {
+  y = 10
+} else {
+  y = 50
+}
+y
+```
+
+---
+
+## Estructura de control: if
+
+La clausula ```else``` no es siempre necesaria  
+
+```r
+if (<condicion>) {
+  # hacer algo
+}
+```
+
+```{r, echo=T}
+x = 10
+if (x==10) {  # !=
+  print('El valor de x es el esperado')
+}
+```
+
+---
+
+## Iteraciones: for
 
 ...
 
 ---
 
-## Estructuras de control
+## Iteraciones: apply
 
-...
+La función ```apply``` nos permite ejecutar operaciones repetitivas sobre matrices y data frames
+
+```{r, echo=T}
+x = data.frame(c1 = 1:2, c2 = 10:11); x
+mult = function(x, c) {
+  return (x+c)
+}
+apply(x, 2, mult, 5)  # apply(<objeto>, <fila (1) o columna (2)>, <funcion>, <parametro>)
+```
+
+---
+
+## Funciones especiales para operaciones comúnes
+
+rowSums, rowMeans, colSums, colMeans
+
+```{r, echo=T}
+x = data.frame(c1 = 1:5, c2 = 10:14)
+x
+rowSums(x)
+```
 
 ---
 

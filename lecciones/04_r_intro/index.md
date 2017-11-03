@@ -451,6 +451,8 @@ x
 
 ## Data Frames
 
+Número de filas del data frame
+
 
 ```r
 nrow(x)
@@ -460,8 +462,11 @@ nrow(x)
 ## [1] 5
 ```
 
+Número de columnas del data frame
+
+
 ```r
-ncol(x)
+ncol(x)  
 ```
 
 ```
@@ -470,41 +475,171 @@ ncol(x)
 
 ---
 
----
+## Names
 
-## Atributos
-
-En R los objetos tienen los siguientes atributos
-
--   names, dimnames
-
--   dimensions (e.g. arrays, matrices)
-
--   class
-
--   length
-
--   otros definidos por el usuario
-
-Mediante la función ```attributes()``` se puede acceder a los atributos de un objeto
-
----
-
-## Atributos
+Nombre de las columnas del data frame
 
 
+```r
+x
+```
 
----
+```
+##   c1    c2 c3
+## 1  1  TRUE  a
+## 2  2  TRUE  b
+## 3  3 FALSE  c
+## 4  4 FALSE  d
+## 5  5  TRUE  e
+```
 
-## Operaciones básicas
+```r
+names(x)
+```
 
-...
+```
+## [1] "c1" "c2" "c3"
+```
 
 ---
 
-## Estructuras de control
+## Names
 
-...
+Las listas pueden también tener nombre
+
+
+```r
+x = list(a = 1, b = 2, c = 3)
+names(x)
+```
+
+```
+## [1] "a" "b" "c"
+```
+
+---
+
+## Estructura de control: if
+
+```r
+if(<condicion>) {
+        ## hacer algo
+} else {
+        ## hacer otra cosa
+}
+if(<condicion1>) {
+        ## hacer algo
+} else if(<condicion2>)  {
+        ## hacer algo diferente
+} else {
+        ## hacer otra cosa
+}
+```
+
+---
+
+## Estructura de control: if
+
+Ejemplo
+
+
+```r
+x = 2
+y = 0
+if (x > 3) {
+  y = 10
+} else {
+  y = 50
+}
+y
+```
+
+```
+## [1] 50
+```
+
+---
+
+## Estructura de control: if
+
+La clausula ```else``` no es siempre necesaria  
+
+```r
+if (<condicion>) {
+  # hacer algo
+}
+```
+
+
+```r
+x = 10
+if (x==10) {  # !=
+  print('El valor de x es el esperado')
+}
+```
+
+```
+## [1] "El valor de x es el esperado"
+```
+
+---
+
+## Loop: apply
+
+La función ```apply``` nos permite ejecutar operaciones repetitivas sobre matrices y data frames
+
+
+```r
+x = data.frame(c1 = 1:2, c2 = 10:11); x
+```
+
+```
+##   c1 c2
+## 1  1 10
+## 2  2 11
+```
+
+```r
+mult = function(x, c) {
+  return (x+c)
+}
+apply(x, 2, mult, 5)  # apply(<objeto>, <fila (1) o columna (2)>, <funcion>, <parametro>)
+```
+
+```
+##      c1 c2
+## [1,]  6 15
+## [2,]  7 16
+```
+
+---
+
+## Funciones especiales para operaciones comúnes
+
+rowSums, rowMeans, colSums, colMeans
+
+
+```r
+x = data.frame(c1 = 1:5, c2 = 10:14)
+x
+```
+
+```
+##   c1 c2
+## 1  1 10
+## 2  2 11
+## 3  3 12
+## 4  4 13
+## 5  5 14
+```
+
+```r
+rowSums(x)
+```
+
+```
+## [1] 11 13 15 17 19
+```
 
 ---
 

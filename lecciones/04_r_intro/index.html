@@ -506,13 +506,17 @@ x
     <h2>Data Frames</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">nrow(x)
+    <p>Número de filas del data frame</p>
+
+<pre><code class="r">nrow(x)
 </code></pre>
 
 <pre><code>## [1] 5
 </code></pre>
 
-<pre><code class="r">ncol(x)
+<p>Número de columnas del data frame</p>
+
+<pre><code class="r">ncol(x)  
 </code></pre>
 
 <pre><code>## [1] 3
@@ -523,28 +527,46 @@ x
 </slide>
 
 <slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Names</h2>
+  </hgroup>
   <article data-timings="">
-    
+    <p>Nombre de las columnas del data frame</p>
+
+<pre><code class="r">x
+</code></pre>
+
+<pre><code>##   c1    c2 c3
+## 1  1  TRUE  a
+## 2  2  TRUE  b
+## 3  3 FALSE  c
+## 4  4 FALSE  d
+## 5  5  TRUE  e
+</code></pre>
+
+<pre><code class="r">names(x)
+</code></pre>
+
+<pre><code>## [1] &quot;c1&quot; &quot;c2&quot; &quot;c3&quot;
+</code></pre>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-22" style="background:;">
   <hgroup>
-    <h2>Atributos</h2>
+    <h2>Names</h2>
   </hgroup>
   <article data-timings="">
-    <p>En R los objetos tienen los siguientes atributos</p>
+    <p>Las listas pueden también tener nombre</p>
 
-<ul>
-<li><p>names, dimnames</p></li>
-<li><p>dimensions (e.g. arrays, matrices)</p></li>
-<li><p>class</p></li>
-<li><p>length</p></li>
-<li><p>otros definidos por el usuario</p></li>
-</ul>
+<pre><code class="r">x = list(a = 1, b = 2, c = 3)
+names(x)
+</code></pre>
 
-<p>Mediante la función <code>attributes()</code> se puede acceder a los atributos de un objeto</p>
+<pre><code>## [1] &quot;a&quot; &quot;b&quot; &quot;c&quot;
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
@@ -552,37 +574,136 @@ x
 
 <slide class="" id="slide-23" style="background:;">
   <hgroup>
-    <h2>Atributos</h2>
+    <h2>Estructura de control: if</h2>
   </hgroup>
   <article data-timings="">
-    
+    <pre><code class="r">if(&lt;condicion&gt;) {
+        ## hacer algo
+} else {
+        ## hacer otra cosa
+}
+if(&lt;condicion1&gt;) {
+        ## hacer algo
+} else if(&lt;condicion2&gt;)  {
+        ## hacer algo diferente
+} else {
+        ## hacer otra cosa
+}
+</code></pre>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-24" style="background:;">
   <hgroup>
-    <h2>Operaciones básicas</h2>
+    <h2>Estructura de control: if</h2>
   </hgroup>
   <article data-timings="">
-    <p class='..</p>
+    <p>Ejemplo</p>
 
- '></article>
+<pre><code class="r">x = 2
+y = 0
+if (x &gt; 3) {
+  y = 10
+} else {
+  y = 50
+}
+y
+</code></pre>
+
+<pre><code>## [1] 50
+</code></pre>
+
+  </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-25" style="background:;">
   <hgroup>
-    <h2>Estructuras de control</h2>
+    <h2>Estructura de control: if</h2>
   </hgroup>
   <article data-timings="">
-    <p class='..</p>
+    <p>La clausula <code>else</code> no es siempre necesaria  </p>
 
- '></article>
+<pre><code class="r">if (&lt;condicion&gt;) {
+  # hacer algo
+}
+</code></pre>
+
+<pre><code class="r">x = 10
+if (x==10) {  # !=
+  print(&#39;El valor de x es el esperado&#39;)
+}
+</code></pre>
+
+<pre><code>## [1] &quot;El valor de x es el esperado&quot;
+</code></pre>
+
+  </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>Loop: apply</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>La función <code>apply</code> nos permite ejecutar operaciones repetitivas sobre matrices y data frames</p>
+
+<pre><code class="r">x = data.frame(c1 = 1:2, c2 = 10:11); x
+</code></pre>
+
+<pre><code>##   c1 c2
+## 1  1 10
+## 2  2 11
+</code></pre>
+
+<pre><code class="r">mult = function(x, c) {
+  return (x+c)
+}
+apply(x, 2, mult, 5)  # apply(&lt;objeto&gt;, &lt;fila (1) o columna (2)&gt;, &lt;funcion&gt;, &lt;parametro&gt;)
+</code></pre>
+
+<pre><code>##      c1 c2
+## [1,]  6 15
+## [2,]  7 16
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>Funciones especiales para operaciones comúnes</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>rowSums, rowMeans, colSums, colMeans</p>
+
+<pre><code class="r">x = data.frame(c1 = 1:5, c2 = 10:14)
+x
+</code></pre>
+
+<pre><code>##   c1 c2
+## 1  1 10
+## 2  2 11
+## 3  3 12
+## 4  4 13
+## 5  5 14
+</code></pre>
+
+<pre><code class="r">rowSums(x)
+</code></pre>
+
+<pre><code>## [1] 11 13 15 17 19
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
   <hgroup>
     <h2>Lectura de datos</h2>
   </hgroup>
@@ -593,7 +714,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-27" style="background:;">
+<slide class="" id="slide-29" style="background:;">
   <hgroup>
     <h2>Visualización con ggplot2</h2>
   </hgroup>
@@ -604,7 +725,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-28" style="background:;">
+<slide class="" id="slide-30" style="background:;">
   <hgroup>
     <h2>Gramática</h2>
   </hgroup>
@@ -615,7 +736,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-29" style="background:;">
+<slide class="" id="slide-31" style="background:;">
   <hgroup>
     <h2>Histograma</h2>
   </hgroup>
@@ -626,7 +747,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-30" style="background:;">
+<slide class="" id="slide-32" style="background:;">
   <hgroup>
     <h2>Scatter plots</h2>
   </hgroup>
@@ -637,7 +758,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-31" style="background:;">
+<slide class="" id="slide-33" style="background:;">
   <hgroup>
     <h2>Bar charts</h2>
   </hgroup>
@@ -648,7 +769,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-32" style="background:;">
+<slide class="" id="slide-34" style="background:;">
   <hgroup>
     <h2>Línea</h2>
   </hgroup>
@@ -659,7 +780,7 @@ x
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-33" style="background:;">
+<slide class="" id="slide-35" style="background:;">
   <hgroup>
     <h2>Box plots</h2>
   </hgroup>
@@ -796,80 +917,92 @@ x
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=21 title='NA'>
+        data-slide=21 title='Names'>
          21
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=22 title='Atributos'>
+        data-slide=22 title='Names'>
          22
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=23 title='Atributos'>
+        data-slide=23 title='Estructura de control: if'>
          23
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=24 title='Operaciones básicas'>
+        data-slide=24 title='Estructura de control: if'>
          24
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=25 title='Estructuras de control'>
+        data-slide=25 title='Estructura de control: if'>
          25
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=26 title='Lectura de datos'>
+        data-slide=26 title='Loop: apply'>
          26
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=27 title='Visualización con ggplot2'>
+        data-slide=27 title='Funciones especiales para operaciones comúnes'>
          27
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=28 title='Gramática'>
+        data-slide=28 title='Lectura de datos'>
          28
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=29 title='Histograma'>
+        data-slide=29 title='Visualización con ggplot2'>
          29
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=30 title='Scatter plots'>
+        data-slide=30 title='Gramática'>
          30
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=31 title='Bar charts'>
+        data-slide=31 title='Histograma'>
          31
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=32 title='Línea'>
+        data-slide=32 title='Scatter plots'>
          32
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=33 title='Box plots'>
+        data-slide=33 title='Bar charts'>
          33
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='Línea'>
+         34
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='Box plots'>
+         35
       </a>
     </li>
   </ul>
