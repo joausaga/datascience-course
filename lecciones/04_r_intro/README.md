@@ -23,13 +23,8 @@ Lección sobre programación en el lenguaje [R](https://www.r-project.org/) e in
 3. Estructuras de control
 	+ if, else
 	+ for
-	+ while
-	+ break
-	+ next
-4. Lectura/escritura de datos
-	+ read.table, read.csv
-	+ source
-	+ write.table
+4. Lectura de datos
+	+ read.csv
 5. Visualización con ggplot2
 	+ Gramática gráfica
 	+ Función ggplot, componentes
@@ -37,7 +32,6 @@ Lección sobre programación en el lenguaje [R](https://www.r-project.org/) e in
 	+ Scatterplots
 	+ Lines
 	+ Barras
-	+ Facets
 
 ## Referencias
 

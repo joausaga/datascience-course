@@ -584,13 +584,67 @@ if (x==10) {  # !=
 
 ---
 
-## Loop: apply
+## Ciclos: for
+
+Los ciclos `for` toman una variable *interator* y le asignan valores sucesivos de una secuencia o vector. Los ciclos ```for``` son los más utilizados para iterar sobre los elementos de un objeto
+
+
+```r
+x = data.frame(c1 = 4:6, c2 = 18:20)
+for(i in seq_len(nrow(x))) {
+  print(x[i, 'c1'])  # por cada fila imprimo el valor de la primera columna (nombre)
+  print(x[i, 2])     # por cada fila imprimo el valor de la segunda columna (número)
+}
+```
+
+```
+## [1] 4
+## [1] 18
+## [1] 5
+## [1] 19
+## [1] 6
+## [1] 20
+```
+
+Este ciclo toma la variable `i` y en cada iteración le asigna un nro de fila (1, 2, 3) y luego termina.
+
+---
+
+## Iteraciones: apply
 
 La función ```apply``` nos permite ejecutar operaciones repetitivas sobre matrices y data frames
 
 
 ```r
-x = data.frame(c1 = 1:2, c2 = 10:11); x
+x = data.frame(c1 = 1:3, c2 = 10:12); x
+```
+
+```
+##   c1 c2
+## 1  1 10
+## 2  2 11
+## 3  3 12
+```
+
+```r
+apply(x, 2, median)  # apply(<objeto>, <fila (1) o columna (2)>, <funcion>)
+```
+
+```
+## c1 c2 
+##  2 11
+```
+
+Otras funciones que se puede utilizar: max, min, mean, sum
+
+---
+
+## Iteraciones: apply
+
+
+```r
+x = data.frame(c1 = 1:2, c2 = 10:11)
+x
 ```
 
 ```
@@ -645,46 +699,119 @@ rowSums(x)
 
 ## Lectura de datos
 
-...
+```read.csv``` es las función más utilizadas para la lectura de datos en formato csv. Algunos de sus parámetros son:
+
+- `file`, nombre del archivo, incluyendo la ruta al mismo
+- `header`, parámetro lógico indicando si el archivo cuenta con un encabezado
+- `skip`, número de filas a ignorar desde el inicio del archivo
+- `colClasses`, un vector de caracteres indicando la clase de cada columna en el dataset
+- `nrows`, el número de filas del dataset a leer
+- `comment.char`, cadena de caracteres indicando el caracter usado para comentarios
+- `stringsAsFactors`, parámetro lógico indicando si las variables de tipo caracter deben ser codificadas como factores
+
+
+```r
+data = read.csv(file = 'becal-cobertura.csv', header = T, stringsAsFactors = F)
+```
 
 ---
 
-## Visualización con ggplot2
+## Estructura de datos
 
-...
+La función ```str``` se utiliza para una exploración rápida de la estructura del dataset
+
+
+```r
+str(data, vec.len=1)
+```
+
+```
+## 'data.frame':	907 obs. of  9 variables:
+##  $ No                                    : int  1 2 ...
+##  $ C.I.                                  : chr  "2.485.187" ...
+##  $ Nombre.y.Apellido                     : chr  "Alejandra Recalde Carballo" ...
+##  $ Tipo.de.Beca..según.Programa.aprobado.: chr  "Doctorado para Investigadores en CyT" ...
+##  $ Maestria...Doctorado                  : chr  "Doctorado en Biotecnología Molecular" ...
+##  $ Universidad.de.Destino                : chr  "Universidad de Chile" ...
+##  $ Pais                                  : chr  "Chile" ...
+##  $ Dept..de.Origen                       : chr  "Capital" ...
+##  $ Total.General                         : chr  "$             82.896" ...
+```
 
 ---
 
-## Gramática
+## Visualización
 
-...
+Funciones de visualización más comunes:
+
+1 variable:
+* Histogramas
+* Boxplots
+* Barra
+* Linea
+
+2 variables:
+* Scatterplots
+
 
 ---
 
 ## Histograma
 
-...
+
+```r
+hist(autos$mpg, col='green', main='Distribución de las millas por galón', 
+     xlab='Millas por galón', ylab='Frecuencia')
+```
+
+<img src="assets/fig/unnamed-chunk-37-1.png" title="plot of chunk unnamed-chunk-37" alt="plot of chunk unnamed-chunk-37" style="display: block; margin: auto;" />
 
 ---
 
-## Scatter plots
+## Boxplots
 
-...
 
----
+```r
+boxplot(autos$hp, col='red', main='Distribución de caballos de fuerza', 
+        ylab='Caballos de fuerza')
+```
 
-## Bar charts
-
-...
-
----
-
-## Línea
-
-...
+<img src="assets/fig/unnamed-chunk-38-1.png" title="plot of chunk unnamed-chunk-38" alt="plot of chunk unnamed-chunk-38" style="display: block; margin: auto;" />
 
 ---
 
-## Box plots
+## Barra
 
-...
+
+
+
+```r
+barplot(table(autos$am), col='green', xlab='Tipo de transmisión',
+        main='Nro. de vehículos por tipo de transmisión')
+```
+
+<img src="assets/fig/unnamed-chunk-40-1.png" title="plot of chunk unnamed-chunk-40" alt="plot of chunk unnamed-chunk-40" style="display: block; margin: auto;" />
+
+---
+
+## Linea
+
+
+```r
+plot(presidents, ylab = 'Porcentage de aprobación (%)', xlab='Año',
+     main = 'Aprobación (1er cuatrimestre) Presidentes de EEUU')
+```
+
+<img src="assets/fig/unnamed-chunk-41-1.png" title="plot of chunk unnamed-chunk-41" alt="plot of chunk unnamed-chunk-41" style="display: block; margin: auto;" />
+
+---
+
+## Scatterplots
+
+
+```r
+plot(autos$mpg, autos$wt, col='blue', xlab='Millas por galón', ylab='Peso (libras)',
+     main='Relación entre peso del vehículo y millas recorridas por galón')
+```
+
+<img src="assets/fig/unnamed-chunk-42-1.png" title="plot of chunk unnamed-chunk-42" alt="plot of chunk unnamed-chunk-42" style="display: block; margin: auto;" />
