@@ -2,7 +2,7 @@
 
 ### Introducción a la programación en R
 
-Lección sobre programación en el lenguaje [R](https://www.r-project.org/) e introducción al graficado con [ggplot2](http://ggplot2.org/).
+Lección sobre programación en el lenguaje [R](https://www.r-project.org/)
 
 ## Temas de la lección
 
@@ -25,12 +25,11 @@ Lección sobre programación en el lenguaje [R](https://www.r-project.org/) e in
 	+ for
 4. Lectura de datos
 	+ read.csv
-5. Visualización con ggplot2
-	+ Gramática gráfica
-	+ Función ggplot, componentes
+5. Visualización
+	+ Gráficas para 1 y 2 variable
 	+ Histogramas
 	+ Scatterplots
-	+ Lines
+	+ Lineas
 	+ Barras
 
 ## Referencias
@@ -39,10 +38,10 @@ Lección sobre programación en el lenguaje [R](https://www.r-project.org/) e in
 2. _Data Types and Basic Operations_ [R Programming](https://github.com/DataScienceSpecialization/courses/blob/master/02_RProgramming/DataTypes/index.Rmd)
 3. _Control Structures_ [R Programming](https://github.com/DataScienceSpecialization/courses/blob/master/02_RProgramming/ControlStructures/index.Rmd)
 4. _Reading Writing Data_ [R Programming](https://github.com/DataScienceSpecialization/courses/blob/master/02_RProgramming/reading_data_I/index.Rmd)
-5. _Plotting with ggplot2_ [Exploratory Analysis](https://github.com/DataScienceSpecialization/courses/blob/master/04_ExploratoryAnalysis/ggplot2/ppt/ggplot2.pdf)
 
 ## Recursos
 
+Graficado con Ggplot2 (otra librería para graficado)
+1. _Plotting with ggplot2_ [Exploratory Analysis](https://github.com/DataScienceSpecialization/courses/blob/master/04_ExploratoryAnalysis/ggplot2/ppt/ggplot2.pdf)
 1. _Graphs with ggplot2_ [Graphs, Cookbook for R](http://www.cookbook-r.com/Graphs)
-
 2. _Ggplo2 Package_ [The R Graph Gallery](http://www.r-graph-gallery.com/portfolio/ggplot2-package/)
