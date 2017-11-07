@@ -1,5 +1,5 @@
 ---
-title       : Programación en R
+title       : Introducción a la programación en R
 subtitle    : Curso de Data Science con Impacto Social
 author      : Jorge Saldivar
 job         : Universidad Católica "Nuestra Señora de la Asunción"
@@ -655,15 +655,15 @@ x
 
 ```r
 mult = function(x, c) {
-  return (x+c)
+  return (x*c)
 }
 apply(x, 2, mult, 5)  # apply(<objeto>, <fila (1) o columna (2)>, <funcion>, <parametro>)
 ```
 
 ```
 ##      c1 c2
-## [1,]  6 15
-## [2,]  7 16
+## [1,]  5 50
+## [2,] 10 55
 ```
 
 ---
