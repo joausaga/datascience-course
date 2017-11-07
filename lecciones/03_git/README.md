@@ -35,7 +35,7 @@ EDAD					=Edad de la persona,INTEGER
 FUNCIONARIO PUBLICO		=Descripción del lugar de trabajo en caso sea funcionario, TEXT
 
 
-#### [DATASET 2] (https://github.com/joausaga/datascience-course/blob/master/data/becal-cobertura.csv)
+#### [DATASET 2](https://github.com/joausaga/datascience-course/blob/master/data/becal-cobertura.csv)
 No 						=Numero del registro, INTEGER
 C.I 					=Cedula del beneficiario, TEXT
 NOMBRE Y APELLIDO		=Nombre y apellido del beneficiario, TEXT
