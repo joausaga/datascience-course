@@ -76,3 +76,6 @@ NOMBRE Y APELLIDO    =Nombre y apellido del beneficiario, TEXT
 TIPO DE BECA         =Describe el tipo de beca, TEXT
 
 MAESTRIA/DOCTORADO   =Describe el tipo de solitidud del beneficiario, TEXT
+
+
+terminado
