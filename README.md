@@ -37,3 +37,29 @@ Completar el formulario de inscripción al curso [aquí](https://goo.gl/forms/tO
 4. Análisis Exploratorio de datos
 5. Inferencia Estadística
 6. Aprendizaje supervisado
+
+
+
+## [PROYECTO BECAL](http://www.becal.gov.py/)
+Becas destinadas a egresados de una carrera con el fin de llevar a cabo sus estudios de especialización (maestrías o doctorados en un país extranjero). El principal desafío de BECAL es mejorar la oferta del capital humano avanzado, mediante el financiamiento de becas de estudios de entrenamiento docente y postgrados en centros de excelencia del exterior. El mismo, tiene por objetivo contribuir a aumentar los niveles de generación y aplicación de conocimiento en las áreas de Ciencias y Tecnología (CyT) y en los niveles de aprendizaje en la educación. El principal problema a ser abordado por este programa es la baja capacidad del país para generar y aplicar conocimiento requerido para el desarrollo.
+
+### DATASETS
+
+#### [DATASET 1](https://github.com/joausaga/datascience-course/blob/master/data/becal2017.csv)
+Nº\t\t\t\t					=Numero del registro, INTEGER\s\s
+CONDICION\t\t\t\t				=Estado del Becario, CHAR\s\s
+Nº\t\t\t\t						=Numero, INTEGER\s\s
+TIPO CONVOCATORIA\t\t\t\t		=En que convocatoria hizo su solicitud,TEXT\s\s
+FECHA DE ADJUDICACION\t\t\t\t	=Fecha en la que se le otorgo la beca, TEXT\s\s
+C.I\t\t\t\t 					=Cedula de indentidad, CHAR\s\s
+SEXO\t\t\t\t					=Define el sexo de la persona, CHAR\s\s
+EDAD\t\t\t\t					=Edad de la persona,INTEGER\s\s
+FUNCIONARIO PUBLICO\t\t\t\t		=Descripción del lugar de trabajo en caso sea funcionario, TEXT\s\s
+
+
+#### [DATASET 2](https://github.com/joausaga/datascience-course/blob/master/data/becal-cobertura.csv)
+No 						=Numero del registro, INTEGER\s\s
+C.I 					=Cedula del beneficiario, TEXT\s\s
+NOMBRE Y APELLIDO		=Nombre y apellido del beneficiario, TEXT\s\s
+TIPO DE BECA 			=Describe el tipo de beca, TEXT\s\s
+MAESTRIA/DOCTORADO		=Describe el tipo de solitidud del beneficiario, TEXT\s\s

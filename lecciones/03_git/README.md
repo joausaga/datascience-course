@@ -18,31 +18,6 @@ Lección sobre control de versiones con Git e introducción al lenguage markup [
 5. Git workflow
 6. Introducción al lenguaje Markdown
 
-## [PROYECTO BECAL](http://www.becal.gov.py/)
-Becas destinadas a egresados de una carrera con el fin de llevar a cabo sus estudios de especialización (maestrías o doctorados en un país extranjero). El principal desafío de BECAL es mejorar la oferta del capital humano avanzado, mediante el financiamiento de becas de estudios de entrenamiento docente y postgrados en centros de excelencia del exterior. El mismo, tiene por objetivo contribuir a aumentar los niveles de generación y aplicación de conocimiento en las áreas de Ciencias y Tecnología (CyT) y en los niveles de aprendizaje en la educación. El principal problema a ser abordado por este programa es la baja capacidad del país para generar y aplicar conocimiento requerido para el desarrollo.
-
-### DATASETS
-
-#### [DATASET 1](https://github.com/joausaga/datascience-course/blob/master/data/becal2017.csv)
-Nº						=Numero del registro, INTEGER
-CONDICION				=Estado del Becario, CHAR
-Nº						=Numero, INTEGER
-TIPO CONVOCATORIA		=En que convocatoria hizo su solicitud,TEXT
-FECHA DE ADJUDICACION	=Fecha en la que se le otorgo la beca, TEXT
-C.I 					=Cedula de indentidad, CHAR
-SEXO					=Define el sexo de la persona, CHAR
-EDAD					=Edad de la persona,INTEGER
-FUNCIONARIO PUBLICO		=Descripción del lugar de trabajo en caso sea funcionario, TEXT
-
-
-#### [DATASET 2](https://github.com/joausaga/datascience-course/blob/master/data/becal-cobertura.csv)
-No 						=Numero del registro, INTEGER
-C.I 					=Cedula del beneficiario, TEXT
-NOMBRE Y APELLIDO		=Nombre y apellido del beneficiario, TEXT
-TIPO DE BECA 			=Describe el tipo de beca, TEXT
-MAESTRIA/DOCTORADO		=Describe el tipo de solitidud del beneficiario, TEXT
-
-
 ## Trabajo Práctico
 
 1. Realizar un fork de este repositorio 
