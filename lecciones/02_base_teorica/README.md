@@ -24,7 +24,7 @@ Lección sobre los conceptos básicos del curso
 	+ Predictivas
 	+ Causales
 4. __Diseño de estudio__
-	+ Realizar preguntar de investigación
+	+ Realizar pregunta de investigación
 	+ Exploración
 	+ Predicción
 	+ Inferencia
@@ -50,3 +50,9 @@ Lección sobre los conceptos básicos del curso
 6. _Observation Studies and Experiments_, [Inferential Statistics](https://www.dropbox.com/s/a42e4owsvynvjrb/lecture_slides-unit1_part1_2_obs_study_exp.pdf?dl=0)
 
 7. _Experimental Design_, [Inferential Statistics](https://www.dropbox.com/s/b5gq2ynmkb3p65a/lecture_slides-unit1_part1_4_exp_design.pdf?dl=0)
+
+## Recursos
+
+1. [The Hardest Thing In Data Science](https://buckwoody.wordpress.com/2015/12/30/the-hardest-thing-in-data-science)
+
+2. [Tabular Format](https://www.youtube.com/watch?time_continue=102&v=5Vq530Lijb0)

@@ -28,7 +28,7 @@ Lección introductoria al curso
 
 2. Crear una cuenta en [Github](https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/02_05_github/index.Rmd)
 
-3. Instalar [Source Tree](https://www.sourcetreeapp.com/), cliente Git 
+3. Instalar [Source Tree](https://www.sourcetreeapp.com/), cliente Git (opcional) - [Instrucciones](https://confluence.atlassian.com/get-started-with-sourcetree/install-sourcetree-847359094.html)
 
 ## Referencias
 

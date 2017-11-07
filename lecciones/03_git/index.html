@@ -246,31 +246,201 @@
     <h2>Fork</h2>
   </hgroup>
   <article data-timings="">
-    <p class='..</p>
+    <p>Crear una copia de algún repositorio existen a nuestra cuenta Github</p>
 
- '></article>
+<p><img class=center src="../assets/img/github_fork2.png" height=350 /></p>
+
+  </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-13" style="background:;">
   <hgroup>
-    <h2>Recibir cambios (pull)</h2>
+    <h2>Conectar SourceTree a Github</h2>
   </hgroup>
   <article data-timings="">
-    <p class='..</p>
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ol>
+<li><p>Clic en &quot;rueda&quot; de configuración en la margen superior derecha de la interfaz y luego clic en <strong>Account</strong></p></li>
+<li><p>Clic en el botón <strong>Add</strong> de la ventana emergente</p></li>
+<li><p>Elegir la opción Github de la lista de <strong>Hosts</strong></p></li>
+<li><p>Clic en el botón <strong>Connect Account</strong> e introducir las credenciales del usuario Github a conectar</p></li>
+</ol>
 
- '></article>
+</div>
+<div style='float:right;width:48%;'>
+  <p><img class=center src="../assets/img/connect_github_sourcetree.png" height=300 /></p>
+
+</div>
+  </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-14" style="background:;">
   <hgroup>
-    <h2>Markdown</h2>
+    <h2>Clonar repositorio remoto</h2>
   </hgroup>
   <article data-timings="">
-    <p class='..</p>
+    <ol>
+<li><p>Clic en la opción <strong>Remote</strong> en la marge izquierda del menú principal</p></li>
+<li><p>Elegir de la lista el repositorio a clonar y clic en <strong>Clone</strong></p></li>
+</ol>
 
- '></article>
+<p>Al finalizar el proceso de clonación el repositorio recién clonado debería aparecer listado al hacer clic sobre la opción <strong>Local</strong> ubicada a la izquiera de la opción Remote en el menú principal</p>
+
+<p><img class=center src="../assets/img/clone_repo_sourcetree.png" height=200 /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Sincronizar cambios (pull)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Para sincronizar el reporitorio local con los últimos cambios en el repositorio original debemos primero agregar este repositorio, normalmente llamado <strong>upstream</strong>, a nuestro repositorio local</p>
+
+<p><img class=center src="../assets/img/add_upstream_repo.png" height=500 /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Sincronizar cambios (pull)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Luego de agregar el repositorio upstream, seguir los siguientes pasos:</p>
+
+<ol>
+<li><p>Clic en el botón <strong>Pull</strong> del menú superior</p></li>
+<li><p>Elegir la opción <strong>upstream</strong> en la lista <strong>Pull from repository</strong></p></li>
+<li><p>Elegir la opción <strong>master</strong> en la lista <strong>Remote branch to pull</strong></p></li>
+<li><p>Clic en el botón <strong>OK</strong></p></li>
+</ol>
+
+<p><img class=center src="../assets/img/pull_sourcetree.png" height=250 /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Lenguaje Markdown</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><q>Markdown es un lenguaje de marcas ligero compuesto por un conjunto de sintaxis que permiten dar formato al texto.</q></p>
+
+<p><a href="https://es.wikipedia.org/wiki/Markdown">Markdown</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Sintaxis para encabezados</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br></p>
+
+<pre><code class="markdown">## Esto es un título
+</code></pre>
+
+<h2>Esto es un título</h2>
+
+<p><br></p>
+
+<pre><code class="markdown">### Esto es un subtítulo
+</code></pre>
+
+<h3>Esto es un subtítulo</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Sintaxis para listas</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="markdown">* Item 1
+* Item 2
+* Item 3
+</code></pre>
+
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ul>
+
+<pre><code class="markdown">1. Item 1
+2. Item 2
+3. Item 3
+</code></pre>
+
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Sintaxis para enlaces e imágenes</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="markdown">[Wikipedia](https://www.wikipedia.org)
+</code></pre>
+
+<p><a href="https://www.wikipedia.org">Wikipedia</a></p>
+
+<p><br></p>
+
+<pre><code class="markdown">![Logo Google](https://www.blog.google/static/blog/images/google-200x200.7714256da16f.png)
+</code></pre>
+
+<p><img src="https://www.blog.google/static/blog/images/google-200x200.7714256da16f.png" alt="Logo Google"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Sintaxis para formato de texto</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="markdown">*cursiva*
+</code></pre>
+
+<p><em>cursiva</em></p>
+
+<pre><code class="markdown">**negrita**
+</code></pre>
+
+<p><strong>negrita</strong></p>
+
+<pre><code class="markdown">~~tachado~~
+</code></pre>
+
+<p><del>tachado</del></p>
+
+<h3>Referencia</h3>
+
+<p><a href="http://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">Lenguage Markdown</a></p>
+
+  </article>
   <!-- Presenter Notes -->
 </slide>
 
@@ -352,14 +522,56 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='Recibir cambios (pull)'>
+        data-slide=13 title='Conectar SourceTree a Github'>
          13
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=14 title='Markdown'>
+        data-slide=14 title='Clonar repositorio remoto'>
          14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Sincronizar cambios (pull)'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Sincronizar cambios (pull)'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Lenguaje Markdown'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Sintaxis para encabezados'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Sintaxis para listas'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Sintaxis para enlaces e imágenes'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Sintaxis para formato de texto'>
+         21
       </a>
     </li>
   </ul>

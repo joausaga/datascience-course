@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programación en R</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Programación en R">
+  <meta name="author" content="Jorge Saldivar">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../libraries/frameworks/io2012/js/slides" 
+    src="../libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="../assets/img/logo-uca.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Programación en R</h1>
+    <h2>Curso de Data Science con Impacto Social</h2>
+    <p>Jorge Saldivar<br/>Universidad Católica &quot;Nuestra Señora de la Asunción&quot;</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>¿Qué es R?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p><strong>R es un lenguaje y entorno open-soure para computación y gráficos estadísticos</strong></p></li>
+<li><p>R proporciona una amplia variedad de funcionalidades que permiten llevar adelante diferentes estudios estadísticos (modelado lineal y no lineal, pruebas estadísticas clásicas, análisis de series temporales, clasificación, agrupamiento) y visualizarlos a través de gráficos. </p></li>
+<li><p>Es altamente extensible por lo que existen una importante cantidad de paquetes de software (4000) que extendienden su funcionalidad</p></li>
+</ul>
+
+<p><a href="https://www.r-project.org/about.html">What is R?</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Objetos</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Todo en R es un objeto</p></li>
+<li><p>El objeto más básico en R es el <strong>vector</strong>, que es un contenedor de objectos que puede alojar objetos del mismo tipo</p></li>
+<li><p>La única <strong>excepción</strong> son las <strong>listas</strong> (o list en inglés), que son vectores que pueden contener diferentes tipos de objetos</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Tipos de objetos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>R maneja cinco tipos básicos (o atómicos) de objetos:</p>
+
+<ul>
+<li><p>caracteres (letras) o <strong>character</strong> en inglés</p></li>
+<li><p>numérico (números reales de doble precisión) o <strong>numeric</strong> en inglés</p></li>
+<li><p>entero o <strong>integer</strong> en inglés</p></li>
+<li><p>complejo o <strong>complex</strong> en inglés</p></li>
+<li><p>lógico (True/False) o <strong>logic</strong> en inglés</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Creando vectores</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>La función <code>c()</code> puede ser usada para crear vectores de objetos</p>
+
+<pre><code class="r">  nu = c(0.5, 0.6)             ## vector de 2 objetos del tipo númerico
+  l1 = c(TRUE, FALSE, TRUE)    ## vector 3 objetos del tipo lógico
+  l2 = c(T, F)                 ## vector de 3 objetos del tipo lógico
+  ch = c(&#39;a&#39;)                  ## vector de 1 objeto del tipo caracter
+  it = 9:29                    ## vector de 21 objetos del tipo entero
+  co = c(1+0i, 2+4i)           ## vector de 2 objetos del tipo complejo
+</code></pre>
+
+<p>El caracter <code>#</code> indica que lo que está a la derecha es un comentario y por tanto es ignorado</p>
+
+<p>El operador <code>:</code> es usado para crear secuencia de enteros</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Creando vectores</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>También se pueden crear vectores usando la función <code>vector()</code></p>
+
+<pre><code class="r">  v = vector(&#39;numeric&#39;, length = 10) 
+  v[1] = 5
+  v  # auto-impresion
+</code></pre>
+
+<pre><code>##  [1] 5 0 0 0 0 0 0 0 0 0
+</code></pre>
+
+<pre><code class="r">  print(v) # impresion explícita
+</code></pre>
+
+<pre><code>##  [1] 5 0 0 0 0 0 0 0 0 0
+</code></pre>
+
+<p>El <code>[1]</code> indica que el objeto es un vector y que <code>5</code> es su primer elemento</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Mezclando objetos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Que pasaría si mezclamos objetos de diferentes tipos en un mismo vector</p>
+
+<pre><code class="r">  y = c(1.7, &#39;a&#39;)   ## character
+  y
+</code></pre>
+
+<pre><code>## [1] &quot;1.7&quot; &quot;a&quot;
+</code></pre>
+
+<pre><code class="r">  y = c(TRUE, 2)    ## numeric
+  y
+</code></pre>
+
+<pre><code>## [1] 1 2
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Mezclando objetos</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">  y = c(&#39;a&#39;, TRUE)  ## character
+  y
+</code></pre>
+
+<pre><code>## [1] &quot;a&quot;    &quot;TRUE&quot;
+</code></pre>
+
+<p>Cuando mezclamos objetos de clases distintas, R intenta convertir los objetos a una misma clase siguiendo el siguiente esquema de precedencia y ocurriendo lo que se denomina <em>coeción implícita</em>:</p>
+
+<ol>
+<li>logical (menor precedencia)</li>
+<li>integer</li>
+<li>numeric</li>
+<li>complex</li>
+<li>character (mayor precedencia)</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Coeción Explícita</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Los objetos pueden ser explícitamente convertidos de una clase a otra utilizando (de ser posible) las funciones <code>as.*</code></p>
+
+<pre><code class="r">x = 0:6
+class(x)  # la función `class` se utiliza para averiguar la clase de un objeto
+</code></pre>
+
+<pre><code>## [1] &quot;integer&quot;
+</code></pre>
+
+<pre><code class="r">x = as.numeric(x)
+x
+</code></pre>
+
+<pre><code>## [1] 0 1 2 3 4 5 6
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Coerción Explícita</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">x = as.logical(x)
+x
+</code></pre>
+
+<pre><code>## [1] FALSE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE
+</code></pre>
+
+<pre><code class="r">x = as.character(x)
+x
+</code></pre>
+
+<pre><code>## [1] &quot;FALSE&quot; &quot;TRUE&quot;  &quot;TRUE&quot;  &quot;TRUE&quot;  &quot;TRUE&quot;  &quot;TRUE&quot;  &quot;TRUE&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Coerción Explícita</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>No todos los objetos de una clase se pueden convertir a otra, por ejemplo</p>
+
+<pre><code class="r">x = c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)
+as.numeric(x)
+</code></pre>
+
+<pre><code>## Warning: NAs introduced by coercion
+</code></pre>
+
+<pre><code>## [1] NA NA NA
+</code></pre>
+
+<p><code>NA</code> (<strong>&quot;not available&quot;</strong>) es utilizado por R para indicar que un valor no está disponible</p>
+
+<pre><code class="r">as.logical(x)
+</code></pre>
+
+<pre><code>## [1] NA NA NA
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Matrices</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Las matrices son un tipo especial de vectores donde los elementos se encuentran organizados en filas y columnas.</p>
+
+<pre><code class="r">m = matrix(1:6, nrow = 2, ncol = 3) # creando una matriz de 2 filas y 3 columnas
+m
+</code></pre>
+
+<pre><code>##      [,1] [,2] [,3]
+## [1,]    1    3    5
+## [2,]    2    4    6
+</code></pre>
+
+<p>En R las matrices son objetos que cuentan con el atributo <strong>dimensión</strong>.</p>
+
+<pre><code class="r">dim(m)  # opteniendo la dimensión de la matriz
+</code></pre>
+
+<pre><code>## [1] 2 3
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Matrices</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Las matrices son construidas por columna. El primer elemento se encuentra en la esquina superior izquierda y a partir de ahí los siguientes van creandose a lo largo de las columnas</p>
+
+<pre><code class="r">m = matrix(1:6, nrow = 2, ncol = 3)
+m
+</code></pre>
+
+<pre><code>##      [,1] [,2] [,3]
+## [1,]    1    3    5
+## [2,]    2    4    6
+</code></pre>
+
+<p>Para acceder a los elementos de la matriz se debe indicar entre <code>[]</code> la fila y columna separado por <code>,</code></p>
+
+<pre><code class="r">m[2, 1] # elemento de la segunda fila primera columna 
+</code></pre>
+
+<pre><code>## [1] 3
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Atributos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>La función <code>attributes</code> sirve para conocer los atributos de un objeto en R.</p>
+
+<pre><code class="r">attributes(m)
+</code></pre>
+
+<pre><code>## $dim
+## [1] 2 3
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>cbind-ing y rbind-ing</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Las matrices también pueden ser creadas acoplando vectores por columna o fila con las funciones <code>cbind()</code> and <code>rbind()</code>, respectivamente</p>
+
+<pre><code class="r">x = 1:3  # creando vector con la sequencia de enteros 1, 2, 3
+y = 10:12  # creando vector con la sequencia de enteros 10, 11, 12
+z = cbind(x, y)  # acoplando los vectores por columna para crear una matriz
+z
+</code></pre>
+
+<pre><code>##      x  y
+## [1,] 1 10
+## [2,] 2 11
+## [3,] 3 12
+</code></pre>
+
+<pre><code class="r">w = rbind(x, y) # acoplando los vectores por fila para crear una matriz
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Listas</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Las listas son un tipo especial de vectores que pueden contener elementos de diferentes clases</p>
+
+<pre><code class="r">x = list(1, &quot;a&quot;, TRUE, 1 + 4i) 
+x
+</code></pre>
+
+<pre><code>## [[1]]
+## [1] 1
+## 
+## [[2]]
+## [1] &quot;a&quot;
+## 
+## [[3]]
+## [1] TRUE
+## 
+## [[4]]
+## [1] 1+4i
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Factores</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Los factores son usados en R para representar <strong>datos categóricos</strong></p>
+
+<pre><code class="r">x = factor(c(&#39;yes&#39;, &#39;yes&#39;, &#39;no&#39;, &#39;yes&#39;, &#39;no&#39;)) 
+x
+</code></pre>
+
+<pre><code>## [1] yes yes no  yes no 
+## Levels: no yes
+</code></pre>
+
+<p>La función <code>table</code> muestra la frecuencia de cada categoría.</p>
+
+<pre><code class="r">table(x)
+</code></pre>
+
+<pre><code>## x
+##  no yes 
+##   2   3
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Factores ordenados</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>En R los <strong>datos ordinales</strong> se represetan a través de factores ordenados. El orden de los factores se establece utilizando el argumento <code>levels</code> de la función <code>factor()</code></p>
+
+<pre><code class="r">x = factor(c(&#39;yes&#39;, &#39;yes&#39;, &#39;no&#39;, &#39;yes&#39;, &#39;no&#39;), levels=c(&#39;yes&#39;, &#39;no&#39;))
+x
+</code></pre>
+
+<pre><code>## [1] yes yes no  yes no 
+## Levels: yes no
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Valores desconocidos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>En R los valores desconocidos se representan con los símbolos <code>NA</code> (o <code>NaN</code> para operaciones matemáticas indefinidas)</p>
+
+<ul>
+<li><p><code>is.na()</code> es usado para chequear si un objeto es <code>NA</code></p></li>
+<li><p><code>is.nan()</code> es usado para comprobar la presencia de <code>NaN</code></p></li>
+<li><p>Un valor <code>NaN</code> es al mismo tiempo <code>NA</code> pero lo opuesto no se da</p></li>
+</ul>
+
+<pre><code class="r">x = c(1, 2, NA, 10, 3)
+is.na(x)
+</code></pre>
+
+<pre><code>## [1] FALSE FALSE  TRUE FALSE FALSE
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Data Frames</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>En R los data frames son usados para alojar datos en forma tabular</p>
+
+<ul>
+<li><p>Son un tipo especial de matriz que puede contener elementos de diferentes clases (las matrices pueden tener solo elementos del mismo tipo)</p></li>
+<li><p>Usualmente son creados mediante las funciones <code>data.frame</code>, <code>read.table()</code>, o <code>read.csv()</code></p></li>
+<li><p>Pueden ser convertido a una matriz por medio de la función <code>data.matrix()</code></p></li>
+</ul>
+
+<pre><code class="r">x = data.frame(c1 = 1:5, c2 = c(T, T, F, F, T), c3 = c(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;)) 
+x
+</code></pre>
+
+<pre><code>##   c1    c2 c3
+## 1  1  TRUE  a
+## 2  2  TRUE  b
+## 3  3 FALSE  c
+## 4  4 FALSE  d
+## 5  5  TRUE  e
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Data Frames</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Número de filas del data frame</p>
+
+<pre><code class="r">nrow(x)
+</code></pre>
+
+<pre><code>## [1] 5
+</code></pre>
+
+<p>Número de columnas del data frame</p>
+
+<pre><code class="r">ncol(x)  
+</code></pre>
+
+<pre><code>## [1] 3
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Names</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Nombre de las columnas del data frame</p>
+
+<pre><code class="r">x
+</code></pre>
+
+<pre><code>##   c1    c2 c3
+## 1  1  TRUE  a
+## 2  2  TRUE  b
+## 3  3 FALSE  c
+## 4  4 FALSE  d
+## 5  5  TRUE  e
+</code></pre>
+
+<pre><code class="r">names(x)
+</code></pre>
+
+<pre><code>## [1] &quot;c1&quot; &quot;c2&quot; &quot;c3&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Names</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Las listas pueden también tener nombre</p>
+
+<pre><code class="r">x = list(a = 1, b = 2, c = 3)
+names(x)
+</code></pre>
+
+<pre><code>## [1] &quot;a&quot; &quot;b&quot; &quot;c&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>Estructura de control: if</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">if(&lt;condicion&gt;) {
+        ## hacer algo
+} else {
+        ## hacer otra cosa
+}
+if(&lt;condicion1&gt;) {
+        ## hacer algo
+} else if(&lt;condicion2&gt;)  {
+        ## hacer algo diferente
+} else {
+        ## hacer otra cosa
+}
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>Estructura de control: if</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Ejemplo</p>
+
+<pre><code class="r">x = 2
+y = 0
+if (x &gt; 3) {
+  y = 10
+} else {
+  y = 50
+}
+y
+</code></pre>
+
+<pre><code>## [1] 50
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>Estructura de control: if</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>La clausula <code>else</code> no es siempre necesaria  </p>
+
+<pre><code class="r">if (&lt;condicion&gt;) {
+  # hacer algo
+}
+</code></pre>
+
+<pre><code class="r">x = 10
+if (x==10) {  # !=
+  print(&#39;El valor de x es el esperado&#39;)
+}
+</code></pre>
+
+<pre><code>## [1] &quot;El valor de x es el esperado&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>Ciclos: for</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Los ciclos <code>for</code> toman una variable <em>interator</em> y le asignan valores sucesivos de una secuencia o vector. Los ciclos <code>for</code> son los más utilizados para iterar sobre los elementos de un objeto</p>
+
+<pre><code class="r">x = data.frame(c1 = 4:6, c2 = 18:20)
+for(i in seq_len(nrow(x))) {
+  print(x[i, &#39;c1&#39;])  # por cada fila imprimo el valor de la primera columna (nombre)
+  print(x[i, 2])     # por cada fila imprimo el valor de la segunda columna (número)
+}
+</code></pre>
+
+<pre><code>## [1] 4
+## [1] 18
+## [1] 5
+## [1] 19
+## [1] 6
+## [1] 20
+</code></pre>
+
+<p>Este ciclo toma la variable <code>i</code> y en cada iteración le asigna un nro de fila (1, 2, 3) y luego termina.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>Iteraciones: apply</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>La función <code>apply</code> nos permite ejecutar operaciones repetitivas sobre matrices y data frames</p>
+
+<pre><code class="r">x = data.frame(c1 = 1:3, c2 = 10:12); x
+</code></pre>
+
+<pre><code>##   c1 c2
+## 1  1 10
+## 2  2 11
+## 3  3 12
+</code></pre>
+
+<pre><code class="r">apply(x, 2, median)  # apply(&lt;objeto&gt;, &lt;fila (1) o columna (2)&gt;, &lt;funcion&gt;)
+</code></pre>
+
+<pre><code>## c1 c2 
+##  2 11
+</code></pre>
+
+<p>Otras funciones que se puede utilizar: max, min, mean, sum</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  <hgroup>
+    <h2>Iteraciones: apply</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">x = data.frame(c1 = 1:2, c2 = 10:11)
+x
+</code></pre>
+
+<pre><code>##   c1 c2
+## 1  1 10
+## 2  2 11
+</code></pre>
+
+<pre><code class="r">mult = function(x, c) {
+  return (x+c)
+}
+apply(x, 2, mult, 5)  # apply(&lt;objeto&gt;, &lt;fila (1) o columna (2)&gt;, &lt;funcion&gt;, &lt;parametro&gt;)
+</code></pre>
+
+<pre><code>##      c1 c2
+## [1,]  6 15
+## [2,]  7 16
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-29" style="background:;">
+  <hgroup>
+    <h2>Funciones especiales para operaciones comúnes</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>rowSums, rowMeans, colSums, colMeans</p>
+
+<pre><code class="r">x = data.frame(c1 = 1:5, c2 = 10:14)
+x
+</code></pre>
+
+<pre><code>##   c1 c2
+## 1  1 10
+## 2  2 11
+## 3  3 12
+## 4  4 13
+## 5  5 14
+</code></pre>
+
+<pre><code class="r">rowSums(x)
+</code></pre>
+
+<pre><code>## [1] 11 13 15 17 19
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-30" style="background:;">
+  <hgroup>
+    <h2>Lectura de datos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><code>read.csv</code> es las función más utilizadas para la lectura de datos en formato csv. Algunos de sus parámetros son:</p>
+
+<ul>
+<li><code>file</code>, nombre del archivo, incluyendo la ruta al mismo</li>
+<li><code>header</code>, parámetro lógico indicando si el archivo cuenta con un encabezado</li>
+<li><code>skip</code>, número de filas a ignorar desde el inicio del archivo</li>
+<li><code>colClasses</code>, un vector de caracteres indicando la clase de cada columna en el dataset</li>
+<li><code>nrows</code>, el número de filas del dataset a leer</li>
+<li><code>comment.char</code>, cadena de caracteres indicando el caracter usado para comentarios</li>
+<li><code>stringsAsFactors</code>, parámetro lógico indicando si las variables de tipo caracter deben ser codificadas como factores</li>
+</ul>
+
+<pre><code class="r">data = read.csv(file = &#39;becal-cobertura.csv&#39;, header = T, stringsAsFactors = F)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-31" style="background:;">
+  <hgroup>
+    <h2>Estructura de datos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>La función <code>str</code> se utiliza para una exploración rápida de la estructura del dataset</p>
+
+<pre><code class="r">str(data, vec.len=1)
+</code></pre>
+
+<pre><code>## &#39;data.frame&#39;:    907 obs. of  9 variables:
+##  $ No                                    : int  1 2 ...
+##  $ C.I.                                  : chr  &quot;2.485.187&quot; ...
+##  $ Nombre.y.Apellido                     : chr  &quot;Alejandra Recalde Carballo&quot; ...
+##  $ Tipo.de.Beca..según.Programa.aprobado.: chr  &quot;Doctorado para Investigadores en CyT&quot; ...
+##  $ Maestria...Doctorado                  : chr  &quot;Doctorado en Biotecnología Molecular&quot; ...
+##  $ Universidad.de.Destino                : chr  &quot;Universidad de Chile&quot; ...
+##  $ Pais                                  : chr  &quot;Chile&quot; ...
+##  $ Dept..de.Origen                       : chr  &quot;Capital&quot; ...
+##  $ Total.General                         : chr  &quot;$             82.896&quot; ...
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-32" style="background:;">
+  <hgroup>
+    <h2>Visualización</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Funciones de visualización más comunes:</p>
+
+<p>1 variable:</p>
+
+<ul>
+<li>Histogramas</li>
+<li>Boxplots</li>
+<li>Barra</li>
+<li>Linea</li>
+</ul>
+
+<p>2 variables:</p>
+
+<ul>
+<li>Scatterplots</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-33" style="background:;">
+  <hgroup>
+    <h2>Histograma</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">hist(autos$mpg, col=&#39;green&#39;, main=&#39;Distribución de las millas por galón&#39;, 
+     xlab=&#39;Millas por galón&#39;, ylab=&#39;Frecuencia&#39;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-37-1.png" title="plot of chunk unnamed-chunk-37" alt="plot of chunk unnamed-chunk-37" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  <hgroup>
+    <h2>Boxplots</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">boxplot(autos$hp, col=&#39;red&#39;, main=&#39;Distribución de caballos de fuerza&#39;, 
+        ylab=&#39;Caballos de fuerza&#39;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-38-1.png" title="plot of chunk unnamed-chunk-38" alt="plot of chunk unnamed-chunk-38" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-35" style="background:;">
+  <hgroup>
+    <h2>Barra</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">barplot(table(autos$am), col=&#39;green&#39;, xlab=&#39;Tipo de transmisión&#39;,
+        main=&#39;Nro. de vehículos por tipo de transmisión&#39;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-40-1.png" title="plot of chunk unnamed-chunk-40" alt="plot of chunk unnamed-chunk-40" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-36" style="background:;">
+  <hgroup>
+    <h2>Linea</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">plot(presidents, ylab = &#39;Porcentage de aprobación (%)&#39;, xlab=&#39;Año&#39;,
+     main = &#39;Aprobación (1er cuatrimestre) Presidentes de EEUU&#39;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-41-1.png" title="plot of chunk unnamed-chunk-41" alt="plot of chunk unnamed-chunk-41" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-37" style="background:;">
+  <hgroup>
+    <h2>Scatterplots</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">plot(autos$mpg, autos$wt, col=&#39;blue&#39;, xlab=&#39;Millas por galón&#39;, ylab=&#39;Peso (libras)&#39;,
+     main=&#39;Relación entre peso del vehículo y millas recorridas por galón&#39;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-42-1.png" title="plot of chunk unnamed-chunk-42" alt="plot of chunk unnamed-chunk-42" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='¿Qué es R?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Objetos'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Tipos de objetos'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Creando vectores'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Creando vectores'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Mezclando objetos'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Mezclando objetos'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Coeción Explícita'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Coerción Explícita'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Coerción Explícita'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Matrices'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Matrices'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Atributos'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='cbind-ing y rbind-ing'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Listas'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Factores'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Factores ordenados'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Valores desconocidos'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Data Frames'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Data Frames'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Names'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Names'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Estructura de control: if'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Estructura de control: if'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Estructura de control: if'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Ciclos: for'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Iteraciones: apply'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='Iteraciones: apply'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Funciones especiales para operaciones comúnes'>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='Lectura de datos'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='Estructura de datos'>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='Visualización'>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='Histograma'>
+         33
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='Boxplots'>
+         34
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='Barra'>
+         35
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='Linea'>
+         36
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='Scatterplots'>
+         37
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="../libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="../libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
