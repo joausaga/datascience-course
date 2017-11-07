@@ -46,33 +46,33 @@ Becas destinadas a egresados de una carrera con el fin de llevar a cabo sus estu
 ### DATASETS
 
 #### [DATASET 1](https://github.com/joausaga/datascience-course/blob/master/data/becal2017.csv)
-Nº					=Numero del registro, INTEGER
+Nº                    =Numero del registro, INTEGER
 
-CONDICION				=Estado del Becario, CHAR
+CONDICION             =Estado del Becario, CHAR
 
-Nº						=Numero, INTEGER
+Nº                    =Numero, INTEGER
 
-TIPO CONVOCATORIA		=En que convocatoria hizo su solicitud,TEXT
+TIPO CONVOCATORIA     =En que convocatoria hizo su solicitud,TEXT
 
-FECHA DE ADJUDICACION	=Fecha en la que se le otorgo la beca, TEXT
+FECHA DE ADJUDICACION =Fecha en la que se le otorgo la beca, TEXT
 
-C.I 					=Cedula de indentidad, CHAR
+C.I                   =Cedula de indentidad, CHAR
 
-SEXO					=Define el sexo de la persona, CHAR
+SEXO                  =Define el sexo de la persona, CHAR
 
-EDAD					=Edad de la persona,INTEGER
+EDAD                  =Edad de la persona,INTEGER
 
-FUNCIONARIO PUBLICO		=Descripción del lugar de trabajo en caso sea funcionario, TEXT
+FUNCIONARIO PUBLICO   =Descripción del lugar de trabajo en caso sea funcionario, TEXT
 
 
 
 #### [DATASET 2](https://github.com/joausaga/datascience-course/blob/master/data/becal-cobertura.csv)
-No 						=Numero del registro, INTEGER
+No                   =Numero del registro, INTEGER
 
-C.I 					=Cedula del beneficiario, TEXT
+C.I                  =Cedula del beneficiario, TEXT
 
-NOMBRE Y APELLIDO		=Nombre y apellido del beneficiario, TEXT
+NOMBRE Y APELLIDO    =Nombre y apellido del beneficiario, TEXT
 
-TIPO DE BECA 			=Describe el tipo de beca, TEXT
+TIPO DE BECA         =Describe el tipo de beca, TEXT
 
-MAESTRIA/DOCTORADO		=Describe el tipo de solitidud del beneficiario, TEXT
+MAESTRIA/DOCTORADO   =Describe el tipo de solitidud del beneficiario, TEXT
