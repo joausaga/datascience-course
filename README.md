@@ -64,6 +64,65 @@ EDAD                  =Edad de la persona,INTEGER
 
 FUNCIONARIO PUBLICO   =Descripción del lugar de trabajo en caso sea funcionario, TEXT
 
+CARGO				  =Cargo que desempeña, TEXT
+
+GOCE DE SUELDO		  =Si permitira o no goce de sueldo, TEXT
+
+TIPO DE BECA  		  =Enfasis de la beca, TEXT
+
+AREA DE LA CIENCIA 	  =En que area esta enfatizada EL TIPO DE BECA, TEXT
+
+DISCIPLINA			  =Cual es la disciplina del AREA
+
+SECTOR PRIORIZADO POR LA CONACYT = Tipo de sector de enfasis, TEXT
+
+SUBSECTOR PRIORIZADO         =Subsector del sector, TEXT
+
+MAESTRIA/DOCTORADO     =Que tipo de TITULO BUSCA con u descripcion , TEXT
+
+UNIVERSIDAD DE DESTINO =descripcion de la universidad, TEXT
+
+RANKING				   =Que tipo de ranking posee, TEXT
+
+Nº					   =Posicion en el ranking mensionado, INTEGER
+
+RANKING AREA ESPECIFICA= en el area especifica, TEXT
+
+Nº					   = que posición se encuentra, TEXT
+
+CIUDAD DE DESTINO      =Ciudad donde se dictaran los cursos, TEXT
+
+PAIS DE DESTINO        =Pais donde se dicta, TEXT
+
+MESES DE DURACIÓN DE ESTUDIOS= cantidad de tiempo que toma finalizar dicho estudio, TEXT
+
+INICIO (COBERTURA DE LA BECA) = Fecha de inicio, DATE
+
+FIN(COBERTURA DE LA BECA)     =Fecha de finalizacion, DATE
+
+CIUDAD DE ORIGEN			  =Ciudad de Origen del solicitante, TEXT
+
+DEPARTAMENTO DE ORIGEN        =Departamento de origen del solicitante, TEXT
+
+CIUDAD DE RESIDENCIA          =Donde vive el solicitante, TEXT
+
+DEPARTAMENTO DE RESIDENCIA	  =Departamento de la ciudad donde reside, TEXT
+
+NIVEL SOCIOECONOMICO               =Indicador de nivel economico, INTEGER
+
+TIEMPO DE COBERTURA           =Cantidad de meses, TEXT
+
+CONTRATO Nº 				=Codigo de contrato, TEXT
+
+FECHA FIRMA DE CONTRATO     =Fecha de firma, DATE
+
+FECHA DE FIRMA DE ADENDA     = Fecha de firma de la adenda, DATE
+
+
+ 
+
+
+
 
 
 #### [DATASET 2](https://github.com/joausaga/datascience-course/blob/master/data/becal-cobertura.csv)
@@ -77,5 +136,12 @@ TIPO DE BECA         =Describe el tipo de beca, TEXT
 
 MAESTRIA/DOCTORADO   =Describe el tipo de solitidud del beneficiario, TEXT
 
+UNIVERSIDAD DE DESTINO= Universidad donde ira el becado, TEXT
 
-terminado
+PAIS 				=Pais de destino, TEXT
+
+DEP. DE Origen     =Departamento del pais, TEXT
+
+TOTAL GENERAL		=cantidad de la beca, TEXT
+
+
