@@ -32,7 +32,7 @@ Lección sobre técnicas para obtener y pre-procesar datos con el lenguaje R.
 
 ### Entendiendo la política nacional de becas para estudios de posgrados en el exterior (BECAL)
 
-Con este trabajo práctico se inician los trabajos en marco del proyecto del curso que busca entender la política nacional de becas para estudios en el extranjero. Para ello utilizaremos el dataset proveído por la institución BECAL sobre la adjudicación de becas.
+Con esta tarea se inician los trabajos en marco del proyecto del curso que busca entender la política nacional de becas para estudios en el extranjero. Para ello utilizaremos el dataset proveído por la institución BECAL sobre la adjudicación de becas.
 
 #### Instrucciones
 
@@ -40,17 +40,17 @@ Con este trabajo práctico se inician los trabajos en marco del proyecto del cur
 * Dentro de la nueva carpeta _proyecto_ crear una carpeta llamada _data_;
 * Copiar los datasets _becal2017.csv_ y _becal-cobertura.csv_ que se encuentran dentro de _data_;
 * Utilizando R-studio crear un proyecto R llamado _Becal_ y guardarlo en la carpeta _trabajos_practicos_;
-* Desde R-studio crear un script R y guardarlo dentro de la carpeta _trabajos_practicos_con el nombre _preprocesamiento-becal.R_;
+* Desde R-studio crear un script R y guardarlo dentro de la carpeta _trabajos_practicos_ con el nombre _preprocesamiento-becal.R_;
 * Utilizando el lenguaje R importar ambos datasets y **realizar las siguientes tareas de limpieza y pre-procesamiento**:
 	+ Dataset: _becal2017.csv_
-		1. Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, no /, etc.) Remplazar los espacios vacíos y barras por guión bajo
-		2. Agregar la columna **id_becario** para identificar becario. El contenido de la columna será de la siguiente forma: b/_xx (donde xx será remplazado por un número secuencia de dos digitos, p.ej., 00, 01, 02)
-		3. Eliminar la columna **ci**
-		4. Eliminar los registros cuya condición es _no becario_
-		5. Convertir el contenido de la columna **fecha_adjudicacion** al formato dd/mm/yyyy
-		6. Convertir los registros cuyo contenido de la columna **maestria_doctorado** sea de más de una línea (p.ej., 554) a contenido de una sola línea
-		7. Agregar la columna **categoria_universidad** para contener la categoría de la universidad de acuerdo a su ranking. Las categorías a considerar son: top_10, top_50, top_100, top_150, top_200, mas_200
-		8. Unificar los nombres de los cursos (columna maestría_doctorado) aplicando las siguientes acciones: eliminar del nombre del curso las palabras Doctorado, PHD, PhD, Master, Maestría, y finalmente convertir el nombre al idioma español.
+		1. Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos, sin puntos, y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, no /, etc.)
+		2. Agregar la columna **id_becario** para identificar becario. El contenido de la columna será de la siguiente forma: b_x (donde x será remplazado por un número empezando en 1, p.ej., b_1, b_2, b_3)
+		3. Eliminar los espacios al final de la cadena que indica la condición del becario y eliminar los registros cuya condición sea _'No becario'_ o _'Pendiente'_
+		4. Convertir la fecha de adjudicación al formato dd/mm/yyyy
+		5. Convertir la columna cédula de identidad al tipo numérico removiendo primeramente el separador de miles (coma o punto)
+		6. Convertir los registros cuyo contenido de la columna **maestriadoctorado** sea de más de una línea (p.ej., 554) a contenido de una sola línea. Sugerencia: Eliminar el caracter '\n'
+		7. Agregar la columna **categoriauni** para contener la categoría de la universidad de acuerdo a su ranking. Las categorías a considerar son: top_10, top_50, top_100, top_150, top_200, mas_200. Usar la categoría _sin dato_ para casos donde no se tenga información del ranking
+		8. Agregar la columna **tipoestudio** que puede tomar uno de tres valores, maestria_profesional, maestria_academica, o doctorado, dependiendo del tipo de beca
 	+ Dataset: _becal-cobertura.csv_
 		1. Renombrar las columnas **Total General** y **C.I.** siguiendo las reglas mencionadas anteriormente
 		2. Remover los signos de dolar y punto de las filas de la columna **total_general** y convertir la columna al tipo entero
