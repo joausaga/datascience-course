@@ -23,7 +23,7 @@ Lección sobre programación en el lenguaje [R](https://www.r-project.org/)
 3. Estructuras de control
 	+ if, else
 	+ for
-4. Lectura de datos
+4. Lectura/Escritura de datos
 	+ read.csv
 5. Visualización
 	+ Gráficas para 1 y 2 variable
@@ -41,7 +41,10 @@ Lección sobre programación en el lenguaje [R](https://www.r-project.org/)
 
 ## Recursos
 
+1. _Tutorial del lengaguje R_ [Free Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)
+
 Graficado con Ggplot2 (otra librería para graficado)
+
 1. _Plotting with ggplot2_ [Exploratory Analysis](https://github.com/DataScienceSpecialization/courses/blob/master/04_ExploratoryAnalysis/ggplot2/ppt/ggplot2.pdf)
 1. _Graphs with ggplot2_ [Graphs, Cookbook for R](http://www.cookbook-r.com/Graphs)
 2. _Ggplo2 Package_ [The R Graph Gallery](http://www.r-graph-gallery.com/portfolio/ggplot2-package/)
