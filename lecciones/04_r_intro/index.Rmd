@@ -434,6 +434,21 @@ apply(x, 2, mult, 5)  # apply(<objeto>, <fila (1) o columna (2)>, <funcion>, <pa
 
 ---
 
+## Iteraciones: sapply
+
+Similar a su par `apply` pero para listas y vectores. Retorna una lista
+
+```{r, echo=T}
+x = data.frame(c1 = 1:2, c2 = 10:11)
+x
+area_circulo = function(r) {
+  return (3.14*r^2)
+}
+sapply(x[,'c1'], area_circulo)  # sapply(<lista o vector>, <funcion>, <otros parametros>)
+```
+
+---
+
 ## Funciones especiales para operaciones comúnes
 
 rowSums, rowMeans, colSums, colMeans
@@ -448,7 +463,7 @@ rowSums(x)
 
 ## Lectura de datos
 
-```read.csv``` es las función más utilizadas para la lectura de datos en formato csv. Algunos de sus parámetros son:
+```read.csv``` es la función más utilizadas para la lectura de datos en formato csv. Algunos de sus parámetros son:
 
 - `file`, nombre del archivo, incluyendo la ruta al mismo
 - `header`, parámetro lógico indicando si el archivo cuenta con un encabezado
@@ -460,6 +475,20 @@ rowSums(x)
 
 ```{r, echo=T}
 data = read.csv(file = 'becal-cobertura.csv', header = T, stringsAsFactors = F)
+```
+
+---
+
+## Escritura de datos
+
+```write.csv``` es la función más utilizadas para la escritura de datos en formato csv. Algunos de sus parámetros son:
+
+- x, dataset a guardar en archivo 
+- `file`, nombre del archivo, incluyendo la ruta al mismo
+- `row.names`, ignorar o no nombre de filas
+
+```{r, echo=T}
+write.csv(x, 'leccion4.csv', row.names=F)
 ```
 
 ---
