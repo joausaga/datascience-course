@@ -1,0 +1,105 @@
+---
+title       : Preparación de datos
+subtitle    : Curso de Data Science con Impacto Social
+author      : Jorge Saldivar
+job         : Universidad Católica "Nuestra Señora de la Asunción"
+logo        : logo-uca.png
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+url:
+  lib: ../libraries
+  assets: ../assets
+widgets     : [mathjax]     # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+--- &twocol 
+
+## Preparación de datos 
+
+* La preparación de los datos es un proceso iterativo donde primero se identifican los errores y luego se corrigen
+
+*** =left
+
+**Ejemplos de errores**:
+
+  - Diferentes formatos: 
+    + 24/08/17 o 08/24/17, 2 o `dos`
+  - Diferentes unidades de medida: 
+    + 3500$ o 3500€
+  - Valores incorrectos: Precio: 4,800Gs.
+  - Valores ausentes: Edad: `NULL`
+  - Valores desconocidos: 
+    + Nombre: JorgeⒶ웃|"""✪✪
+
+*** =right
+
+**Fuente de errores**:
+
+  - Errores introducidos por personas
+  - Mala aplicación de estándares de codificación
+  - Integración datos con diferentes esquemas, ej., altura: 6.2'' o 1.88m
+  - Legacy systems
+  - Migración de datos
+  - Errores de programación
+  - Errores en la transmición de los datos
+
+---
+
+## Ejemplo de datos problemáticos (BECAL)
+
+<img class=center src="../assets/img/datos_becal_problemas.png" height=450 />
+
+---
+
+## Datos de buena calidad
+
+Existen medidas estándar para determinar la calidad de los datos
+
+- **Validez**: se ajustan a un esquema definido 
+  + E.j., esquema de nro. de teléfono +(prefijo)nnn-nnnn
+
+- **Precisión**: se ajustan a estándares conocidos
+  + E.j., código de país (ISO-3166 AU, BB, IT, PY)
+
+- **Completitud**: el dataset contiene todos los registros que deberia tener
+
+- **Consistencia**: campos dependientes en el dataset deben ser consistentes 
+  + E.j., fecha de fin debe ser posterior a fecha de inicio
+
+- **Uniformidad**: mismas unidades de medida 
+  + E.j., distancia en millas o kilometros?
+
+---
+
+## Acciones correctivas y de preparación de datos
+
+Normalmente se realizan algunas de las siguientes acciones para corregir errores y preparar los datos
+
+- Eliminar o corregir errores de tipeo
+- Validar contra estándares conocidos
+- Control cruzado de datos
+- Completar los datos a disponición incorporando información de otras fuentes
+- Normalizar datos (e.j., transformar Ave. a Avenida o Tte. a Teniente)
+
+---
+
+## Herramientas de preparación de datos en R
+
+- sub
+
+- str_trim
+
+- merge
+
+- dplyr
+
+  - filter
+  - select
+  - mutate

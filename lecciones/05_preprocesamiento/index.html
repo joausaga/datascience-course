@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Preparación de datos</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Preparación de datos">
+  <meta name="author" content="Jorge Saldivar">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../libraries/frameworks/io2012/js/slides" 
+    src="../libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="../assets/img/logo-uca.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Preparación de datos</h1>
+    <h2>Curso de Data Science con Impacto Social</h2>
+    <p>Jorge Saldivar<br/>Universidad Católica &quot;Nuestra Señora de la Asunción&quot;</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Preparación de datos</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>La preparación de los datos es un proceso iterativo donde primero se identifican los errores y luego se corrigen</li>
+</ul>
+
+<div style='float:left;width:48%;' class='centered'>
+  <p><strong>Ejemplos de datos con errores</strong>:</p>
+
+<ul>
+<li>Diferentes formatos: 
+
+<ul>
+<li>24/08/17 o 08/24/17, 2 o <code>dos</code></li>
+</ul></li>
+<li>Diferentes unidades de medida: 
+
+<ul>
+<li>3500$ o 3500€</li>
+</ul></li>
+<li>Valores incorrectos: Precio: 4,800Gs.</li>
+<li>Valores ausentes: Edad: <code>NULL</code></li>
+<li>Valores desconocidos: 
+
+<ul>
+<li>Nombre: JorgeⒶ웃|&quot;&quot;&quot;✪✪</li>
+</ul></li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><strong>Fuente de errores</strong>:</p>
+
+<ul>
+<li>Errores introducidos por personas</li>
+<li>Mala aplicación de estándares de codificación</li>
+<li>Integración datos con diferentes esquemas, ej., altura: 6.2&#39;&#39; o 1.88m</li>
+<li>Legacy systems</li>
+<li>Migración de datos</li>
+<li>Errores de programación</li>
+<li>Errores en la transmición de los datos</li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Ejemplo de datos problemáticos (BECAL)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img class=center src="../assets/img/datos_becal_problemas.png" height=450 /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Datos de buena calidad</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Existen medidas estándar para determinar la calidad de los datos</p>
+
+<ul>
+<li><p><strong>Validez</strong>: se ajustan a un esquema definido </p>
+
+<ul>
+<li>E.j., esquema de nro. de teléfono +(prefijo)nnn-nnnn</li>
+</ul></li>
+<li><p><strong>Precisión</strong>: se ajustan a estándares conocidos</p>
+
+<ul>
+<li>E.j., código de país (ISO-3166 AU, BB, IT, PY)</li>
+</ul></li>
+<li><p><strong>Completitud</strong>: el dataset contiene todos los registros que deberia tener</p></li>
+<li><p><strong>Consistencia</strong>: campos dependientes en el dataset deben ser consistentes </p>
+
+<ul>
+<li>E.j., fecha de fin debe ser posterior a fecha de inicio</li>
+</ul></li>
+<li><p><strong>Uniformidad</strong>: mismas unidades de medida </p>
+
+<ul>
+<li>E.j., distancia en millas o kilometros?</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Acciones correctivas y de preparación de datos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Normalmente se realizan algunas de las siguientes acciones para corregir errores y preparar los datos</p>
+
+<ul>
+<li>Eliminar o corregir errores de tipeo</li>
+<li>Validar contra estándares conocidos</li>
+<li>Control cruzado de datos</li>
+<li>Completar los datos a disponición incorporando información de otras fuentes</li>
+<li>Normalizar datos (e.j., transformar Ave. a Avenida o Tte. a Teniente)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Herramientas de preparación de datos en R</h2>
+  </hgroup>
+  <article data-timings="">
+    <p class='..</p>
+
+ '></article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Preparación de datos'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Ejemplo de datos problemáticos (BECAL)'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Datos de buena calidad'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Acciones correctivas y de preparación de datos'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Herramientas de preparación de datos en R'>
+         6
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="../libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="../libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
