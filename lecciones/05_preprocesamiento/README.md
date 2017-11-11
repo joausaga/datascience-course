@@ -6,33 +6,27 @@ Lección sobre técnicas para obtener y pre-procesar datos con el lenguaje R.
 
 ## Temas de la lección
 
-1. ¿Qué son datos limpios?
-2. Subsetting y ordenamiento
-	+ Subconjunto de datos
-	+ Tratamiento de valores desconocidos
-	+ Ordenamiento de datos
-3. Renombrar variables
+1. Preparación de datos
+	+ Ejemplos de errores
+	+ Fuente de errores
+2. Datos de buena calidad (métricas)
+	+ Validez
+	+ Precisión
+	+ Completitud
+	+ Consistencia
+	+ Uniformidad
+3. Acciones correctivas
+4. Herramientas en R
+	+ Subsetting y ordenamiento
 	+ Manejo de texto
-4. Creación de nuevas variables
-	+ Secuencia
-	+ Creando variables binarias
-	+ Creando variables categoricas
-5. Merging de datos
-	+ Unificando datos con _merge()_
-6. Librería Dplyr
-	+ Select
-	+ Filter
-	+ Mutate
-	+ Arrange
-	+ Summarize
-	+ Group by
-	+ Rename
+	+ Unificando datos
+	+ Dplyr (select, filter, mutate)
 
 ## Trabajo Práctico
 
 ### Entendiendo la política nacional de becas para estudios de posgrados en el exterior (BECAL)
 
-Con esta tarea se inician los trabajos en marco del proyecto del curso que busca entender la política nacional de becas para estudios en el extranjero. Para ello utilizaremos el dataset proveído por la institución BECAL sobre la adjudicación de becas.
+Con este trabajo empezamos nuestro análisis del dataset proveído por la institución BECAL con el objetivo de entender la política nacional de becas para estudios en el extranjero.
 
 #### Instrucciones
 
@@ -67,6 +61,7 @@ Con esta tarea se inician los trabajos en marco del proyecto del curso que busca
 3. _Creating New Variables_ [Getting Data](https://github.com/DataScienceSpecialization/courses/blob/master/03_GettingData/03_03_creatingNewVariables/index.Rmd)
 4. _Merging Data_ [Getting Data](https://github.com/DataScienceSpecialization/courses/blob/master/03_GettingData/03_05_mergingData/index.Rmd)
 5. _Managing Data Frames with Dplyr_ [Getting Data](https://github.com/DataScienceSpecialization/courses/blob/master/03_GettingData/dplyr/dplyr.pdf)
+6. _Data Quality_ [Data Wrangling with Mongo DB](https://www.udacity.com/course/data-wrangling-with-mongodb--ud032)
 
 ## Recursos
 
