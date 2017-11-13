@@ -25,7 +25,7 @@ knit        : slidify::knit2slides
 
 *** =left
 
-**Ejemplos de datos con errores**:
+**Ejemplos de errores**:
 
   - Diferentes formatos: 
     + 24/08/17 o 08/24/17, 2 o `dos`
@@ -89,5 +89,100 @@ Normalmente se realizan algunas de las siguientes acciones para corregir errores
 ---
 
 ## Herramientas de preparación de datos en R
+
+- partición y ordenamiento
+
+- manejo de texto
+
+  - gsub
+  - grep/grepl
+  - str_trim
+  - strsplit
+  - tolower
+  
+- merge
+
+- dplyr
+
+  - filter
+  - select
+  - mutate
+
+---
+
+## Partición
+
+
+```r
+x = data.frame('var1'=sample(1:5),'var2'=sample(6:10),'var3'=sample(11:15))
+x
+```
+
+```
+##   var1 var2 var3
+## 1    5    6   13
+## 2    3    9   12
+## 3    1    7   11
+## 4    4   10   15
+## 5    2    8   14
+```
+Todos los registros de la columna indicada por su respectivo indice
+
+```r
+x[,1]
+```
+
+```
+## [1] 5 3 1 4 2
+```
+
+---
+
+## Partición
+
+Todos los registros de la columna indicada por su nombre
+
+```r
+x[,'var1']
+```
+
+```
+## [1] 5 3 1 4 2
+```
+Los registros indicados por sus respectivos indices
+
+```r
+x[1:2,'var2']
+```
+
+```
+## [1] 6 9
+```
+
+---
+
+## Partición con expresiones lógicas
+
+
+```r
+x[(x$var1 <= 3 & x$var3 > 11),]
+```
+
+```
+##   var1 var2 var3
+## 2    3    9   12
+## 5    2    8   14
+```
+
+```r
+x[(x$var1 <= 3 | x$var3 > 15),]
+```
+
+```
+##   var1 var2 var3
+## 2    3    9   12
+## 3    1    7   11
+## 5    2    8   14
+```
 
 ...

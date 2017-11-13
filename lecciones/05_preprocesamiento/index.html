@@ -60,7 +60,7 @@
 </ul>
 
 <div style='float:left;width:48%;' class='centered'>
-  <p><strong>Ejemplos de datos con errores</strong>:</p>
+  <p><strong>Ejemplos de errores</strong>:</p>
 
 <ul>
 <li>Diferentes formatos: 
@@ -171,7 +171,108 @@
     <h2>Herramientas de preparación de datos en R</h2>
   </hgroup>
   <article data-timings="">
-    <p class='..</p>
+    <ul>
+<li><p>partición y ordenamiento</p></li>
+<li><p>manejo de texto</p>
+
+<ul>
+<li>gsub</li>
+<li>grep/grepl</li>
+<li>str_trim</li>
+<li>strsplit</li>
+<li>tolower</li>
+</ul></li>
+<li><p>merge</p></li>
+<li><p>dplyr</p>
+
+<ul>
+<li>filter</li>
+<li>select</li>
+<li>mutate</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Partición</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">x = data.frame(&#39;var1&#39;=sample(1:5),&#39;var2&#39;=sample(6:10),&#39;var3&#39;=sample(11:15))
+x
+</code></pre>
+
+<pre><code>##   var1 var2 var3
+## 1    5    6   13
+## 2    3    9   12
+## 3    1    7   11
+## 4    4   10   15
+## 5    2    8   14
+</code></pre>
+
+<p>Todos los registros de la columna indicada por su respectivo indice</p>
+
+<pre><code class="r">x[,1]
+</code></pre>
+
+<pre><code>## [1] 5 3 1 4 2
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Partición</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Todos los registros de la columna indicada por su nombre</p>
+
+<pre><code class="r">x[,&#39;var1&#39;]
+</code></pre>
+
+<pre><code>## [1] 5 3 1 4 2
+</code></pre>
+
+<p>Los registros indicados por sus respectivos indices</p>
+
+<pre><code class="r">x[1:2,&#39;var2&#39;]
+</code></pre>
+
+<pre><code>## [1] 6 9
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Partición con expresiones lógicas</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">x[(x$var1 &lt;= 3 &amp; x$var3 &gt; 11),]
+</code></pre>
+
+<pre><code>##   var1 var2 var3
+## 2    3    9   12
+## 5    2    8   14
+</code></pre>
+
+<pre><code class="r">x[(x$var1 &lt;= 3 | x$var3 &gt; 15),]
+</code></pre>
+
+<pre><code>##   var1 var2 var3
+## 2    3    9   12
+## 3    1    7   11
+## 5    2    8   14
+</code></pre>
+
+<p class='..</p>
 
  '></article>
   <!-- Presenter Notes -->
@@ -215,6 +316,24 @@
       <a href="#" target="_self" rel='tooltip' 
         data-slide=6 title='Herramientas de preparación de datos en R'>
          6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Partición'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Partición'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Partición con expresiones lógicas'>
+         9
       </a>
     </li>
   </ul>
