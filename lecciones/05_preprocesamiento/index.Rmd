@@ -15,17 +15,16 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+<img class=center src="../assets/img/datamining-bron-copyright-user.png" height=550 />
 
---- &twocol 
+
+--- &twocol
 
 ## Preparación de datos 
 
 * La preparación de los datos es un proceso iterativo donde primero se identifican los errores y luego se corrigen
 
-*** =left
+*** {name: left}
 
 **Ejemplos de errores**:
 
@@ -38,7 +37,7 @@ knitr::opts_chunk$set(echo = FALSE)
   - Valores desconocidos: 
     + Nombre: JorgeⒶ웃|"""✪✪
 
-*** =right
+*** {name: right}
 
 **Fuente de errores**:
 

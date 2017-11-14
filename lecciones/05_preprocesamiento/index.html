@@ -45,7 +45,8 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <article data-timings="">
-    
+    <p><img class=center src="../assets/img/datamining-bron-copyright-user.png" height=550 /></p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -255,7 +256,7 @@ x
     <h2>Partición con expresiones lógicas</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">x[(x$var1 &lt;= 3 &amp; x$var3 &gt; 11),]
+    <pre><code class="r">x[(x$var1 &lt;= 3 &amp; x$var3 &gt; 11),]   # AND
 </code></pre>
 
 <pre><code>##   var1 var2 var3
@@ -263,7 +264,7 @@ x
 ## 5    2    8   14
 </code></pre>
 
-<pre><code class="r">x[(x$var1 &lt;= 3 | x$var3 &gt; 15),]
+<pre><code class="r">x[(x$var1 &lt;= 3 | x$var3 &gt; 15),]   # OR
 </code></pre>
 
 <pre><code>##   var1 var2 var3

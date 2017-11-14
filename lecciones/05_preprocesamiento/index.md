@@ -15,15 +15,16 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
+<img class=center src="../assets/img/datamining-bron-copyright-user.png" height=550 />
 
 
---- &twocol 
+--- &twocol
 
 ## Preparación de datos 
 
 * La preparación de los datos es un proceso iterativo donde primero se identifican los errores y luego se corrigen
 
-*** =left
+*** {name: left}
 
 **Ejemplos de errores**:
 
@@ -36,7 +37,7 @@ knit        : slidify::knit2slides
   - Valores desconocidos: 
     + Nombre: JorgeⒶ웃|"""✪✪
 
-*** =right
+*** {name: right}
 
 **Fuente de errores**:
 
@@ -165,7 +166,7 @@ x[1:2,'var2']
 
 
 ```r
-x[(x$var1 <= 3 & x$var3 > 11),]
+x[(x$var1 <= 3 & x$var3 > 11),]   # AND
 ```
 
 ```
@@ -175,7 +176,7 @@ x[(x$var1 <= 3 & x$var3 > 11),]
 ```
 
 ```r
-x[(x$var1 <= 3 | x$var3 > 15),]
+x[(x$var1 <= 3 | x$var3 > 15),]   # OR
 ```
 
 ```
