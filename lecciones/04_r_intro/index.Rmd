@@ -189,14 +189,14 @@ dim(m)  # opteniendo la dimensión de la matriz
 
 Las matrices son construidas por columna. El primer elemento se encuentra en la esquina superior izquierda y a partir de ahí los siguientes van creandose a lo largo de las columnas
 
-```{r, echo=T}
+```{r, matrices, echo=T}
 m = matrix(1:6, nrow = 2, ncol = 3)
 m
 ```
 
 Para acceder a los elementos de la matriz se debe indicar entre ```[]``` la fila y columna separado por ```,```
 
-```{r, echo=T}
+```{r, dependson='matrices', echo=T}
 m[2, 1] # elemento de la segunda fila primera columna 
 ```
 

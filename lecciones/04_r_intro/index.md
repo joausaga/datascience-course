@@ -281,7 +281,7 @@ m[2, 1] # elemento de la segunda fila primera columna
 ```
 
 ```
-## [1] 3
+## [1] 2
 ```
 
 ---
@@ -808,7 +808,7 @@ hist(autos$mpg, col='green', main='Distribución de las millas por galón',
      xlab='Millas por galón', ylab='Frecuencia')
 ```
 
-<img src="assets/fig/unnamed-chunk-39-1.png" title="plot of chunk unnamed-chunk-39" alt="plot of chunk unnamed-chunk-39" style="display: block; margin: auto;" />
+<img src="assets/fig/unnamed-chunk-38-1.png" title="plot of chunk unnamed-chunk-38" alt="plot of chunk unnamed-chunk-38" style="display: block; margin: auto;" />
 
 ---
 
@@ -820,7 +820,7 @@ boxplot(autos$hp, col='red', main='Distribución de caballos de fuerza',
         ylab='Caballos de fuerza')
 ```
 
-<img src="assets/fig/unnamed-chunk-40-1.png" title="plot of chunk unnamed-chunk-40" alt="plot of chunk unnamed-chunk-40" style="display: block; margin: auto;" />
+<img src="assets/fig/unnamed-chunk-39-1.png" title="plot of chunk unnamed-chunk-39" alt="plot of chunk unnamed-chunk-39" style="display: block; margin: auto;" />
 
 ---
 
@@ -834,7 +834,7 @@ barplot(table(autos$am), col='green', xlab='Tipo de transmisión',
         main='Nro. de vehículos por tipo de transmisión')
 ```
 
-<img src="assets/fig/unnamed-chunk-42-1.png" title="plot of chunk unnamed-chunk-42" alt="plot of chunk unnamed-chunk-42" style="display: block; margin: auto;" />
+<img src="assets/fig/unnamed-chunk-41-1.png" title="plot of chunk unnamed-chunk-41" alt="plot of chunk unnamed-chunk-41" style="display: block; margin: auto;" />
 
 ---
 
@@ -846,7 +846,7 @@ plot(presidents, ylab = 'Porcentage de aprobación (%)', xlab='Año',
      main = 'Aprobación (1er cuatrimestre) Presidentes de EEUU')
 ```
 
-<img src="assets/fig/unnamed-chunk-43-1.png" title="plot of chunk unnamed-chunk-43" alt="plot of chunk unnamed-chunk-43" style="display: block; margin: auto;" />
+<img src="assets/fig/unnamed-chunk-42-1.png" title="plot of chunk unnamed-chunk-42" alt="plot of chunk unnamed-chunk-42" style="display: block; margin: auto;" />
 
 ---
 
@@ -858,4 +858,4 @@ plot(autos$mpg, autos$wt, col='blue', xlab='Millas por galón', ylab='Peso (libr
      main='Relación entre peso del vehículo y millas recorridas por galón')
 ```
 
-<img src="assets/fig/unnamed-chunk-44-1.png" title="plot of chunk unnamed-chunk-44" alt="plot of chunk unnamed-chunk-44" style="display: block; margin: auto;" />
+<img src="assets/fig/unnamed-chunk-43-1.png" title="plot of chunk unnamed-chunk-43" alt="plot of chunk unnamed-chunk-43" style="display: block; margin: auto;" />
