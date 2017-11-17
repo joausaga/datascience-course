@@ -108,8 +108,10 @@ Normalmente se realizan algunas de las siguientes acciones para corregir errores
 
 - dplyr
 
-  - filter
   - select
+  - filter
+  - arrange
+  - rename
   - mutate
 
 ---
@@ -220,6 +222,10 @@ grepl('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presenciar de ca
 
 ## str_trim: eliminación de espacios vacíos redundantes
 
+```{r, echo=T}
+library(stringr)
+```
+
 ```{r, dependson="becal", echo=T}
 becal[1:2,'Condición']
 str_trim(becal[1:2,'Condición'])  # eliminar espacios vacío al inicio y final del texto
@@ -242,4 +248,117 @@ substr(becal_c[1,'Universidad.de.Destino'],16,20)  # extraer parte del texto
 ```{r, dependson="becalc", echo=T}
 becal_c[1,c(5,6)]
 paste0(becal_c[1,5],' (',becal_c[1,6],')')
+```
+
+---
+
+## Unir datasets con merge
+
+```{r, dependson="becal", echo=F}
+becal[,'C.I.'] = gsub(',', '', becal[,'C.I.'])
+paste0('Tamaño del dataset becal2017.csv (becal): ', dim(becal)[1], ' filas x ', dim(becal)[2], ' columnas')
+```
+
+```{r, dependson="becalc", echo=F}
+becal_c[,'C.I.'] = gsub('.', '', becal_c[,'C.I.'])
+paste0('Tamaño del dataset becal-cobertura.csv (becal_c): ', dim(becal_c)[1], ' filas x ', dim(becal_c)[2], ' columnas')
+```
+
+Unir ambos datasets de becal utilizando el número de cédula como clave común entre ambos. El parámetro ```all.y``` indica que se descartarán los registros que existan en x pero no en y
+
+```{r, echo=T}
+ambos_becal = merge(becal, becal_c, by.x="C.I.", by.y="C.I.", all.y=TRUE)
+```
+
+```{r, echo=F}
+paste0('Tamaño del dataset final: ', dim(ambos_becal)[1], ' filas x ', dim(ambos_becal)[2], ' columnas')
+```
+
+---
+
+## Manipulación de data frames con dplyr
+
+```{r, echo=F, warning=F}
+library(dplyr)
+```
+
+Dyplyr es un paquete de funcionalidades de R que permite manipular frames de datos de forma conveniente. Sus principales funciones son:
+
+* `select`: obtener un subconjunto de las columnas seleccionadas del data frame
+
+* `filter`: extraer un subconjunto de filas del data frame seleccionadas a partir de condiciones lógicas
+
+* `arrange`: reordena las filas de un data frame
+
+* `rename`: renombra las variables de un data frame
+
+* `mutate`: agregar nuevas variables (columnas) al data frame
+
+---
+
+## Dplyr: select
+
+```{r, echo=T}
+head(select(becal, C.I., Sexo, Edad))  # head sirve para mostrar las primeras n filas del dataframe
+```
+
+---
+
+## Dplyr: filter
+
+```{r filtro, echo=T}
+dataset_filtrado = filter(becal, Sexo=='Femenino')
+```
+
+```{r, dependson="filtro", echo=F}
+head(select(dataset_filtrado, C.I., Sexo, Edad))
+```
+
+---
+
+## Dplyr: arrange
+
+```{r becal_filtrado, echo=F}
+becal = filter(becal, Edad!="pendiente")
+```
+
+```{r orden, dependson="becal_filtrado", echo=T}
+dataset_ordenado = arrange(becal, Edad)
+```
+
+```{r, dependson="orden", echo=F}
+head(select(dataset_ordenado, C.I., Sexo, Edad), 3)
+```
+
+```{r orden_desc, dependson="becal_filtrado", echo=T}
+dataset_ordenado_desc = arrange(becal, desc(Edad))
+```
+
+```{r, dependson="orden_desc", echo=F}
+head(select(dataset_ordenado_desc, C.I., Sexo, Edad), 3)
+```
+
+---
+
+## Dplyr: rename
+
+```{r renombrado, echo=T}
+becal_renombrado = rename(becal, ci = C.I., sexo = Sexo, edad = Edad)
+```
+
+```{r, dependson="renombrado", echo=F}
+head(select(becal_renombrado, ci, sexo, edad))
+```
+
+---
+
+## Dplyr: mutate
+
+```{r, echo=F}
+source('../../proyecto/utils.R')
+```
+
+```{r, echo=T, warning=F}
+becal_gs = mutate(becal_c, total_gs=5500*convertir_totalgeneral(Total.General))
+head(select(becal_gs, Total.General, total_gs), 5)
 ```

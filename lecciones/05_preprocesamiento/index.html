@@ -190,8 +190,10 @@
 <li><p>dplyr</p>
 
 <ul>
-<li>filter</li>
 <li>select</li>
+<li>filter</li>
+<li>arrange</li>
+<li>rename</li>
 <li>mutate</li>
 </ul></li>
 </ul>
@@ -413,7 +415,10 @@ x
     <h2>str_trim: eliminación de espacios vacíos redundantes</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">becal[1:2,&#39;Condición&#39;]
+    <pre><code class="r">library(stringr)
+</code></pre>
+
+<pre><code class="r">becal[1:2,&#39;Condición&#39;]
 </code></pre>
 
 <pre><code>## [1] &quot;Becario &quot; &quot;Becario &quot;
@@ -472,6 +477,159 @@ x
 </code></pre>
 
 <pre><code>## [1] &quot;Doctorado en Biotecnología Molecular (Universidad de Chile)&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Unir datasets con merge</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>## [1] &quot;Tamaño del dataset becal2017.csv (becal): 914 filas x 36 columnas&quot;
+</code></pre>
+
+<pre><code>## [1] &quot;Tamaño del dataset becal-cobertura.csv (becal_c): 907 filas x 9 columnas&quot;
+</code></pre>
+
+<p>Unir ambos datasets de becal utilizando el número de cédula como clave común entre ambos. El parámetro <code>all.y</code> indica que se descartarán los registros que existan en x pero no en y</p>
+
+<pre><code class="r">ambos_becal = merge(becal, becal_c, by.x=&quot;C.I.&quot;, by.y=&quot;C.I.&quot;, all.y=TRUE)
+</code></pre>
+
+<pre><code>## [1] &quot;Tamaño del dataset final: 907 filas x 44 columnas&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Manipulación de data frames con dplyr</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Dyplyr es un paquete de funcionalidades de R que permite manipular frames de datos de forma conveniente. Sus principales funciones son:</p>
+
+<ul>
+<li><p><code>select</code>: obtener un subconjunto de las columnas seleccionadas del data frame</p></li>
+<li><p><code>filter</code>: extraer un subconjunto de filas del data frame seleccionadas a partir de condiciones lógicas</p></li>
+<li><p><code>arrange</code>: reordena las filas de un data frame</p></li>
+<li><p><code>rename</code>: renombra las variables de un data frame</p></li>
+<li><p><code>mutate</code>: agregar nuevas variables (columnas) al data frame</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Dplyr: select</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">head(select(becal, C.I., Sexo, Edad))  # head sirve para mostrar las primeras n filas del dataframe
+</code></pre>
+
+<pre><code>##        C.I.      Sexo Edad
+## 1  2485187   Femenino   26
+## 2  2271427  Masculino   28
+## 3  1937293  Masculino   32
+## 4  3964773   Femenino   24
+## 5  3209470   Femenino   29
+## 6  2330407   Femenino   30
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Dplyr: filter</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">dataset_filtrado = filter(becal, Sexo==&#39;Femenino&#39;)
+</code></pre>
+
+<pre><code>##        C.I.     Sexo Edad
+## 1  2485187  Femenino   26
+## 2  3964773  Femenino   24
+## 3  3209470  Femenino   29
+## 4  2330407  Femenino   30
+## 5  2241073  Femenino   28
+## 6  2178736  Femenino   29
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Dplyr: arrange</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">dataset_ordenado = arrange(becal, Edad)
+</code></pre>
+
+<pre><code>##        C.I.      Sexo Edad
+## 1  3761383  Masculino   22
+## 2  2182256   Femenino   22
+## 3  3513438   Femenino   23
+</code></pre>
+
+<pre><code class="r">dataset_ordenado_desc = arrange(becal, desc(Edad))
+</code></pre>
+
+<pre><code>##       C.I.     Sexo Edad
+## 1  667357  Femenino   58
+## 2  563373  Femenino   58
+## 3  610370  Femenino   57
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>Dplyr: rename</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">becal_renombrado = rename(becal, ci = C.I., sexo = Sexo, edad = Edad)
+</code></pre>
+
+<pre><code>##          ci      sexo edad
+## 1  2485187   Femenino   26
+## 2  2271427  Masculino   28
+## 3  1937293  Masculino   32
+## 4  3964773   Femenino   24
+## 5  3209470   Femenino   29
+## 6  2330407   Femenino   30
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>Dplyr: mutate</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">becal_gs = mutate(becal_c, total_gs=5500*convertir_totalgeneral(Total.General))
+head(select(becal_gs, Total.General, total_gs), 5)
+</code></pre>
+
+<pre><code>##          Total.General  total_gs
+## 1 $             82.896 455928000
+## 2 $             29.000 159500000
+## 3 $             79.376 436568000
+## 4 $             19.118 105149000
+## 5 $             56.089 308489500
 </code></pre>
 
   </article>
@@ -582,6 +740,48 @@ x
       <a href="#" target="_self" rel='tooltip' 
         data-slide=17 title='Otras funciones de manejo de texto'>
          17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Unir datasets con merge'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Manipulación de data frames con dplyr'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Dplyr: select'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Dplyr: filter'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Dplyr: arrange'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Dplyr: rename'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Dplyr: mutate'>
+         24
       </a>
     </li>
   </ul>

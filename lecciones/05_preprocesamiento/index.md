@@ -108,8 +108,10 @@ Normalmente se realizan algunas de las siguientes acciones para corregir errores
 
 - dplyr
 
-  - filter
   - select
+  - filter
+  - arrange
+  - rename
   - mutate
 
 ---
@@ -337,6 +339,11 @@ grepl('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presenciar de ca
 
 
 ```r
+library(stringr)
+```
+
+
+```r
 becal[1:2,'Condición']
 ```
 
@@ -401,4 +408,160 @@ paste0(becal_c[1,5],' (',becal_c[1,6],')')
 
 ```
 ## [1] "Doctorado en Biotecnología Molecular (Universidad de Chile)"
+```
+
+---
+
+## Unir datasets con merge
+
+
+```
+## [1] "Tamaño del dataset becal2017.csv (becal): 914 filas x 36 columnas"
+```
+
+
+```
+## [1] "Tamaño del dataset becal-cobertura.csv (becal_c): 907 filas x 9 columnas"
+```
+
+Unir ambos datasets de becal utilizando el número de cédula como clave común entre ambos. El parámetro ```all.y``` indica que se descartarán los registros que existan en x pero no en y
+
+
+```r
+ambos_becal = merge(becal, becal_c, by.x="C.I.", by.y="C.I.", all.y=TRUE)
+```
+
+
+```
+## [1] "Tamaño del dataset final: 907 filas x 44 columnas"
+```
+
+---
+
+## Manipulación de data frames con dplyr
+
+
+
+Dyplyr es un paquete de funcionalidades de R que permite manipular frames de datos de forma conveniente. Sus principales funciones son:
+
+* `select`: obtener un subconjunto de las columnas seleccionadas del data frame
+
+* `filter`: extraer un subconjunto de filas del data frame seleccionadas a partir de condiciones lógicas
+
+* `arrange`: reordena las filas de un data frame
+
+* `rename`: renombra las variables de un data frame
+
+* `mutate`: agregar nuevas variables (columnas) al data frame
+
+---
+
+## Dplyr: select
+
+
+```r
+head(select(becal, C.I., Sexo, Edad))  # head sirve para mostrar las primeras n filas del dataframe
+```
+
+```
+##        C.I.      Sexo Edad
+## 1  2485187   Femenino   26
+## 2  2271427  Masculino   28
+## 3  1937293  Masculino   32
+## 4  3964773   Femenino   24
+## 5  3209470   Femenino   29
+## 6  2330407   Femenino   30
+```
+
+---
+
+## Dplyr: filter
+
+
+```r
+dataset_filtrado = filter(becal, Sexo=='Femenino')
+```
+
+
+```
+##        C.I.     Sexo Edad
+## 1  2485187  Femenino   26
+## 2  3964773  Femenino   24
+## 3  3209470  Femenino   29
+## 4  2330407  Femenino   30
+## 5  2241073  Femenino   28
+## 6  2178736  Femenino   29
+```
+
+---
+
+## Dplyr: arrange
+
+
+
+
+```r
+dataset_ordenado = arrange(becal, Edad)
+```
+
+
+```
+##        C.I.      Sexo Edad
+## 1  3761383  Masculino   22
+## 2  2182256   Femenino   22
+## 3  3513438   Femenino   23
+```
+
+
+```r
+dataset_ordenado_desc = arrange(becal, desc(Edad))
+```
+
+
+```
+##       C.I.     Sexo Edad
+## 1  667357  Femenino   58
+## 2  563373  Femenino   58
+## 3  610370  Femenino   57
+```
+
+---
+
+## Dplyr: rename
+
+
+```r
+becal_renombrado = rename(becal, ci = C.I., sexo = Sexo, edad = Edad)
+```
+
+
+```
+##          ci      sexo edad
+## 1  2485187   Femenino   26
+## 2  2271427  Masculino   28
+## 3  1937293  Masculino   32
+## 4  3964773   Femenino   24
+## 5  3209470   Femenino   29
+## 6  2330407   Femenino   30
+```
+
+---
+
+## Dplyr: mutate
+
+
+
+
+```r
+becal_gs = mutate(becal_c, total_gs=5500*convertir_totalgeneral(Total.General))
+head(select(becal_gs, Total.General, total_gs), 5)
+```
+
+```
+##          Total.General  total_gs
+## 1 $             82.896 455928000
+## 2 $             29.000 159500000
+## 3 $             79.376 436568000
+## 4 $             19.118 105149000
+## 5 $             56.089 308489500
 ```
