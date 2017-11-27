@@ -70,3 +70,5 @@ for (i in seq_len(nrow(x))) {
   print(x[i, 2])
 }
 seq_len(nrow(x))
+
+#Teresa
