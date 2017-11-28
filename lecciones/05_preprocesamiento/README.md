@@ -30,7 +30,7 @@ Con este trabajo empezamos nuestro análisis del dataset proveído por la instit
 
 #### Instrucciones
 
-* Utilizando R-studio crear un proyecto R dentro de la carpeta _proyecto_;
+* Utilizando R-studio crear un proyecto R, llamado _Becal_, dentro de la carpeta _proyecto_;
 * Desde R-studio crear un script R y guardarlo dentro de la carpeta _proyecto_ con el nombre _preprocesamiento-becal.R_. Sugerencia: utilizar el template **template_tarea1.R** que se encuentra en la carpeta _proyecto_;
 * Utilizando el lenguaje R importar ambos datasets y **realizar las siguientes tareas de limpieza y pre-procesamiento**:
 	+ Dataset: _becal2017.csv_
