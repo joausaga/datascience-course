@@ -35,7 +35,7 @@ En data science los tipo de datos tradicionales son:
 
 ## Estructura y representación de los datos
 
-En data science los datos se estructuran comúnmente en **data frames**, los cuales se componen de filas y columnas 
+En data science los datos se estructuran comúnmente de manera tabular en filas y columnas 
 
 <img class=center src="../assets/img/dataframe-a.png" height=450 />
 
@@ -163,7 +163,7 @@ Un caso común de uso es la presentación de resultados de censos
 
 ## Análisis Causal
 
-**Objetivo**: Investigar que el comportamiento de una variable al realizar modificaciones sobre otras variables.
+**Objetivo**: Investigar que ocurren con el comportamiento de una variable al modificar otras variables.
 
 * Una condición fundamental para identificar causalidad es la **asignación aleatoria**
 * El control de la mayor cantidad posible de factores es también importante para inferir causalidad
@@ -178,7 +178,7 @@ Un caso común de uso es la presentación de resultados de censos
 <img class=center src="../assets/img/example-causal-analysis.png" height=450 />
 
 
-[Inuence of sex role stereotypes on personnel decisions](http://fcrstemalgebra1.pbworks.com/w/file/fetch/82019231/1e.%20Sex%20role%20stereotypes.pdf)
+[Influence of sex role stereotypes on personnel decisions](http://fcrstemalgebra1.pbworks.com/w/file/fetch/82019231/1e.%20Sex%20role%20stereotypes.pdf)
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Git para Data Scientists
+title       : Git para Data Scientists
 subtitle    : Curso de Data Science con Impacto Social
 author      : Jorge Saldivar
 job         : Universidad Católica "Nuestra Señora de la Asunción"
@@ -150,16 +150,155 @@ Hacer clic en el botón **Push** del menú superior y luego clic en el botón **
 
 ## Fork
 
-...
+Crear una copia de algún repositorio existen a nuestra cuenta Github
+
+<img class=center src="../assets/img/github_fork2.png" height=350 />
+
+--- &twocol
+
+## Conectar SourceTree a Github
+
+*** =left
+
+1. Clic en "rueda" de configuración en la margen superior derecha de la interfaz y luego clic en **Account**
+
+2. Clic en el botón **Add** de la ventana emergente
+
+3. Elegir la opción Github de la lista de **Hosts**
+
+4. Clic en el botón **Connect Account** e introducir las credenciales del usuario Github a conectar
+
+*** =right
+
+<img class=center src="../assets/img/connect_github_sourcetree.png" height=300 />
 
 ---
 
-## Recibir cambios (pull)
+## Clonar repositorio remoto
 
-...
+1. Clic en la opción **Remote** en la marge izquierda del menú principal
+
+2. Elegir de la lista el repositorio a clonar y clic en **Clone**
+
+Al finalizar el proceso de clonación el repositorio recién clonado debería aparecer listado al hacer clic sobre la opción **Local** ubicada a la izquiera de la opción Remote en el menú principal
+
+<img class=center src="../assets/img/clone_repo_sourcetree.png" height=200 />
 
 ---
 
-## Markdown
+## Sincronizar cambios (pull)
 
-...
+Para sincronizar el reporitorio local con los últimos cambios en el repositorio original debemos primero agregar este repositorio, normalmente llamado **upstream**, a nuestro repositorio local
+
+<img class=center src="../assets/img/add_upstream_repo.png" height=500 />
+
+---
+
+## Sincronizar cambios (pull)
+
+Luego de agregar el repositorio upstream, seguir los siguientes pasos:
+
+1. Clic en el botón **Pull** del menú superior
+
+2. Elegir la opción **upstream** en la lista **Pull from repository**
+
+3. Elegir la opción **master** en la lista **Remote branch to pull**
+
+4. Clic en el botón **OK**
+
+<img class=center src="../assets/img/pull_sourcetree.png" height=250 />
+
+---
+
+## Lenguaje Markdown
+
+<q>Markdown es un lenguaje de marcas ligero compuesto por un conjunto de sintaxis que permiten dar formato al texto.</q>
+
+[Markdown](https://es.wikipedia.org/wiki/Markdown)
+
+---
+
+## Sintaxis para encabezados
+
+<br>
+
+```markdown
+## Esto es un título
+```
+## Esto es un título
+
+<br>
+
+```markdown
+### Esto es un subtítulo
+```
+### Esto es un subtítulo
+
+---
+
+## Sintaxis para listas
+
+```markdown
+* Item 1
+* Item 2
+* Item 3
+```
+
+* Item 1
+* Item 2
+* Item 3
+
+```markdown
+1. Item 1
+2. Item 2
+3. Item 3
+```
+
+1. Item 1
+2. Item 2
+3. Item 3
+
+---
+
+## Sintaxis para enlaces e imágenes
+
+```markdown
+[Wikipedia](https://www.wikipedia.org)
+```
+
+[Wikipedia](https://www.wikipedia.org)
+
+<br>
+
+```markdown
+![Logo Google](https://www.blog.google/static/blog/images/google-200x200.7714256da16f.png)
+```
+
+![Logo Google](https://www.blog.google/static/blog/images/google-200x200.7714256da16f.png)
+
+---
+
+## Sintaxis para formato de texto
+
+```markdown
+*cursiva*
+```
+
+*cursiva*
+
+```markdown
+**negrita**
+```
+
+**negrita**
+
+```markdown
+~~tachado~~
+```
+
+~~tachado~~
+
+
+### Referencia
+
+[Lenguage Markdown](http://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
