@@ -38,23 +38,23 @@ Lección sobre técnicas para la realización de análisis exploratorio de datos
 
 Con este trabajo práctico realizaremos una primera aproximación a la la política nacional de becas para estudios en el extranjero. Por medio de una análisis exploratorio de los datos investigaremos los siguientes temas:
 
-1. Distribución de becarios por edad, sexo, sector laboral (público/privado), con/sin goce de sueldo, ciudad y departamento de origen, ciudad y departamento de residencia;
-2. Distribución de becas por tipo (maestría/doctorado) y disciplina;
-3. Distribución de becas por país, ciudad, y universidad de destino;
-4. Cantidad de becarios por rango de ranking de universidad de destino (top 10, top 50, top 100, top 150, top 200, ranking mayor a 200;
-5. Resumen (min, max, mediana, promedio), quantiles (0.25, 0.75), desviación estándar del tiempo de duración de los estudios;
-6. Resumen (min, max, mediana, promedio), desviación estándar de montos de beca;
-7. Percentiles de cobertura 25%, 50%, 75%, 100%;
-8. Percentiles de completitud de estudios 25%, 50%, 75%, 100%;
-9. Distribución de becas por nombre de curso de posgrado;
-10. Distribución de montos de coberturas;
-11. Top-10 de mayores montos de coberturas;
-12. Análisis de correlación entre montos de cobertura y ranking de universidades.
+1. Eliminar registros cuyo tipo de estudio no sea maestría o doctorado;
+2. Distribución de becarios por edad, sexo, sector laboral (público/privado), con/sin goce de sueldo, ciudad y departamento de origen, ciudad y departamento de residencia;
+3. Distribución de becas por tipo (maestría/doctorado) y disciplina;
+4. Distribución de becas por país, ciudad, y universidad de destino;
+5. Distribución de becas por área de la ciencia;
+6. Cantidad de becarios por rango de ranking de universidad de destino (top 10, top 50, top 100, top 150, top 200, ranking mayor a 200;
+7. Resumen (min, max, mediana, promedio), quantiles (0.25, 0.75), desviación estándar del tiempo de duración de los estudios;
+8. Resumen (min, max, mediana, promedio), desviación estándar de montos de beca;
+9. Percentiles de cobertura 25%, 50%, 75%, 100%;
+10. Top-10 de mayores montos de coberturas;
+11. Percentiles de completitud de estudios 25%, 50%, 75%, 100%;
+12. Correlación entre montos de cobertura y ranking de universidades
 
 
 #### Instrucciones
 
-* En R-studio y como parte del proyecto _Becal_ creado anteriormente crear un documento R Markdown y guardarlo dentro de la carpeta _proyecto_ con el nombre _eda-becal.R_;
+* En R-studio y como parte del proyecto _Becal_ creado anteriormente crear un documento R Markdown y guardarlo dentro de la carpeta _proyecto_ con el nombre _eda-becal.Rmd_;
 * Utilizando el lenguaje R realizar los análisis mencionados más arriba y reportarlos en utilizando el lenguaje Markdown. La elección de los elementos de visualización (gráficos, tablas, etc) corre por parte del alumno;
 * Hacer push a github del reporte;
 * Enviar por mail el link al reporte creado.
