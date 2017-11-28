@@ -31,10 +31,10 @@ Con este trabajo empezamos nuestro análisis del dataset proveído por la instit
 #### Instrucciones
 
 * Utilizando R-studio crear un proyecto R dentro de la carpeta _proyecto_;
-* Desde R-studio crear un script R y guardarlo dentro de la carpeta _proyecto_ con el nombre _preprocesamiento-becal.R_;
+* Desde R-studio crear un script R y guardarlo dentro de la carpeta _proyecto_ con el nombre _preprocesamiento-becal.R_. Sugerencia: utilizar el template **template_tarea1.R** que se encuentra en la carpeta _proyecto_;
 * Utilizando el lenguaje R importar ambos datasets y **realizar las siguientes tareas de limpieza y pre-procesamiento**:
 	+ Dataset: _becal2017.csv_
-		1. Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos, sin puntos, y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, no /, etc.). Sugerencia: Utilizar funciones utilitarias de **utilis.R**
+		1. Renombrar las columnas al siguiente formato: nombres en minúscula sin espacios vacíos, sin puntos, y conteniendo solo caracteres a-z sin artículos (no acentos, no ñs, no paréntesis, no /, etc.). Sugerencia: Utilizar funciones utilitarias de **utilis.R** que se encuentra dentro de la carpeta _proyecto_
 		2. Renombrar las columnas llamdas 'n' de la siguiente manera: columna 1 = 'nroreg', columna 3 = 'nroconv', columna 20 = 'nrorankuni', columna 22 = 'nrorankcur'
 		3. Eliminar los espacios al final de la cadena que indica la condición del becario y eliminar los registros cuya condición sea _'No becario'_ o _'Pendiente'_
 		4. Convertir la fecha de adjudicación al formato dd/mm/yyyy
