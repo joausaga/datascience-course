@@ -317,7 +317,7 @@ becal_c[c(1,210,843),'Total.General']
 ```
 
 ```r
-grep('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presenciar de caracter euro
+grep('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presencia del caracter euro
 ```
 
 ```
@@ -326,7 +326,7 @@ grep('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presenciar de car
 
 
 ```r
-grepl('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presenciar de caracter euro
+grepl('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presencia del caracter euro
 ```
 
 ```

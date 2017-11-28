@@ -211,11 +211,11 @@ becal_c = read.csv('../../proyecto/data/becal-cobertura.csv', header = T, string
 
 ```{r, dependson="becalc", echo=T}
 becal_c[c(1,210,843),'Total.General']
-grep('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presenciar de caracter euro
+grep('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presencia del caracter euro
 ```
 
 ```{r, dependson="becalc", echo=T}
-grepl('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presenciar de caracter euro
+grepl('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presencia del caracter euro
 ```
 
 ---
