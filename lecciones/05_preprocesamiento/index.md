@@ -252,7 +252,7 @@ toupper(becal[,'Sexo'])[1:5]   # convertir todas las letras de la palabra a may√
 
 ---
 
-## strplit: divir texto
+## strsplit: divir texto
 
 
 ```r

@@ -181,7 +181,7 @@ toupper(becal[,'Sexo'])[1:5]   # convertir todas las letras de la palabra a may√
 
 ---
 
-## strplit: divir texto
+## strsplit: divir texto
 
 ```{r, dependson="becal", echo=T}
 becal[1:2,'Fecha.firma.de.Contrato']
