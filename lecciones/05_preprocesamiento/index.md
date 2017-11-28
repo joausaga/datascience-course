@@ -442,7 +442,7 @@ ambos_becal = merge(becal, becal_c, by.x="C.I.", by.y="C.I.", all.y=TRUE)
 
 
 
-Dyplyr es un paquete de funcionalidades de R que permite manipular frames de datos de forma conveniente. Sus principales funciones son:
+Dplyr es un paquete de funcionalidades de R que permite manipular frames de datos de forma conveniente. Sus principales funciones son:
 
 * `select`: obtener un subconjunto de las columnas seleccionadas del data frame
 
