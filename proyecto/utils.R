@@ -57,6 +57,15 @@ limpiar_nombres = function(nombre) {
   return (nombre)
 }
 
+# Función que elimina acentos, espacios vacios redundantes, y convierte texto a minúscula
+normalizar_texto = function(texto) {
+  texto = tolower(texto)  # pasar texto a minusculas
+  texto = stri_trans_general(texto, 'latin-ascii')  # remover acentos
+  #texto = gsub('[^a-z\\s]', '', texto)  # remover caracteres no alfabeticos excepto espacio
+  texto = str_trim(texto) # elimina espacios vacios de adelante y atrás
+  return (texto)
+}
+
 # Función que calcula el nivel de completitud del estudio. Recibe como parámetros la fecha de 
 # inicio de la cobertura y la duración del estudio. Devuelve un número de 0-100 indicando
 # el porcentaje de completitud del estudio.
