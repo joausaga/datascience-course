@@ -2,6 +2,8 @@
 # curso: data science con impacto social
 # contenido: funciones utilitarias para la solucion de tareas
 
+library(stringi)
+
 # Funcion que convierte montos expresados en variables del tipo caracter a montos del tipo entero.
 # Para ello convierte los montos en euros a dolaresm, utilizando el cambio 1E->1.17USD, además
 # elimina los signos de dolar y euro así como también los puntos y espacios vacios. Finalmente,
