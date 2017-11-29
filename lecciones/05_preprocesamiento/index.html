@@ -336,7 +336,7 @@ x
 
 <slide class="" id="slide-12" style="background:;">
   <hgroup>
-    <h2>strplit: divir texto</h2>
+    <h2>strsplit: divir texto</h2>
   </hgroup>
   <article data-timings="">
     <pre><code class="r">becal[1:2,&#39;Fecha.firma.de.Contrato&#39;]
@@ -394,13 +394,13 @@ x
 <pre><code>## [1] &quot;$             82.896&quot;  &quot;$             3 0.668&quot; &quot;€ 23.570,05&quot;
 </code></pre>
 
-<pre><code class="r">grep(&#39;€&#39;,becal_c[c(1,210,843),&#39;Total.General&#39;])  # buscar la presenciar de caracter euro
+<pre><code class="r">grep(&#39;€&#39;,becal_c[c(1,210,843),&#39;Total.General&#39;])  # buscar la presencia del caracter euro
 </code></pre>
 
 <pre><code>## [1] 3
 </code></pre>
 
-<pre><code class="r">grepl(&#39;€&#39;,becal_c[c(1,210,843),&#39;Total.General&#39;])  # buscar la presenciar de caracter euro
+<pre><code class="r">grepl(&#39;€&#39;,becal_c[c(1,210,843),&#39;Total.General&#39;])  # buscar la presencia del caracter euro
 </code></pre>
 
 <pre><code>## [1] FALSE FALSE  TRUE
@@ -511,7 +511,7 @@ x
     <h2>Manipulación de data frames con dplyr</h2>
   </hgroup>
   <article data-timings="">
-    <p>Dyplyr es un paquete de funcionalidades de R que permite manipular frames de datos de forma conveniente. Sus principales funciones son:</p>
+    <p>Dplyr es un paquete de funcionalidades de R que permite manipular frames de datos de forma conveniente. Sus principales funciones son:</p>
 
 <ul>
 <li><p><code>select</code>: obtener un subconjunto de las columnas seleccionadas del data frame</p></li>
@@ -708,7 +708,7 @@ head(select(becal_gs, Total.General, total_gs), 5)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=12 title='strplit: divir texto'>
+        data-slide=12 title='strsplit: divir texto'>
          12
       </a>
     </li>

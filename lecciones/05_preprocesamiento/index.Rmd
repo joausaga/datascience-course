@@ -181,7 +181,7 @@ toupper(becal[,'Sexo'])[1:5]   # convertir todas las letras de la palabra a may�
 
 ---
 
-## strplit: divir texto
+## strsplit: divir texto
 
 ```{r, dependson="becal", echo=T}
 becal[1:2,'Fecha.firma.de.Contrato']
@@ -211,11 +211,11 @@ becal_c = read.csv('../../proyecto/data/becal-cobertura.csv', header = T, string
 
 ```{r, dependson="becalc", echo=T}
 becal_c[c(1,210,843),'Total.General']
-grep('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presenciar de caracter euro
+grep('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presencia del caracter euro
 ```
 
 ```{r, dependson="becalc", echo=T}
-grepl('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presenciar de caracter euro
+grepl('€',becal_c[c(1,210,843),'Total.General'])  # buscar la presencia del caracter euro
 ```
 
 ---
@@ -282,7 +282,7 @@ paste0('Tamaño del dataset final: ', dim(ambos_becal)[1], ' filas x ', dim(ambo
 library(dplyr)
 ```
 
-Dyplyr es un paquete de funcionalidades de R que permite manipular frames de datos de forma conveniente. Sus principales funciones son:
+Dplyr es un paquete de funcionalidades de R que permite manipular frames de datos de forma conveniente. Sus principales funciones son:
 
 * `select`: obtener un subconjunto de las columnas seleccionadas del data frame
 
