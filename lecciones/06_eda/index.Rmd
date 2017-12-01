@@ -1,0 +1,223 @@
+---
+title       : Análisis Exploratorio
+subtitle    : Curso de Data Science con Impacto Social
+author      : Jorge Saldivar
+job         : Universidad Católica "Nuestra Señora de la Asunción"
+logo        : logo-uca.png
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+url:
+  lib: ../libraries
+  assets: ../assets
+widgets     : [mathjax]     # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## ¿Qué es el Análisis Exploratorio de Datos?
+
+<q>Es un método para entender los datos y sus relaciones a través de herramientas estadísticas y gráficas</q>
+
+---
+
+## Análisis Exploratorio de Datos
+
+* Normalmente se lleva a cabo antes de análisis estadísticos más formales y rigurosos
+* Puede revelar nuevas preguntas e ideas o incluso servir como punto de partida para la construcción de modelos predictivos
+* Sirve como barrera de protección ante datos de mala calidad
+
+<img class=center src="../assets/img/eda.jpg" height=320 />
+
+---
+
+## Objetivos
+
+* Entender la distribución de los valores que toma una variable
+
+* Verificar la relación entre variables
+
+* Validar hipótesis de manera informal
+
+* Comprobar suposiciones e intuiciones acerca de los datos
+
+---
+
+## ¿Qué hacer primero?
+
+* El primer paso en un análisis exploratorio es entender el comportamiento de las variables que son centrales para el trabajo.
+
+* Esto requerirá la creación de resumenes y gráficos que ilustren los valores que toman estas variables.
+
+* Inicialmente se exploran las variables de interés una a una
+
+---
+
+## Exploración de una variable
+
+* Utilizando los datos de becal exploremos, por ejemplo, la distribución de la **edad** de los beneficiarios
+
+```{r, becal, echo=F}
+becal = read.csv('../../proyecto/data/becal_completo.csv')
+outlier = becal[1,]
+outlier$edad = 120
+becal_m = rbind(becal,outlier)
+```
+```{r, echo=T, fig.height=5, fig.align='center', dependson='becal'}
+hist(becal_m$edad, main=paste("Distribución de becarios por edad (n=",nrow(becal_m),")"), 
+                            ylab="Frecuencia", xlab="Edad", col = "red")
+```
+
+---
+
+## Prestar atención a anomalías y outliers
+
+* Difícil que alguien tenga 120 años, más difícil aún que esa persona pida una beca
+
+* Casos como esto indican la presencia de valores extremos en el data set, así como también, datos de mala calidad o limitaciones en los datos. 
+
+* En situaciones de este tipo se debe inspeccionar el dato y tomar acciones al respecto. Por ejemplo, se podría eliminar el registro, ajustar el valor, o remplazarlo.
+
+```{r, echo=F, fig.height=4.5, fig.align='center', dependson='becal'}
+hist(becal$edad, main=paste("Distribución de becarios por edad - sin outlier (n=",nrow(becal),")"), 
+    ylab="Frecuencia", xlab="Edad", col = "red")
+```
+
+---
+
+## Prestar atención a anomalías y outliers
+
+* Ejemplo **sin eliminar el outlier** pero solo limitando los valores del eje x a través del parámetro ```xlim``` de la función ```hist```
+
+```{r, echo=T, fig.height=5, fig.align='center', dependson='becal'}
+hist(becal_m$edad, main=paste("Distribución de becarios por edad (n=",nrow(becal_m),")"), 
+    ylab="Frecuencia", xlab="Edad", col = "red", xlim = c(20, 80))
+```
+
+---
+
+## Estadísticas descriptivas para variables numéricas
+
+* La distribución de valores en una variable se puede entender también por medio de estadísticas descriptivas (promedio, mediana, mínimo, máximo, etc.) 
+
+* Una manera rápida de acceder a estas estadísticas es por medio del comando ```summary```
+
+```{r, echo=T}
+summary(becal$edad)
+```
+
+---
+
+## Cuantiles
+
+* Otra manera de inspeccionar como se distribuyen los valores de una variable es observando los cuantiles, que son puntos que dividen la distribución en cuatro partes
+
+* En R los cuantiles de una distribución se calculan por medio de la función ```quantile```
+
+```{r, echo=T}
+quantile(becal$edad)
+```
+
+* También puedo especificarle puntos específicos de la distribución que me gustaría inspeccionar
+
+```{r, echo=T}
+quantile(becal$edad, probs=c(0.40,0.65,0.90))
+```
+
+---
+
+## Variabilidad de datos
+
+* Un aspecto importante al momento de inspeccionar una variable es medir la dispersión de los datos con respecto al valor medio de la distribución
+
+* Una primera medida es calcular la **varianza** por medio de la función ```var``` 
+
+```{r, echo=T}
+var(becal$edad)
+```
+
+* Otra forma de conocer la disperción es a través de la **desviación estándar** que es la raiz cuadrada de la varianza y se calcula con la función ```sd``` (o ```sqrt(var(becal$edad))```)
+
+```{r, echo=T}
+sd(becal$edad)
+```
+
+---
+
+## Distribución de variables categóricas
+
+* La función ``table`` sirve para entender la cantidad de valores por categoría en variables categóricas
+
+* Por ejemplo, podemos averiguar la distribución de beneficiarios por ranking de universidad
+
+```{r, echo=T}
+table(becal$categoriauni)
+```
+
+---
+
+## Distribución de variables categóricas
+
+* Gráficamente podemos estudiar la distribución de valores en variables categóricas utilizando el resultado de la función ```table``` en gráficos de barra
+
+```{r, echo=T, fig.height=4.5, fig.align='center', dependson='becal'}
+barplot(table(becal$categoriauni),
+        main=paste("Becarios por rango de ranking de universidad (n=",nrow(becal),")"), 
+        ylab="Total", xlab="Rango de ranking", col="blue")
+```
+
+---
+
+## Distribución de variables categóricas
+
+* Podríamos mejorar la gráfica eliminando la categoría **sin dato**, que no nos interesa por el momento, y ordenando las categorías de mayor a menor
+
+```{r, echo=F, warning=F}
+library(dplyr)
+```
+
+```{r, echo=T, fig.height=4, fig.align='center', dependson='becal'}
+becal_limpio = subset(becal, categoriauni != "sin dato") # elimina los registros "sin dato"
+dis_categoriauni = table(droplevels(becal_limpio$categoriauni))
+categoria_ordenadas = sort(dis_categoriauni, decreasing = T)  # ordena las categorias de mayor a menor
+barplot(categoria_ordenadas, main=paste("Becarios por rango de ranking de universidad (n=",
+        nrow(becal_limpio),")"), ylab="Total", xlab="Rango de ranking", col="blue")
+```
+
+---
+
+## Exploración de dos variables
+
+* Utilizando los datos de becal exploremos, por ejemplo, la asociación entre meses de duración y costo del curso
+
+* Gráficamente podemos utilizar **scatter plots** para examinar la relación entre estas variables
+
+```{r, echo=T, fig.height=3.5, fig.align='center'}
+plot(becal$mesesdeduraciondeestudios, becal$totalgralusd, 
+     ylab="Costo Total en USD", xlab="Duración Estudio en Meses",
+     main="Meses de Duración por Costo de Estudio")
+```
+
+---
+
+## Correlación
+
+* En estadística una de la técnicas más comunes para el estudio de asociaciones entre variables es la **correlación**
+
+* La correlación mide que tanto dos variables se encuentran linealmente relacionadas. A diferencia de la covarianza que determina simplemente si dos variables cambian a la par, la correlación mide la fuerza de la relación entre ellas
+
+* El resultado de una análisis de correlación es un número entre -1 y 1. Los extremos indican correlación perfecta entre las variables. Una correlación negativa indica que las variables cambian en sentido contrario, mientras que una correlación positiva demuestra que ambas variables cambian en la misma dirección
+
+* En R correlación se calcula por medio de la función ``cor``
+
+```{r, echo=F, becal_sin_na, dependson='becal'}
+becal_sin_na = filter(becal, totalgralusd != 'NA')
+```
+
+```{r, echo=T, dependson='becal_sin_na'}
+cor(becal_sin_na$mesesdeduraciondeestudios, becal_sin_na$totalgralusd)
+```

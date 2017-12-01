@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Análisis Exploratorio</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Análisis Exploratorio">
+  <meta name="author" content="Jorge Saldivar">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../libraries/frameworks/io2012/js/slides" 
+    src="../libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="../assets/img/logo-uca.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Análisis Exploratorio</h1>
+    <h2>Curso de Data Science con Impacto Social</h2>
+    <p>Jorge Saldivar<br/>Universidad Católica &quot;Nuestra Señora de la Asunción&quot;</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>¿Qué es el Análisis Exploratorio de Datos?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><q>Es un método para entender los datos y sus relaciones a través de herramientas estadísticas y gráficas</q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Análisis Exploratorio de Datos</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Normalmente se lleva a cabo antes de análisis estadísticos más formales y rigurosos</li>
+<li>Puede revelar nuevas preguntas e ideas o incluso servir como punto de partida para la construcción de modelos predictivos</li>
+<li>Sirve como barrera de protección ante datos de mala calidad</li>
+</ul>
+
+<p><img class=center src="../assets/img/eda.jpg" height=320 /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Objetivos</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Entender la distribución de los valores que toma una variable</p></li>
+<li><p>Verificar la relación entre variables</p></li>
+<li><p>Validar hipótesis de manera informal</p></li>
+<li><p>Comprobar suposiciones e intuiciones acerca de los datos</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>¿Qué hacer primero?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>El primer paso en un análisis exploratorio es entender el comportamiento de las variables que son centrales para el trabajo.</p></li>
+<li><p>Esto requerirá la creación de resumenes y gráficos que ilustren los valores que toman estas variables.</p></li>
+<li><p>Inicialmente se exploran las variables de interés una a una</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Exploración de una variable</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Utilizando los datos de becal exploremos, por ejemplo, la distribución de la <strong>edad</strong> de los beneficiarios</li>
+</ul>
+
+<pre><code class="r">hist(becal_m$edad, main=paste(&quot;Distribución de becarios por edad (n=&quot;,nrow(becal_m),&quot;)&quot;), 
+                            ylab=&quot;Frecuencia&quot;, xlab=&quot;Edad&quot;, col = &quot;red&quot;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Prestar atención a anomalías y outliers</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Difícil que alguien tenga 120 años, más difícil aún que esa persona pida una beca</p></li>
+<li><p>Casos como esto indican la presencia de valores extremos en el data set, así como también, datos de mala calidad o limitaciones en los datos. </p></li>
+<li><p>En situaciones de este tipo se debe inspeccionar el dato y tomar acciones al respecto. Por ejemplo, se podría eliminar el registro, ajustar el valor, o remplazarlo.</p></li>
+</ul>
+
+<p><img src="assets/fig/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Prestar atención a anomalías y outliers</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Ejemplo <strong>sin eliminar el outlier</strong> pero solo limitando los valores del eje x a través del parámetro <code>xlim</code> de la función <code>hist</code></li>
+</ul>
+
+<pre><code class="r">hist(becal_m$edad, main=paste(&quot;Distribución de becarios por edad (n=&quot;,nrow(becal_m),&quot;)&quot;), 
+    ylab=&quot;Frecuencia&quot;, xlab=&quot;Edad&quot;, col = &quot;red&quot;, xlim = c(20, 80))
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Estadísticas descriptivas para variables numéricas</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>La distribución de valores en una variable se puede entender también por medio de estadísticas descriptivas (promedio, mediana, mínimo, máximo, etc.) </p></li>
+<li><p>Una manera rápida de acceder a estas estadísticas es por medio del comando <code>summary</code></p></li>
+</ul>
+
+<pre><code class="r">summary(becal$edad)
+</code></pre>
+
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   22.00   26.00   29.00   30.13   33.00   58.00
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Cuantiles</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Otra manera de inspeccionar como se distribuyen los valores de una variable es observando los cuantiles, que son puntos que dividen la distribución en cuatro partes</p></li>
+<li><p>En R los cuantiles de una distribución se calculan por medio de la función <code>quantile</code></p></li>
+</ul>
+
+<pre><code class="r">quantile(becal$edad)
+</code></pre>
+
+<pre><code>##   0%  25%  50%  75% 100% 
+##   22   26   29   33   58
+</code></pre>
+
+<ul>
+<li>También puedo especificarle puntos específicos de la distribución que me gustaría inspeccionar</li>
+</ul>
+
+<pre><code class="r">quantile(becal$edad, probs=c(0.40,0.65,0.90))
+</code></pre>
+
+<pre><code>## 40% 65% 90% 
+##  28  31  35
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Variabilidad de datos</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Un aspecto importante al momento de inspeccionar una variable es medir la dispersión de los datos con respecto al valor medio de la distribución</p></li>
+<li><p>Una primera medida es calcular la <strong>varianza</strong> por medio de la función <code>var</code> </p></li>
+</ul>
+
+<pre><code class="r">var(becal$edad)
+</code></pre>
+
+<pre><code>## [1] 27.01779
+</code></pre>
+
+<ul>
+<li>Otra forma de conocer la disperción es a través de la <strong>desviación estándar</strong> que es la raiz cuadrada de la varianza y se calcula con la función <code>sd</code> (o <code>sqrt(var(becal$edad))</code>)</li>
+</ul>
+
+<pre><code class="r">sd(becal$edad)
+</code></pre>
+
+<pre><code>## [1] 5.197864
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Distribución de variables categóricas</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>La función <code>table</code> sirve para entender la cantidad de valores por categoría en variables categóricas</p></li>
+<li><p>Por ejemplo, podemos averiguar la distribución de beneficiarios por ranking de universidad</p></li>
+</ul>
+
+<pre><code class="r">table(becal$categoriauni)
+</code></pre>
+
+<pre><code>## 
+##  mas_200 sin dato   top_10  top_100  top_150  top_200   top_50 
+##      231      127       17       34       89      211       95
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Distribución de variables categóricas</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Gráficamente podemos estudiar la distribución de valores en variables categóricas utilizando el resultado de la función <code>table</code> en gráficos de barra</li>
+</ul>
+
+<pre><code class="r">barplot(table(becal$categoriauni),
+        main=paste(&quot;Becarios por rango de ranking de universidad (n=&quot;,nrow(becal),&quot;)&quot;), 
+        ylab=&quot;Total&quot;, xlab=&quot;Rango de ranking&quot;, col=&quot;blue&quot;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-10-1.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Distribución de variables categóricas</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Podríamos mejorar la gráfica eliminando la categoría <strong>sin dato</strong>, que no nos interesa por el momento, y ordenando las categorías de mayor a menor</li>
+</ul>
+
+<pre><code class="r">becal_limpio = subset(becal, categoriauni != &quot;sin dato&quot;) # elimina los registros &quot;sin dato&quot;
+dis_categoriauni = table(droplevels(becal_limpio$categoriauni))
+categoria_ordenadas = sort(dis_categoriauni, decreasing = T)  # ordena las categorias de mayor a menor
+barplot(categoria_ordenadas, main=paste(&quot;Becarios por rango de ranking de universidad (n=&quot;,
+        nrow(becal_limpio),&quot;)&quot;), ylab=&quot;Total&quot;, xlab=&quot;Rango de ranking&quot;, col=&quot;blue&quot;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-12-1.png" title="plot of chunk unnamed-chunk-12" alt="plot of chunk unnamed-chunk-12" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Exploración de dos variables</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Utilizando los datos de becal exploremos, por ejemplo, la asociación entre meses de duración y costo del curso</p></li>
+<li><p>Gráficamente podemos utilizar <strong>scatter plots</strong> para examinar la relación entre estas variables</p></li>
+</ul>
+
+<pre><code class="r">plot(becal$mesesdeduraciondeestudios, becal$totalgralusd, 
+     ylab=&quot;Costo Total en USD&quot;, xlab=&quot;Duración Estudio en Meses&quot;,
+     main=&quot;Meses de Duración por Costo de Estudio&quot;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-13-1.png" title="plot of chunk unnamed-chunk-13" alt="plot of chunk unnamed-chunk-13" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Correlación</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>En estadística una de la técnicas más comunes para el estudio de asociaciones entre variables es la <strong>correlación</strong></p></li>
+<li><p>La correlación mide que tanto dos variables se encuentran linealmente relacionadas. A diferencia de la covarianza que determina simplemente si dos variables cambian a la par, la correlación mide la fuerza de la relación entre ellas</p></li>
+<li><p>El resultado de una análisis de correlación es un número entre -1 y 1. Los extremos indican correlación perfecta entre las variables. Una correlación negativa indica que las variables cambian en sentido contrario, mientras que una correlación positiva demuestra que ambas variables cambian en la misma dirección</p></li>
+<li><p>En R correlación se calcula por medio de la función <code>cor</code></p></li>
+</ul>
+
+<pre><code class="r">cor(becal_sin_na$mesesdeduraciondeestudios, becal_sin_na$totalgralusd)
+</code></pre>
+
+<pre><code>## [1] 0.7211575
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='¿Qué es el Análisis Exploratorio de Datos?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Análisis Exploratorio de Datos'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Objetivos'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='¿Qué hacer primero?'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Exploración de una variable'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Prestar atención a anomalías y outliers'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Prestar atención a anomalías y outliers'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Estadísticas descriptivas para variables numéricas'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Cuantiles'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Variabilidad de datos'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Distribución de variables categóricas'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Distribución de variables categóricas'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Distribución de variables categóricas'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Exploración de dos variables'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Correlación'>
+         15
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="../libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="../libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

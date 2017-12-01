@@ -8,29 +8,17 @@ Lección sobre técnicas para la realización de análisis exploratorio de datos
 
 1. Proceso de análisis de datos
 2. Visualización de datos
-	+ Histogramas
-	+ Frecuencia
-	+ Linea
-	+ Box plots
-	+ Scatter plots
-3. Tendencia central
-	+ Promedio
-	+ Mediana
-	+ Modo
-4. Resumen de datos
+	+ Histogramas (1 variable)
+	+ Box plots (1 variable)
+	+ Scatter plots (2 variables)
+3. Estadísticas descriptivas
 	+ Min, Max, Mediana, Promedio, Rango
 	+ Quantiles (Percentiles)
 	+ Resumiento datos categóricos con _table()_
-5. Variabilidad
+4. Variabilidad
 	+ Varianza
 	+ Desviación estándar
-6. Estandarizacion
-	+ Z-score
-7. Distribucion normal
-	+ Tabla Z
-8. Distribución muestral
-	+ Teorema central del límite
-9. Correlación
+5. Correlación
 
 ## Trabajo Práctico
 
@@ -67,3 +55,4 @@ Con este trabajo práctico realizaremos una primera aproximación a la la polít
 
 ## Recursos
 1. [Interpreting Correlations](http://rpsychologist.com/d3/correlation/)
+2. [How to Read and Use Histograms in R](http://flowingdata.com/2014/02/27/how-to-read-histograms-and-use-them-in-r/)
