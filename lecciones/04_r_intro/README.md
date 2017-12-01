@@ -42,6 +42,8 @@ Lección sobre programación en el lenguaje [R](https://www.r-project.org/)
 ## Recursos
 
 1. _Tutorial del lengaguje R_ [Free Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)
+2. _Introduction to R Studio_ [R Studio](http://dss.princeton.edu/training/RStudio101.pdf)
+3. _Tutorial on working with data on R_ [Loading data and basic formatting in R](http://flowingdata.com/2015/02/18/loading-data-and-basic-formatting-in-r/)
 
 Graficado con Ggplot2 (otra librería para graficado)
 
