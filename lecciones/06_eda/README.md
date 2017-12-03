@@ -29,22 +29,23 @@ Con este trabajo práctico realizaremos una primera aproximación a la la polít
 1. Eliminar registros cuyo tipo de estudio no sean maestría o doctorado;
 2. Distribución de becarios por edad, sexo, sector laboral (público/privado), ciudad y departamento de origen, ciudad y departamento de residencia;
 3. Distribución de becas por tipo (maestría/doctorado), área de la ciencia, y disciplina;
-4. Distribución de becas por país, ciudad, y universidad de destino;
-5. Cantidad de becarios por rango de ranking de universidad de destino (top 10, top 50, top 100, top 150, top 200, ranking mayor a 200;
-6. Resumen (min, max, mediana, promedio), quantiles (0.25, 0.75), desviación estándar del tiempo de duración de los estudios;
-7. Resumen (min, max, mediana, promedio), desviación estándar de montos de beca;
-8. Percentiles de cobertura 25%, 50%, 75%, 100%;
-9. Top-10 de mayores montos de coberturas y nombre de las universidades a los corresponden;
-10. Percentiles de completitud de estudios 25%, 50%, 75%, 100%;
+4. Resumen (min, max, mediana, promedio), cuantiles (0.25, 0.75), desviación estándar del tiempo de duración de los estudios;
+5. Cuantiles (25%, 50%, 75%, 100%) de completitud de estudios;
+6. Distribución de becas por país, ciudad, y universidad de destino;
+7. Cantidad de becarios por rango de ranking de universidad de destino (top 10, top 50, top 100, top 150, top 200, mayor a 200);
+8. Resumen (min, max, mediana, promedio), desviación estándar de montos de beca;
+9. Cuantiles de cobertura 25%, 50%, 75%, 100%;
+10. Top-10 de mayores montos de coberturas y el tipo de estudio a que corresponden;
 11. Correlación entre montos de cobertura y ranking de universidades
 
 
 #### Instrucciones
 
-* En R-studio y como parte del proyecto _Becal_ creado anteriormente crear un documento R Markdown y guardarlo dentro de la carpeta _proyecto_ con el nombre _eda-becal.Rmd_;
+* En R-studio abrir el archivo _template_tare2.Rmd_ y renombrarlo a _eda-becal.Rmd_;
+* Si no se encuentra ya instalado, instalar el paquete **R Markdown** (`r install.packages("rmarkdown")`) Mas información sobre [R Markdown](http://rmarkdown.rstudio.com/lesson-1.html)
 * Utilizando el lenguaje R realizar los análisis mencionados más arriba y reportarlos en utilizando el lenguaje Markdown. La elección de los elementos de visualización (gráficos, tablas, etc) corre por parte del alumno;
 * Hacer push a github del reporte;
-* Enviar por mail el link al reporte creado.
+* Enviar por mail el link al archivo .Rmd creado
 
 ## Referencias
 1. _Summarizing Data_ [Getting Data](https://github.com/DataScienceSpecialization/courses/blob/master/03_GettingData/03_02_summarizingData/index.Rmd)
