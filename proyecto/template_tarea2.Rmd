@@ -1,6 +1,6 @@
 ---
 title: "Template Tarea: Análisis Exploratorio de Datos"
-author: "Jorge Saldivar"
+author: ""
 date: "12/3/2017"
 output: html_document
 ---
@@ -26,7 +26,7 @@ Describir aquí el análisis (técnica, cantidad de registros, etc.)
 
 Describir aquí los resultados
 
-## Tipo de estudio, aréa de la ciencia,y disciplina
+## Tipo de estudios, aréas de la ciencia, y disciplinas
 
 Describir aquí el análisis (técnica, cantidad de registros, etc.)
 
@@ -37,13 +37,25 @@ Describir aquí el análisis (técnica, cantidad de registros, etc.)
 
 Describir aquí los resultados
 
-## Países, ciudades, y universidades de destino
+### Duración de estudios
 
 Describir aquí el análisis (técnica, cantidad de registros, etc.)
 
-```{r tipo_estudio}
-# Escribir aquí el código de análisis de la distribución de becas por país, 
-# ciudad, y universidad de destino;
+```{r duracion_estudio}
+# Escribir aquí el código de análisis para calcular el promedio, la mediana, el mínimo, 
+# máximo, desviación estándar, y los cuantiles (0.25, 0.75) del tiempo de duración de 
+# los estudios
+```
+
+Describir aquí los resultados
+
+### Completitud de estudios
+
+Describir aquí el análisis (técnica, cantidad de registros, etc.)
+
+```{r completitud_estudio}
+# Escribir aquí el código de análisis para calcular los cuantiles (25%, 50%, 75%, 100%) 
+# de completitud  de los estudios
 ```
 
 Describir aquí los resultados
@@ -52,9 +64,65 @@ Describir aquí los resultados
 
 Describir aquí el análisis (técnica, cantidad de registros, etc.)
 
-```{r tipo_estudio}
+```{r destino}
 # Escribir aquí el código de análisis de la distribución de becas por país, 
 # ciudad, y universidad de destino;
+```
+
+Describir aquí los resultados
+
+### Becarios por rango de ranking de universidad de destino
+
+Describir aquí el análisis (técnica, cantidad de registros, etc.)
+
+```{r distribucion_ranking}
+# Escribir aquí el código de análisis que permita investigar la distribución de 
+# becarios por rango de ranking de universidad de destino (top 10, top 50, 
+# top 100, top 150, top 200, mayor a 200)
+```
+
+Describir aquí los resultados
+
+## Becas
+
+Describir aquí el análisis (técnica, cantidad de registros, etc.)
+
+```{r montos_beca}
+# Escribir aquí el código de análisis que calcular el promedio, la mediana
+# el mínimo, máximo, y desviación estándar de los montos de beca
+```
+
+Describir aquí los resultados
+
+### Porcentaje de cobertura
+
+Describir aquí el análisis (técnica, cantidad de registros, etc.)
+
+```{r cobertura}
+# Escribir aquí el código de análisis que calcular los cuantiles 
+# (25%, 50%, 75%, 100%) de cobertura
+```
+
+Describir aquí los resultados
+
+### Top-10 montos de cobertura
+
+Describir aquí el análisis (técnica, cantidad de registros, etc.)
+
+```{r top10_montos}
+# Escribir aquí el código de análisis que calcular el top-10 de montos de 
+# coberturas y el tipo de estudio a que corresponden
+```
+
+Describir aquí los resultados
+
+### Correlación entre montos de cobertura y ranking de universidades
+
+Describir aquí el análisis (técnica, cantidad de registros, etc.)
+
+```{r correlacion}
+# Escribir aquí el código de análisis que calcular la correlación 
+# entre montos de cobertura y ranking de universidades
 ```
 
 Describir aquí los resultados
