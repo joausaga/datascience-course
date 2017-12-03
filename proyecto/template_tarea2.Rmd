@@ -1,0 +1,60 @@
+---
+title: "Template Tarea: Análisis Exploratorio de Datos"
+author: "Jorge Saldivar"
+date: "12/3/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo=FALSE}
+# Escribir aqui el código para eliminar los registros cuyo tipo de estudio no sean
+# maestría o doctorado
+```
+
+## Perfil demográfico de los becarios
+
+Describir aquí el análisis (técnica, cantidad de registros, etc.)
+
+```{r perfil_demografico}
+# Escribir aquí el código de análisis de la distribución de becarios por edad, sexo, 
+# sector laboral (público/privado), ciudad y departamento de origen, 
+# ciudad y departamento de residencia
+```
+
+Describir aquí los resultados
+
+## Tipo de estudio, aréa de la ciencia,y disciplina
+
+Describir aquí el análisis (técnica, cantidad de registros, etc.)
+
+```{r tipo_estudio}
+# Escribir aquí el código de análisis de la distribución de becas por 
+# tipo (maestría/doctorado) y disciplina
+```
+
+Describir aquí los resultados
+
+## Países, ciudades, y universidades de destino
+
+Describir aquí el análisis (técnica, cantidad de registros, etc.)
+
+```{r tipo_estudio}
+# Escribir aquí el código de análisis de la distribución de becas por país, 
+# ciudad, y universidad de destino;
+```
+
+Describir aquí los resultados
+
+## Países, ciudades, y universidades de destino
+
+Describir aquí el análisis (técnica, cantidad de registros, etc.)
+
+```{r tipo_estudio}
+# Escribir aquí el código de análisis de la distribución de becas por país, 
+# ciudad, y universidad de destino;
+```
+
+Describir aquí los resultados
