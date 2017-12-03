@@ -26,18 +26,17 @@ Lección sobre técnicas para la realización de análisis exploratorio de datos
 
 Con este trabajo práctico realizaremos una primera aproximación a la la política nacional de becas para estudios en el extranjero. Por medio de una análisis exploratorio de los datos investigaremos los siguientes temas:
 
-1. Eliminar registros cuyo tipo de estudio no sea maestría o doctorado;
-2. Distribución de becarios por edad, sexo, sector laboral (público/privado), con/sin goce de sueldo, ciudad y departamento de origen, ciudad y departamento de residencia;
-3. Distribución de becas por tipo (maestría/doctorado) y disciplina;
+1. Eliminar registros cuyo tipo de estudio no sean maestría o doctorado;
+2. Distribución de becarios por edad, sexo, sector laboral (público/privado), ciudad y departamento de origen, ciudad y departamento de residencia;
+3. Distribución de becas por tipo (maestría/doctorado), área de la ciencia, y disciplina;
 4. Distribución de becas por país, ciudad, y universidad de destino;
-5. Distribución de becas por área de la ciencia;
-6. Cantidad de becarios por rango de ranking de universidad de destino (top 10, top 50, top 100, top 150, top 200, ranking mayor a 200;
-7. Resumen (min, max, mediana, promedio), quantiles (0.25, 0.75), desviación estándar del tiempo de duración de los estudios;
-8. Resumen (min, max, mediana, promedio), desviación estándar de montos de beca;
-9. Percentiles de cobertura 25%, 50%, 75%, 100%;
-10. Top-10 de mayores montos de coberturas;
-11. Percentiles de completitud de estudios 25%, 50%, 75%, 100%;
-12. Correlación entre montos de cobertura y ranking de universidades
+5. Cantidad de becarios por rango de ranking de universidad de destino (top 10, top 50, top 100, top 150, top 200, ranking mayor a 200;
+6. Resumen (min, max, mediana, promedio), quantiles (0.25, 0.75), desviación estándar del tiempo de duración de los estudios;
+7. Resumen (min, max, mediana, promedio), desviación estándar de montos de beca;
+8. Percentiles de cobertura 25%, 50%, 75%, 100%;
+9. Top-10 de mayores montos de coberturas y nombre de las universidades a los corresponden;
+10. Percentiles de completitud de estudios 25%, 50%, 75%, 100%;
+11. Correlación entre montos de cobertura y ranking de universidades
 
 
 #### Instrucciones
