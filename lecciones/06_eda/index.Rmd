@@ -130,6 +130,31 @@ quantile(becal$edad, probs=c(0.40,0.65,0.90))
 
 ---
 
+--- &twocol
+
+## Boxplots
+
+*** {name: left}
+
+* Permite tener una vista general de la distribución de una variable
+
+* Condensa en un solo gráfico información sobre el media de la distribución, los valores mínimo y máximo (excluyendo los outliers), el rango donde se encuentran el 50% de los valores (IQR)   
+
+*** {name: right}
+
+<img class=center src="../assets/img/box-plot-explained.gif" height=450 />
+
+---
+
+## Boxplots en R
+
+```{r, echo=T, fig.height=5.5, fig.align='center', dependson='becal'}
+boxplot(becal$edad, col='red', main='Distribución de edad de becarios', 
+        ylab='Edad')
+```
+
+---
+
 ## Variabilidad de datos
 
 * Un aspecto importante al momento de inspeccionar una variable es medir la dispersión de los datos con respecto al valor medio de la distribución
@@ -210,14 +235,36 @@ plot(becal$mesesdeduraciondeestudios, becal$totalgralusd,
 
 * La correlación mide que tanto dos variables se encuentran linealmente relacionadas. A diferencia de la covarianza que determina simplemente si dos variables cambian a la par, la correlación mide la fuerza de la relación entre ellas
 
-* El resultado de una análisis de correlación es un coeficiente entre -1 y 1. Los extremos indican correlación perfecta entre las variables. Una correlación negativa indica que las variables cambian en sentido contrario, mientras que una correlación positiva demuestra que ambas variables cambian en la misma dirección
+$$r = Cov(x,y)/Sx*Sy$$
 
-* En R correlación se calcula por medio de la función ``cor``
+* El resultado de una análisis de correlación es un coeficiente (r o Person's r) entre -1 y 1. Los extremos indican correlación perfecta entre las variables. Una correlación negativa indica que las variables cambian en sentido contrario, mientras que una correlación positiva demuestra que ambas variables cambian en la misma dirección
 
-```{r, echo=F, becal_sin_na, dependson='becal'}
-becal_sin_na = filter(becal, totalgralusd != 'NA')
-```
+<img class=center src="../assets/img/correlation-examples.svg" height=150 />
+
+---
+
+## Correlación en R
+
+En R correlación de Person se calcula por medio de la función ``cor``
 
 ```{r, echo=T, dependson='becal_sin_na'}
+becal_sin_na = filter(becal, totalgralusd != 'NA')  # elimino los valores ausentes
 cor(becal_sin_na$mesesdeduraciondeestudios, becal_sin_na$totalgralusd)
+```
+
+---
+
+## Promedios condicionales
+
+```{r, echo=F}
+library(dplyr)
+```
+
+```{r, echo=T, fig.height=3.5, fig.align='center', dependson='becal'}
+groupo_meses = group_by(becal, mesesdeduraciondeestudios)
+total_x_gm = summarize(groupo_meses, 
+                       total_mean = mean(totalgralusd))
+plot(total_x_gm$mesesdeduraciondeestudios, total_x_gm$total_mean, 
+     ylab="Costo Total Promedio en USD", xlab="Duración Estudio en Meses",
+     main="Meses de Duración por Costo de Estudio")
 ```
