@@ -66,3 +66,6 @@ Con este trabajo empezamos nuestro análisis del dataset proveído por la instit
 ## Recursos
 
 1. [Methods for handling missing values](https://gallery.cortanaintelligence.com/Experiment/Methods-for-handling-missing-values-1)
+2. [Introduction of dplyr](https://www.r-bloggers.com/hadley-wickham-presents-dplyr-at-user-2014/)
+3. [Dplyr tutorial - part 1](https://www.r-bloggers.com/hadley-wickhams-dplyr-tutorial-at-user-2014-part-1/)
+4. [Dplyr tutorial - part 2](https://www.r-bloggers.com/hadley-wickhams-dplyr-tutorial-at-user-2014-part-2/)
