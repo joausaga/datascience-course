@@ -7,18 +7,17 @@ Lección sobre técnicas para la realización de análisis exploratorio de datos
 ## Temas de la lección
 
 1. Proceso de análisis de datos
-2. Visualización de datos
-	+ Histogramas (1 variable)
-	+ Box plots (1 variable)
-	+ Scatter plots (2 variables)
-3. Estadísticas descriptivas
-	+ Min, Max, Mediana, Promedio, Rango
-	+ Quantiles (Percentiles)
+2. Exploración de 1 variable
+	+ Histogramas
+	+ Box plots
+	+ Estadísticas descriptivas (min, max, mediana, promedio, rango)
+	+ Cuantiles
 	+ Resumiento datos categóricos con _table()_
-4. Variabilidad
-	+ Varianza
-	+ Desviación estándar
-5. Correlación
+	+ Variabilidad (varianza, desviación estándar)
+3. Exploración de 2 variables
+	+ Scatter plots
+	+ Correlación
+	+ Promedios condicionales
 
 ## Trabajo Práctico
 
@@ -55,4 +54,6 @@ Con este trabajo práctico realizaremos una primera aproximación a la la polít
 
 ## Recursos
 1. [Interpreting Correlations](http://rpsychologist.com/d3/correlation/)
-2. [How to Read and Use Histograms in R](http://flowingdata.com/2014/02/27/how-to-read-histograms-and-use-them-in-r/)
+2. [Correlation (Pearson, Kendall, Spearman)](http://www.statisticssolutions.com/correlation-pearson-kendall-spearman/)
+3. [How to Read and Use Histograms in R](http://flowingdata.com/2014/02/27/how-to-read-histograms-and-use-them-in-r/)
+4. [How to Read and Use a Box-and-Whisker Plot](http://flowingdata.com/2008/02/15/how-to-read-and-use-a-box-and-whisker-plot/)
