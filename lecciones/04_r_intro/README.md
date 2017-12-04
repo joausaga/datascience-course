@@ -44,6 +44,7 @@ Lección sobre programación en el lenguaje [R](https://www.r-project.org/)
 1. _Tutorial del lengaguje R_ [Free Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)
 2. _Introduction to R Studio_ [R Studio](http://dss.princeton.edu/training/RStudio101.pdf)
 3. _Tutorial on working with data on R_ [Loading data and basic formatting in R](http://flowingdata.com/2015/02/18/loading-data-and-basic-formatting-in-r/)
+4. _Learn more about lapply, tapply, split_ [The lapply command 101](https://rollingyours.wordpress.com/2014/10/20/the-lapply-command-101/)
 
 Graficado con Ggplot2 (otra librería para graficado)
 
