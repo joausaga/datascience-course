@@ -142,8 +142,6 @@ quantile(becal$edad, probs=c(0.40,0.65,0.90))
 ##  28  31  35
 ```
 
----
-
 --- &twocol
 
 ## Boxplots
@@ -270,6 +268,24 @@ plot(becal$mesesdeduraciondeestudios, becal$totalgralusd,
 
 ---
 
+## Promedios condicionales
+
+
+
+
+```r
+groupo_meses = group_by(becal, mesesdeduraciondeestudios)
+total_x_gm = summarize(groupo_meses, 
+                       total_mean = mean(totalgralusd))
+plot(total_x_gm$mesesdeduraciondeestudios, total_x_gm$total_mean, 
+     ylab="Costo Total Promedio en USD", xlab="Duración Estudio en Meses",
+     main="Meses de Duración por Costo de Estudio")
+```
+
+<img src="assets/fig/unnamed-chunk-16-1.png" title="plot of chunk unnamed-chunk-16" alt="plot of chunk unnamed-chunk-16" style="display: block; margin: auto;" />
+
+---
+
 ## Correlación
 
 * En estadística una de la técnicas más comunes para el estudio de asociaciones entre variables es la **correlación**
@@ -297,21 +313,3 @@ cor(becal_sin_na$mesesdeduraciondeestudios, becal_sin_na$totalgralusd)
 ```
 ## [1] 0.7211575
 ```
-
----
-
-## Promedios condicionales
-
-
-
-
-```r
-groupo_meses = group_by(becal, mesesdeduraciondeestudios)
-total_x_gm = summarize(groupo_meses, 
-                       total_mean = mean(totalgralusd))
-plot(total_x_gm$mesesdeduraciondeestudios, total_x_gm$total_mean, 
-     ylab="Costo Total Promedio en USD", xlab="Duración Estudio en Meses",
-     main="Meses de Duración por Costo de Estudio")
-```
-
-<img src="assets/fig/unnamed-chunk-17-1.png" title="plot of chunk unnamed-chunk-17" alt="plot of chunk unnamed-chunk-17" style="display: block; margin: auto;" />

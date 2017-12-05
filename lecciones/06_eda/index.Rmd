@@ -128,8 +128,6 @@ quantile(becal$edad)
 quantile(becal$edad, probs=c(0.40,0.65,0.90))
 ```
 
----
-
 --- &twocol
 
 ## Boxplots
@@ -229,6 +227,23 @@ plot(becal$mesesdeduraciondeestudios, becal$totalgralusd,
 
 ---
 
+## Promedios condicionales
+
+```{r, echo=F}
+library(dplyr)
+```
+
+```{r, echo=T, fig.height=3.5, fig.align='center', dependson='becal'}
+groupo_meses = group_by(becal, mesesdeduraciondeestudios)
+total_x_gm = summarize(groupo_meses, 
+                       total_mean = mean(totalgralusd))
+plot(total_x_gm$mesesdeduraciondeestudios, total_x_gm$total_mean, 
+     ylab="Costo Total Promedio en USD", xlab="Duración Estudio en Meses",
+     main="Meses de Duración por Costo de Estudio")
+```
+
+---
+
 ## Correlación
 
 * En estadística una de la técnicas más comunes para el estudio de asociaciones entre variables es la **correlación**
@@ -250,21 +265,4 @@ En R correlación de Person se calcula por medio de la función ``cor``
 ```{r, echo=T, dependson='becal_sin_na'}
 becal_sin_na = filter(becal, totalgralusd != 'NA')  # elimino los valores ausentes
 cor(becal_sin_na$mesesdeduraciondeestudios, becal_sin_na$totalgralusd)
-```
-
----
-
-## Promedios condicionales
-
-```{r, echo=F}
-library(dplyr)
-```
-
-```{r, echo=T, fig.height=3.5, fig.align='center', dependson='becal'}
-groupo_meses = group_by(becal, mesesdeduraciondeestudios)
-total_x_gm = summarize(groupo_meses, 
-                       total_mean = mean(totalgralusd))
-plot(total_x_gm$mesesdeduraciondeestudios, total_x_gm$total_mean, 
-     ylab="Costo Total Promedio en USD", xlab="Duración Estudio en Meses",
-     main="Meses de Duración por Costo de Estudio")
 ```

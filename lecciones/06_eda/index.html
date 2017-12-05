@@ -211,13 +211,6 @@
 </slide>
 
 <slide class="" id="slide-10" style="background:;">
-  <article data-timings="">
-    
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-11" style="background:;">
   <hgroup>
     <h2>Boxplots</h2>
   </hgroup>
@@ -238,7 +231,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-12" style="background:;">
+<slide class="" id="slide-11" style="background:;">
   <hgroup>
     <h2>Boxplots en R</h2>
   </hgroup>
@@ -253,7 +246,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-13" style="background:;">
+<slide class="" id="slide-12" style="background:;">
   <hgroup>
     <h2>Variabilidad de datos</h2>
   </hgroup>
@@ -283,7 +276,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-14" style="background:;">
+<slide class="" id="slide-13" style="background:;">
   <hgroup>
     <h2>Distribución de variables categóricas</h2>
   </hgroup>
@@ -305,7 +298,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-15" style="background:;">
+<slide class="" id="slide-14" style="background:;">
   <hgroup>
     <h2>Distribución de variables categóricas</h2>
   </hgroup>
@@ -325,7 +318,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-16" style="background:;">
+<slide class="" id="slide-15" style="background:;">
   <hgroup>
     <h2>Distribución de variables categóricas</h2>
   </hgroup>
@@ -347,7 +340,7 @@ barplot(categoria_ordenadas, main=paste(&quot;Becarios por rango de ranking de u
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-17" style="background:;">
+<slide class="" id="slide-16" style="background:;">
   <hgroup>
     <h2>Exploración de dos variables</h2>
   </hgroup>
@@ -363,6 +356,25 @@ barplot(categoria_ordenadas, main=paste(&quot;Becarios por rango de ranking de u
 </code></pre>
 
 <p><img src="assets/fig/unnamed-chunk-14-1.png" title="plot of chunk unnamed-chunk-14" alt="plot of chunk unnamed-chunk-14" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Promedios condicionales</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">groupo_meses = group_by(becal, mesesdeduraciondeestudios)
+total_x_gm = summarize(groupo_meses, 
+                       total_mean = mean(totalgralusd))
+plot(total_x_gm$mesesdeduraciondeestudios, total_x_gm$total_mean, 
+     ylab=&quot;Costo Total Promedio en USD&quot;, xlab=&quot;Duración Estudio en Meses&quot;,
+     main=&quot;Meses de Duración por Costo de Estudio&quot;)
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-16-1.png" title="plot of chunk unnamed-chunk-16" alt="plot of chunk unnamed-chunk-16" style="display: block; margin: auto;" /></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -403,25 +415,6 @@ cor(becal_sin_na$mesesdeduraciondeestudios, becal_sin_na$totalgralusd)
 
 <pre><code>## [1] 0.7211575
 </code></pre>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-20" style="background:;">
-  <hgroup>
-    <h2>Promedios condicionales</h2>
-  </hgroup>
-  <article data-timings="">
-    <pre><code class="r">groupo_meses = group_by(becal, mesesdeduraciondeestudios)
-total_x_gm = summarize(groupo_meses, 
-                       total_mean = mean(totalgralusd))
-plot(total_x_gm$mesesdeduraciondeestudios, total_x_gm$total_mean, 
-     ylab=&quot;Costo Total Promedio en USD&quot;, xlab=&quot;Duración Estudio en Meses&quot;,
-     main=&quot;Meses de Duración por Costo de Estudio&quot;)
-</code></pre>
-
-<p><img src="assets/fig/unnamed-chunk-17-1.png" title="plot of chunk unnamed-chunk-17" alt="plot of chunk unnamed-chunk-17" style="display: block; margin: auto;" /></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -487,25 +480,25 @@ plot(total_x_gm$mesesdeduraciondeestudios, total_x_gm$total_mean,
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=10 title='NA'>
+        data-slide=10 title='Boxplots'>
          10
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=11 title='Boxplots'>
+        data-slide=11 title='Boxplots en R'>
          11
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=12 title='Boxplots en R'>
+        data-slide=12 title='Variabilidad de datos'>
          12
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='Variabilidad de datos'>
+        data-slide=13 title='Distribución de variables categóricas'>
          13
       </a>
     </li>
@@ -523,13 +516,13 @@ plot(total_x_gm$mesesdeduraciondeestudios, total_x_gm$total_mean,
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=16 title='Distribución de variables categóricas'>
+        data-slide=16 title='Exploración de dos variables'>
          16
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=17 title='Exploración de dos variables'>
+        data-slide=17 title='Promedios condicionales'>
          17
       </a>
     </li>
@@ -543,12 +536,6 @@ plot(total_x_gm$mesesdeduraciondeestudios, total_x_gm$total_mean,
       <a href="#" target="_self" rel='tooltip' 
         data-slide=19 title='Correlación en R'>
          19
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=20 title='Promedios condicionales'>
-         20
       </a>
     </li>
   </ul>
