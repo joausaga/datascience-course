@@ -14,7 +14,7 @@ Lección sobre técnicas de inferencia estadística que permitan derivar conclus
 3. Significancia estadística y p-values
 	+ P-value
 	+ Alpha
-	+ Errores the tipo 1 y 2
+	+ Errores de tipo 1 y 2
 4. T-tests
 	+ Grados de libertad
 	+ Tamaño del efecto
@@ -36,8 +36,7 @@ Con este trabajo práctico buscaremos profundizar nuestro entendimiento sobre el
 2. Diferencia entre cantidad de becas adjudicadas a funcionarios públicos y trabajadores del sector privado;
 3. Diferencia entre cantidad de becas por tipo (maestría/doctorado);
 4. Diferencia entre cantidad de becas adjudicadas a gente residente en la capital y gente residente en el interior;
-5. Diferencia entre becarios que residen en su ciudad de origen y aquellos que encuentran viviendo en otra ciudad (identificar la principal ciudad donde se trasladan a vivir);
-6. Diferencia en monto adjudicado entre becarios que viven en Asunción y becarios que residen en el interior del país;
+5. Diferencia en monto adjudicado entre becarios que viven en Asunción y becarios que residen en el interior del país;
 
 ### Instrucciones
 
