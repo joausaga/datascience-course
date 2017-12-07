@@ -29,7 +29,7 @@ Con este trabajo práctico realizaremos una primera aproximación a la la polít
 2. Distribución de becarios por edad, sexo, sector laboral (público/privado), ciudad y departamento de origen, ciudad y departamento de residencia;
 3. Distribución de becas por tipo (maestría/doctorado), área de la ciencia, y disciplina;
 4. Resumen (min, max, mediana, promedio), cuantiles (0.25, 0.75), desviación estándar del tiempo de duración de los estudios;
-5. Cuantiles (25%, 50%, 75%, 100%) de completitud de estudios;
+5. Cuantiles (25%, 50%, 75%, 100%) de completitud de estudios. Sugerencia: utilizar la función _completitud_ de _utils.R_;
 6. Distribución de becas por país, ciudad, y universidad de destino;
 7. Cantidad de becarios por rango de ranking de universidad de destino (top 10, top 50, top 100, top 150, top 200, mayor a 200);
 8. Resumen (min, max, mediana, promedio), desviación estándar de montos de beca;
@@ -43,8 +43,9 @@ Con este trabajo práctico realizaremos una primera aproximación a la la polít
 * En R-studio abrir el archivo _template_tare2.Rmd_ y renombrarlo a _eda-becal.Rmd_;
 * Si no se encuentra ya instalado, instalar el paquete **R Markdown** (`r install.packages("rmarkdown")`) Mas información sobre [R Markdown](http://rmarkdown.rstudio.com/lesson-1.html)
 * Utilizando el lenguaje R realizar los análisis mencionados más arriba y reportarlos en utilizando el lenguaje Markdown. La elección de los elementos de visualización (gráficos, tablas, etc) corre por parte del alumno;
+* Desde R-studio generar un archivo HTML del reporte utilizando el botón _Knit_ que se encuentra entre las opciones del menú superior;
 * Hacer push a github del reporte;
-* Enviar por mail el link al archivo .Rmd creado
+* Enviar por mail el link los archivos .Rmd y HTML creado
 
 ## Referencias
 1. _Summarizing Data_ [Getting Data](https://github.com/DataScienceSpecialization/courses/blob/master/03_GettingData/03_02_summarizingData/index.Rmd)
