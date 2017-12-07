@@ -44,8 +44,8 @@ Con este trabajo práctico realizaremos una primera aproximación a la la polít
 * Si no se encuentra ya instalado, instalar el paquete **R Markdown** (`r install.packages("rmarkdown")`) Mas información sobre [R Markdown](http://rmarkdown.rstudio.com/lesson-1.html)
 * Utilizando el lenguaje R realizar los análisis mencionados más arriba y reportarlos en utilizando el lenguaje Markdown. La elección de los elementos de visualización (gráficos, tablas, etc) corre por parte del alumno;
 * Desde R-studio generar un archivo HTML del reporte utilizando el botón _Knit_ que se encuentra entre las opciones del menú superior;
-* Hacer push a github del reporte;
-* Enviar por mail el link los archivos .Rmd y HTML creado
+* Hacer push a github de los archivos .Rmd y HTML;
+* Enviar por mail (o slack) el link los archivos .Rmd y HTML creado
 
 ## Referencias
 1. _Summarizing Data_ [Getting Data](https://github.com/DataScienceSpecialization/courses/blob/master/03_GettingData/03_02_summarizingData/index.Rmd)

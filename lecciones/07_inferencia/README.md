@@ -40,10 +40,12 @@ Con este trabajo práctico buscaremos profundizar nuestro entendimiento sobre el
 
 ### Instrucciones
 
-* En R-studio y como parte del proyecto _Becal_ creado anteriormente crear un documento R Markdown y guardarlo dentro de la carpeta _proyecto_ con el nombre _inferencia-becal.R_;
-* Utilizando el lenguaje R realizar los análisis mencionados más arriba y reportarlos en utilizando el lenguaje Markdown;
-* Hacer push a github del reporte;
-* Enviar por mail el link al reporte creado.
+* En R-studio abrir el archivo _template_tare3.Rmd_ dentro de _proyecto_ y renombrarlo a _eda-becal.Rmd_;
+* Si no se encuentra ya instalado, instalar el paquete **R Markdown** (`r install.packages('rmarkdown')`) Mas información sobre [R Markdown](http://rmarkdown.rstudio.com/lesson-1.html)
+* Utilizando el lenguaje R realizar los análisis mencionados más arriba y reportarlos en utilizando el lenguaje R Markdown;
+* Desde R-studio generar un archivo HTML del reporte utilizando el botón _Knit_ que se encuentra entre las opciones del menú superior;
+* Hacer push a github de los archivos .Rmd y HTML;
+* Enviar por mail (o slack) el link los archivos .Rmd y HTML creado
 
 ## Referencias
 
