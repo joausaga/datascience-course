@@ -6,25 +6,24 @@ Lección sobre técnicas de inferencia estadística que permitan derivar conclus
 
 ## Temas de la lección
 
-1. Estimación e intervalos de confidencia
-2. Test de Hipótesis
+1. Test de Hipótesis
 	+ La hipótesis NULL
 	+ La hipótesis alternativa
 	+ Hipótesis uni y bidireccional
-3. Significancia estadística y p-values
+2. Significancia estadística y p-values
 	+ P-value
 	+ Alpha
 	+ Errores de tipo 1 y 2
-4. T-tests
+3. T-tests
 	+ Grados de libertad
 	+ Tamaño del efecto
 	+ Error Estándar
 	+ Muestras independientes
-5. ANOVA
+4. ANOVA
 	+ Estadística F
 	+ ANOVA bidireccional
-6. Chi-Square Test
-7. Poder y tamaño de muestra
+5. Chi-Square Test
+
 
 ## Trabajo Práctico
 
