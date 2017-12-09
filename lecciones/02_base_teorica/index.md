@@ -99,10 +99,11 @@ Un caso común de uso es la presentación de resultados de censos
 
 ## Correlación no implica causalidad
 
-<img class=center src="../assets/img/chocolate_nobel_prize.png" height=500 />
+<img class=center src="../assets/img/chocolate_nobel_prize.png" height=450 />
 
 [There's A Shocking Connection Between Eating More Chocolate And Winning The Nobel Prize](http://www.businessinsider.com/chocolate-consumption-vs-nobel-prizes-2014-4)
 
+Otros ejemplos: [Spurious Correlations](http://tylervigen.com/spurious-correlations)
 
 ---
 
