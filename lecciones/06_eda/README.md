@@ -58,3 +58,4 @@ Con este trabajo práctico realizaremos una primera aproximación a la la polít
 2. [Correlation (Pearson, Kendall, Spearman)](http://www.statisticssolutions.com/correlation-pearson-kendall-spearman/)
 3. [How to Read and Use Histograms in R](http://flowingdata.com/2014/02/27/how-to-read-histograms-and-use-them-in-r/)
 4. [How to Read and Use a Box-and-Whisker Plot](http://flowingdata.com/2008/02/15/how-to-read-and-use-a-box-and-whisker-plot/)
+5. [Spurious Correlation](http://tylervigen.com/spurious-correlations)
