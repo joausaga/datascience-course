@@ -45,12 +45,18 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Estimación e intervalos de confidencia</h2>
+    <h2>Análisis Inferencial</h2>
   </hgroup>
   <article data-timings="">
-    <p class='..</p>
+    <ul>
+<li><p>El análisis infencial se utiliza para derivar, por medio de modelos estadísticos, conclusiones respecto a un conjunto de datos</p></li>
+<li><p>La idea es probar si los datos con los que contamos proveen suficientes evidencias para comprobar ciertas afirmaciones sobre un fenómeno a estudiar</p></li>
+<li><p>La fortaleza de la conclusión depende de como los datos fueron colectados</p></li>
+</ul>
 
- '></article>
+<p><img class=center src="../assets/img/analisis_inferencial.png" height=300 /></p>
+
+  </article>
   <!-- Presenter Notes -->
 </slide>
 
@@ -60,16 +66,81 @@
   </hgroup>
   <article data-timings="">
     <ul>
-<li><p>Hipótesis NULL</p></li>
-<li><p>Hipótesis Alternativa</p></li>
-<li><p>Hipótesis uni y bidireccional</p></li>
+<li><p>De las diferentes técnicas del análisis inferencial, nos enfocamos en el <strong>Test de Hipótesis</strong></p></li>
+<li><p>El <strong>Test de Hipótesis</strong> (o también conocido como <strong>Prueba Estadística</strong>) es un método del análisis inferencial que sirve para determinar, por ejemplo, si la diferencia entre dos grupos es estadísticamente significativa</p></li>
+<li><p>Ayuda a responder preguntas como, ¿es la diferencia encontrada fruto del azar?, o ¿que tan probable es que la diferencia esté reflejando alguna diferencia real entre los dos grupos?</p></li>
 </ul>
+
+<p><img class=center src="../assets/img/conclusion_analisis_inferencial.png" height=300 /></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Proceso de Test de Hipótesis</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>El test de hipótesis es parecido a una demostración por contradicción en matemáticas</p></li>
+<li><p>Empezamos por asumir algo contrario a lo que queremos probar y la idea es demostrar en el proceso que nuestra asunción inicial es incorrecta. Analogía: <strong>juicios orales</strong></p></li>
+<li><p><strong>Ejemplo BECAL</strong>. Queremos probar que existe una diferencia entre la cantidad de becas otorgadas a gente del interior es diferente a la cantidad de becas otorgadas a gente de la capital. </p>
+
+<ul>
+<li><strong>Hipótesis NULA (H0)</strong>: no existe diferencia entre la cantidad de becas otorgadas a gente del interior con respecto a gente de la capital (asunción inical)</li>
+<li><strong>Hipótesis alternativa (HA)</strong>: si existe una diferencia entre la cantidad de becas otorgadas a gente del interior con respecto a gente de la capital (lo que nos interesa saber)</li>
+</ul></li>
+<li><p>Lo que hacemos entonces es usar métodos estadísticos para verificar si los datos a mano proveen evidencias suficientes que nos permitan rechazar H0 en favor de HA.</p></li>
+<li><p>Toda respuesta en estadística tiene siempre cierto grado de incertidumbre, por la variabilidad natural de los datos. Por lo tanto lo que realmente demostramos es que es <strong>&quot;muy probable&quot;</strong> que H0 es falso (o verdadero)</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Tipos de hipótesis alternativas</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Éxisten dos tipos de hipótesis alternativas</p></li>
+<li><p>Cuando en la hipótesis no hacemos referencia a el sentido de la diferencia, es decir solo nos interesa saber si existe o no una diferencia, decimos que estamos trabajando con una <strong>hipótesis bi-direccional</strong></p>
+
+<ul>
+<li><strong>Ejemplo.</strong> Existe una diferencia en la cantidad de becas que reciben los del interior y la capital</li>
+</ul></li>
+<li><p>Cuando en la hipótesis si hacemos referencia a que la diferencia es mayor o menos, decimos que estamos trabajando con una <strong>hipótesis uni-direccional</strong></p>
+
+<ul>
+<li><strong>Ejemplo.</strong> Los del interior reciben <strong>menos</strong> (o <strong>más</strong>) becas que los de la capital</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Prueba Estadística</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Luego de definir las hipótesis, el siguiente consiste en recolectar evidencias que nos permitan comprobar nuestras hipótesis</p></li>
+<li><p>En un test de hipótesis la manera de &quot;recolectar evidencias&quot; es aplicando a los datos <strong>pruebas estadísticas</strong></p></li>
+<li><p>La diferencia entre una prueba estadística y cualquier otro procedimiento estadístico es que la prueba estadística está formulada asumiendo que H0, la hipótesis nula, es verdadera</p></li>
+<li><p>Es decir, en un test de hipótesis definimos nuestra hipótesis y después trabjamos asumiendo que H0 es verdadera</p></li>
+</ul>
+
+<p><img class=center src="../assets/img/evidence.png" height=250 /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
   <hgroup>
     <h2>Test de Hipótesis en R</h2>
   </hgroup>
@@ -80,7 +151,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-4" style="background:;">
+<slide class="" id="slide-7" style="background:;">
   <hgroup>
     <h2>Significancia estadística y p-values</h2>
   </hgroup>
@@ -95,7 +166,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-5" style="background:;">
+<slide class="" id="slide-8" style="background:;">
   <hgroup>
     <h2>T-tests</h2>
   </hgroup>
@@ -111,7 +182,7 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-6" style="background:;">
+<slide class="" id="slide-9" style="background:;">
   <hgroup>
     <h2>ANOVA</h2>
   </hgroup>
@@ -125,20 +196,9 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-7" style="background:;">
+<slide class="" id="slide-10" style="background:;">
   <hgroup>
     <h2>Chi-square Test</h2>
-  </hgroup>
-  <article data-timings="">
-    <p class='..</p>
-
- '></article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-8" style="background:;">
-  <hgroup>
-    <h2>Poder y tamaño de la muestra</h2>
   </hgroup>
   <article data-timings="">
     <p class='..</p>
@@ -153,7 +213,7 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Estimación e intervalos de confidencia'>
+        data-slide=1 title='Análisis Inferencial'>
          1
       </a>
     </li>
@@ -165,38 +225,50 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Test de Hipótesis en R'>
+        data-slide=3 title='Proceso de Test de Hipótesis'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Significancia estadística y p-values'>
+        data-slide=4 title='Tipos de hipótesis alternativas'>
          4
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='T-tests'>
+        data-slide=5 title='Prueba Estadística'>
          5
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='ANOVA'>
+        data-slide=6 title='Test de Hipótesis en R'>
          6
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='Chi-square Test'>
+        data-slide=7 title='Significancia estadística y p-values'>
          7
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='Poder y tamaño de la muestra'>
+        data-slide=8 title='T-tests'>
          8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='ANOVA'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Chi-square Test'>
+         10
       </a>
     </li>
   </ul>
