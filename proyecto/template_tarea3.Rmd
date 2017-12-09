@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Diferencia en cantidad de becas según sexo
 
-Describir aquí el análisis (técnica, cantidad de registros, etc.)
+Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cual fueron las hipótesis H0 y HA consideradas
 
 ```{r diferencia_becas_sexo}
 # Escribir aquí el código que compute la diferencia en la cantidad de becas 
@@ -22,7 +22,7 @@ Describir aquí los resultados
 
 ## Diferencia en cantidad de becas por sector laboral
 
-Describir aquí el análisis (técnica, cantidad de registros, etc.)
+Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cual fueron las hipótesis H0 y HA consideradas
 
 ```{r diferencia_becas_sector}
 # Escribir aquí el código que calcule diferencia en cantidad de becas 
@@ -33,7 +33,7 @@ Describir aquí los resultados
 
 ### Diferencia en cantidad de becas por tipo de estudio
 
-Describir aquí el análisis (técnica, cantidad de registros, etc.)
+Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cual fueron las hipótesis H0 y HA consideradas
 
 ```{r diferencia_becas_tipo}
 # Escribir aquí el código que calcule la diferencia en cantidad de becas 
@@ -44,7 +44,7 @@ Describir aquí los resultados
 
 ### Diferencia en cantidad de becas por ciudad de residencia
 
-Describir aquí el análisis (técnica, cantidad de registros, etc.)
+Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cual fueron las hipótesis H0 y HA consideradas
 
 ```{r diferencia_becas_ciudad_residencia}
 # Escribir aquí el código que compute la diferencia entre cantidad de becas 
@@ -55,7 +55,7 @@ Describir aquí los resultados
 
 ## Diferencia en montos de becas por lugar de residencia 
 
-Describir aquí el análisis (técnica, cantidad de registros, etc.)
+Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cual fueron las hipótesis H0 y HA consideradas
 
 ```{r diferencia_becas_lugar_residencia}
 # Escribir aquí el código que analize la diferencia en montos adjudicados entre 
