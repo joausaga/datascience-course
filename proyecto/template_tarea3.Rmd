@@ -9,9 +9,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Diferencia en cantidad de becas según sexo
+## Diferencia en la cantidad de meses de estudio entre hombres y mujeres
 
-Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cual fueron las hipótesis H0 y HA consideradas
+Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cuales fueron las hipótesis H0 y HA consideradas, además del nivel de significancia establecido
 
 ```{r diferencia_becas_sexo}
 # Escribir aquí el código que compute la diferencia en la cantidad de becas 
@@ -20,9 +20,9 @@ Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cu
 
 Describir aquí los resultados
 
-## Diferencia en cantidad de becas por sector laboral
+## Diferencia en edad entre becarios funcionarios públicos y becarios trabajadores del sector privado
 
-Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cual fueron las hipótesis H0 y HA consideradas
+Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cuales fueron las hipótesis H0 y HA consideradas, además del nivel de significancia establecido
 
 ```{r diferencia_becas_sector}
 # Escribir aquí el código que calcule diferencia en cantidad de becas 
@@ -31,9 +31,9 @@ Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cu
 
 Describir aquí los resultados
 
-### Diferencia en cantidad de becas por tipo de estudio
+### Diferencia en el ranking de las universidades de los que estudian maestría versus los que estudian doctorado
 
-Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cual fueron las hipótesis H0 y HA consideradas
+Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cuales fueron las hipótesis H0 y HA consideradas
 
 ```{r diferencia_becas_tipo}
 # Escribir aquí el código que calcule la diferencia en cantidad de becas 
@@ -42,9 +42,9 @@ Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cu
 
 Describir aquí los resultados
 
-### Diferencia en cantidad de becas por ciudad de residencia
+### Diferencia en la cantidad de meses de estudio entre los residentes de la capital, central, e interior
 
-Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cual fueron las hipótesis H0 y HA consideradas
+Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cuales fueron las hipótesis H0 y HA consideradas, además del nivel de significancia establecido
 
 ```{r diferencia_becas_ciudad_residencia}
 # Escribir aquí el código que compute la diferencia entre cantidad de becas 
@@ -53,9 +53,9 @@ Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cu
 
 Describir aquí los resultados
 
-## Diferencia en montos de becas por lugar de residencia 
+## Relación entre sexo de los becarios y país de destino. Considerar solo los cinco países con más becarios
 
-Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cual fueron las hipótesis H0 y HA consideradas
+Describir aquí el análisis (técnica, cantidad de registros, etc.) Explicar cuales fueron las hipótesis H0 y HA consideradas, además del nivel de significancia establecido
 
 ```{r diferencia_becas_lugar_residencia}
 # Escribir aquí el código que analize la diferencia en montos adjudicados entre 

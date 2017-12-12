@@ -28,10 +28,10 @@ Lección sobre técnicas de inferencia estadística que permitan derivar conclus
 Con este trabajo práctico buscaremos profundizar nuestro entendimiento sobre el programa de becas para estudios de posgrado del gobierno nacional. Utilizando técnicas de inferencia estadística analyzaremos los criterios de adjudicación y las principlaes características de los becados seleccionados. En particular investigaremos los siguientes temas:
 
 1. Diferencia en la cantidad de meses de estudio entre hombres y mujeres;
-2. Diferencia en la cantidad de meses de estudio entre funcionarios públicos y trabajadores del sector privado;
-3. Diferencia en el ranking de las universidades de los que estudian maestría versus los que estudian doctorado. Completar, primero, los registros ausentes en la columna _nrorankuni_;
-4. Diferencia en la cantidad de meses de estudio entre los residentes de la capital, central, e interior;
-5. Diferencia en monto adjudicado entre becarios que son originarios de Asunción, central e interior del país;
+2. Diferencia en edad entre becarios funcionarios públicos y becarios trabajadores del sector privado;
+3. Diferencia en el ranking de las universidades de los que estudian maestría versus los que estudian doctorado. Eiminar, primero, los registros ausentes en la columna _nrorankuni_;
+4. Diferencia en monto adjudicado entre becarios que son originarios de Asunción, central e interior del país;
+5. Relación entre sexo de los becarios y país de destino. Considerar solo los cinco países con más becarios.
 
 ### Instrucciones
 
