@@ -27,15 +27,15 @@ Lección sobre técnicas de inferencia estadística que permitan derivar conclus
 
 Con este trabajo práctico buscaremos profundizar nuestro entendimiento sobre el programa de becas para estudios de posgrado del gobierno nacional. Utilizando técnicas de inferencia estadística analyzaremos los criterios de adjudicación y las principlaes características de los becados seleccionados. En particular investigaremos los siguientes temas:
 
-1. Diferencia entre cantidad de becas asignadas a hombre y mujeres;
-2. Diferencia entre cantidad de becas adjudicadas a funcionarios públicos y trabajadores del sector privado;
-3. Diferencia entre cantidad de becas por tipo (maestría/doctorado);
-4. Diferencia entre cantidad de becas adjudicadas a gente residente en la capital y gente residente en el interior;
-5. Diferencia en monto adjudicado entre becarios que viven en Asunción y becarios que residen en el interior del país;
+1. Diferencia en la cantidad de meses de estudio entre hombres y mujeres;
+2. Diferencia en la cantidad de meses de estudio entre funcionarios públicos y trabajadores del sector privado;
+3. Diferencia en el ranking de las universidades de los que estudian maestría versus los que estudian doctorado. Completar, primero, los registros ausentes en la columna _nrorankuni_;
+4. Diferencia en la cantidad de meses de estudio entre los residentes de la capital, central, e interior;
+5. Diferencia en monto adjudicado entre becarios que son originarios de Asunción, central e interior del país;
 
 ### Instrucciones
 
-* En R-studio abrir el archivo _template_tare3.Rmd_ dentro de _proyecto_ y renombrarlo a _eda-becal.Rmd_;
+* En R-studio abrir el archivo _template_tare3.Rmd_ dentro de _proyecto_ y renombrarlo a _analisis-inferencial-becal.Rmd_;
 * Si no se encuentra ya instalado, instalar el paquete **R Markdown** (`r install.packages('rmarkdown')`) Mas información sobre [R Markdown](http://rmarkdown.rstudio.com/lesson-1.html)
 * Utilizando el lenguaje R realizar los análisis mencionados más arriba y reportarlos en utilizando el lenguaje R Markdown;
 * Desde R-studio generar un archivo HTML del reporte utilizando el botón _Knit_ que se encuentra entre las opciones del menú superior;
