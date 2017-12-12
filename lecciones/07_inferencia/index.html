@@ -75,8 +75,8 @@ pre { /* Code block - determines code spacing between lines */
   <article data-timings="">
     <ul>
 <li><p>De las diferentes técnicas del análisis inferencial, nos enfocamos en el <strong>Test de Hipótesis</strong></p></li>
-<li><p>El <strong>Test de Hipótesis</strong> (o también conocido como <strong>Prueba Estadística</strong>) es un método del análisis inferencial que sirve para determinar, por ejemplo, si la diferencia entre dos grupos es estadísticamente significativa</p></li>
-<li><p>Ayuda a responder preguntas como, ¿es la diferencia encontrada fruto del azar?, o ¿que tan probable es que la diferencia esté reflejando alguna diferencia real entre los dos grupos?</p></li>
+<li><p>El <strong>Test de Hipótesis</strong> (o también conocido como <strong>Prueba Estadística</strong>) es un método de análisis inferencial que sirve para determinar, por ejemplo, si la diferencia entre dos grupos es estadísticamente significativa</p></li>
+<li><p>Ayuda a responder preguntas como, ¿es la diferencia encontrada consecuencia de la variabilidad natural de los datos?, o ¿que tan probable es que el resultado esté reflejando alguna diferencia real entre los grupos?</p></li>
 </ul>
 
 <p><img class=center src="../assets/img/conclusion_analisis_inferencial.png" height=300 /></p>
@@ -93,14 +93,14 @@ pre { /* Code block - determines code spacing between lines */
     <ul>
 <li><p>El test de hipótesis es parecido a una demostración por contradicción en matemáticas</p></li>
 <li><p>Empezamos por asumir algo contrario a lo que queremos probar y la idea es demostrar en el proceso que nuestra asunción inicial es incorrecta. Analogía: <strong>juicios orales</strong></p></li>
-<li><p><strong>Ejemplo BECAL</strong>. Queremos probar que existe una diferencia entre la cantidad de becas otorgadas a gente del interior es diferente a la cantidad de becas otorgadas a gente de la capital. </p>
+<li><p><strong>Ejemplo BECAL</strong>. Queremos probar que existe una diferencia entre la cantidad de becas otorgadas a gente del interior y a gente de la capital. </p>
 
 <ul>
-<li><strong>Hipótesis NULA (H0)</strong>: no existe diferencia entre la cantidad de becas otorgadas a gente del interior con respecto a gente de la capital (asunción inical)</li>
-<li><strong>Hipótesis alternativa (HA)</strong>: si existe una diferencia entre la cantidad de becas otorgadas a gente del interior con respecto a gente de la capital (lo que nos interesa saber)</li>
+<li><strong>Hipótesis NULA (H0)</strong>: no existe diferencia entre la cantidad de becas otorgadas a gente del interior con respecto a la gente de la capital (asunción inical)</li>
+<li><strong>Hipótesis alternativa (HA)</strong>: si existe una diferencia entre la cantidad de becas otorgadas a gente del interior con respecto a la gente de la capital (lo que nos interesa saber)</li>
 </ul></li>
 <li><p>Lo que hacemos entonces es usar métodos estadísticos para verificar si los datos a mano proveen evidencias suficientes que nos permitan rechazar H0 en favor de HA.</p></li>
-<li><p>Toda respuesta en estadística tiene siempre cierto grado de incertidumbre, por la variabilidad natural de los datos. Por lo tanto lo que realmente demostramos es que es <strong>&quot;muy probable&quot;</strong> que H0 es falso (o verdadero)</p></li>
+<li><p>Toda respuesta en estadística tiene siempre cierto grado de incertidumbre, por la variabilidad natural de los datos. Por lo tanto lo que realmente demostramos es que es <strong>&quot;muy probable&quot;</strong> que H0 es falsa (o verdadera)</p></li>
 </ul>
 
   </article>
@@ -114,10 +114,10 @@ pre { /* Code block - determines code spacing between lines */
   <article data-timings="">
     <ul>
 <li><p>Éxisten dos tipos de hipótesis alternativas</p></li>
-<li><p>Cuando en la hipótesis no hacemos referencia a el sentido de la diferencia, es decir solo nos interesa saber si existe o no una diferencia, decimos que estamos trabajando con una <strong>hipótesis bi-direccional</strong></p>
+<li><p>Cuando en la hipótesis no hacemos referencia al sentido de la diferencia, es decir solo nos interesa saber si existe o no una diferencia, decimos que estamos trabajando con una <strong>hipótesis bi-direccional</strong></p>
 
 <ul>
-<li><strong>Ejemplo.</strong> Existe una diferencia en la cantidad de becas que reciben los del interior y la capital</li>
+<li><strong>Ejemplo.</strong> Existe diferencia en la cantidad de becas que reciben los del interior y los de la capital</li>
 </ul></li>
 <li><p>Cuando en la hipótesis si hacemos referencia a que la diferencia es mayor o menos, decimos que estamos trabajando con una <strong>hipótesis uni-direccional</strong></p>
 
@@ -136,7 +136,7 @@ pre { /* Code block - determines code spacing between lines */
   </hgroup>
   <article data-timings="">
     <ul>
-<li><p>Luego de definir las hipótesis, el siguiente consiste en recolectar evidencias que nos permitan comprobar nuestras hipótesis</p></li>
+<li><p>Luego de definir las hipótesis, el siguiente paso consiste en recolectar evidencias que nos permitan derivar alguna conclusión sobre las mismas</p></li>
 <li><p>En un test de hipótesis la manera de &quot;recolectar evidencias&quot; es aplicando a los datos <strong>pruebas estadísticas</strong></p></li>
 <li><p>La diferencia entre una prueba estadística y cualquier otro procedimiento estadístico es que la prueba estadística está formulada asumiendo que H0, la hipótesis nula, es verdadera</p></li>
 <li><p>Es decir, en un test de hipótesis definimos nuestra hipótesis y después trabjamos asumiendo que H0 es verdadera</p></li>
@@ -158,8 +158,8 @@ pre { /* Code block - determines code spacing between lines */
 <li><p>En estadística la herramienta que se utiliza en la deliberación se llama <strong>P-value</strong>. El <strong>p-value</strong> transforma una prueba estadística a una escala probabilística</p></li>
 <li><p><strong>P-value</strong> es un número entre 0 y 1 que cuantifica la solidez de las evidencias en contra de la hipótesis nula (H0)</p></li>
 <li><p>Cuanto más pequeño el <strong>p-value</strong> más sólidas las evidencias en contra de la hipótesis nula (H0)</p></li>
-<li><p>Lo que el <strong>p-value</strong> nos dice es que tan probable serían los resultados de la prueba estadística si la hipótesis nula (H0) fuera verdad</p></li>
-<li><p>Si la evidencias son lo &quot;suficientemente sólidas&quot;, es decir si tenemos un <strong>p-value</strong> pequeño, decimos que la pruba estadística es <strong>estadísticamente significativa</strong></p></li>
+<li><p>Lo que el <strong>p-value</strong> nos dice es que tan probable serían los resultados de la prueba estadística si la hipótesis nula (H0) fuera verdadera</p></li>
+<li><p>Si las evidencias son lo &quot;suficientemente sólidas&quot;, es decir si tenemos un <strong>p-value</strong> pequeño, decimos que la prueba es <strong>estadísticamente significativa</strong></p></li>
 </ul>
 
   </article>
@@ -189,10 +189,10 @@ pre { /* Code block - determines code spacing between lines */
   </hgroup>
   <article data-timings="">
     <ul>
-<li><p>El poder estadístico de una prueba es la probabilidad de tomar la decisión correcta (rechazar la hipótesis nula H0) cuando la hipótesis nula H0 es falsa (error del Tipo I, falso negativo)</p></li>
+<li><p>El poder estadístico de una prueba es la probabilidad de tomar la decisión correcta, por ejemplo rechazar la hipótesis nula H0 cuando la hipótesis nula H0 es falsa (error del Tipo I, falso negativo)</p></li>
 <li><p>Cuanto más poder tiene una prueba estadística más sensible es a detectar correctamente hipótesis nula H0 falsas</p></li>
 <li><p>Esto muestra que conviene siempre elegir niveles de significancia alpha bajos</p></li>
-<li><p>Sin embargo, cuando la cantidad de datos a mano es poca niveles de significancia alpha muy bajos nos pueden llevar a cometer errores del Tipo II (falso positivo) debido a que la prueba estadística no tiene suficiente poder</p></li>
+<li><p>Sin embargo, cuando la cantidad de datos a mano es poca niveles de significancia alpha muy bajos nos pueden llevar a cometer errores del Tipo II, esto es aceptar la la hipótesis H0 cuando es falsa (falso positivo) debido a que la prueba estadística no tiene suficiente poder</p></li>
 </ul>
 
   </article>
@@ -258,9 +258,9 @@ pre { /* Code block - determines code spacing between lines */
     <ul>
 <li><p>T-test es muy útil para comparar 2 grupos de datos, pero, ¿qué pasaría si tuvieramos que <strong>comparar más de 2 grupos</strong>?</p></li>
 <li><p>En caso de tener más de 2 grupos, el procedimiento estadístico que se utiliza para comprobar la significancia estadística en la diferencia entre estos se llama <strong>Análisis de Varianza</strong> o <strong>ANOVA</strong></p></li>
-<li><p>ANOVA está basado en la prueba <strong>estadística F</strong> la cual mide la proporción de la varianza entre los grupos y la varianza intra grupos. </p></li>
+<li><p>ANOVA está basado en la prueba <strong>estadística F</strong> la cual mide la proporción de la varianza entre los grupos y la varianza intra grupos</p></li>
 <li><p>Si el resultado de la estadística F es menor a 1 (la varianza intra grupos es mayor a la entre grupos) no existe diferencia entre los grupos</p></li>
-<li><p>Mientras, que si el resultado de la estadística F es mayor a 1 (la varianza entre grupos es mayor a la varianza intra grupos) existe diferencia entre los grupos</p></li>
+<li><p>Mientras, que si el resultado de la estadística F es mayor a 1 (la varianza entre grupos es mayor a la varianza intra grupos) si existe diferencia entre los grupos</p></li>
 </ul>
 
   </article>
@@ -303,7 +303,7 @@ pre { /* Code block - determines code spacing between lines */
   <article data-timings="">
     <ul>
 <li><p>Hasta el momento vimos como estudiar relaciones entre variables categóricas (ej., lugar de residencia) y variables discretas (ej., meses de estudio), pero como haríamos si quisieramos evaluar la relación de dos variables categóricas (ej., sexo y lugar de residencia)?</p></li>
-<li><p>Para el análisis de variables categóricas se utiliza el <strong>test chi-squared</strong> que evalua si las variables de interés son independientes unas de otra</p></li>
+<li><p>Para el análisis de variables categóricas se utiliza el <strong>test chi-square</strong> que evalua si las variables de interés son independientes unas de otra</p></li>
 <li><p>Chi-square se basa en comparar el número de valores observados (los datos) contra el número de valores esperados asumiendo que las variables son independientes</p></li>
 </ul>
 
