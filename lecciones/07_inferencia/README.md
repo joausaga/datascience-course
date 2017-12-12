@@ -14,14 +14,10 @@ Lección sobre técnicas de inferencia estadística que permitan derivar conclus
 	+ P-value
 	+ Alpha
 	+ Errores de tipo 1 y 2
-3. T-tests
-	+ Grados de libertad
-	+ Tamaño del efecto
-	+ Error Estándar
-	+ Muestras independientes
+3. T-test
+	+ Distribución T
 4. ANOVA
 	+ Estadística F
-	+ ANOVA bidireccional
 5. Chi-Square Test
 
 

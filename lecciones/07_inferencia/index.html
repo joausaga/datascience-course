@@ -44,11 +44,19 @@
 
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
-  <hgroup>
-    <h2>Análisis Inferencial</h2>
-  </hgroup>
   <article data-timings="">
-    <ul>
+    <style type="text/css">
+code.r{ /* Code block */
+    font-size: 18px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 16px;
+}
+</style>
+
+<h2>Análisis Inferencial</h2>
+
+<ul>
 <li><p>El análisis infencial se utiliza para derivar, por medio de modelos estadísticos, conclusiones respecto a un conjunto de datos</p></li>
 <li><p>La idea es probar si los datos con los que contamos proveen suficientes evidencias para comprobar ciertas afirmaciones sobre un fenómeno a estudiar</p></li>
 <li><p>La fortaleza de la conclusión depende de como los datos fueron colectados</p></li>
@@ -142,24 +150,33 @@
 
 <slide class="" id="slide-6" style="background:;">
   <hgroup>
-    <h2>Test de Hipótesis en R</h2>
+    <h2>P-value y significancia estadística</h2>
   </hgroup>
   <article data-timings="">
-    <p class='..</p>
+    <ul>
+<li><p>Luego de colectar las evidencias llega el momento de la deliberar si las mismas son suficientes para rechazar nuestra hipótesis nula (H0)</p></li>
+<li><p>En estadística la herramienta que se utiliza en la deliberación se llama <strong>P-value</strong>. El <strong>p-value</strong> transforma una prueba estadística a una escala probabilística</p></li>
+<li><p><strong>P-value</strong> es un número entre 0 y 1 que cuantifica la solidez de las evidencias en contra de la hipótesis nula (H0)</p></li>
+<li><p>Cuanto más pequeño el <strong>p-value</strong> más sólidas las evidencias en contra de la hipótesis nula (H0)</p></li>
+<li><p>Lo que el <strong>p-value</strong> nos dice es que tan probable serían los resultados de la prueba estadística si la hipótesis nula (H0) fuera verdad</p></li>
+<li><p>Si la evidencias son lo &quot;suficientemente sólidas&quot;, es decir si tenemos un <strong>p-value</strong> pequeño, decimos que la pruba estadística es <strong>estadísticamente significativa</strong></p></li>
+</ul>
 
- '></article>
+  </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-7" style="background:;">
   <hgroup>
-    <h2>Significancia estadística y p-values</h2>
+    <h2>Nivel de significancia alpha</h2>
   </hgroup>
   <article data-timings="">
     <ul>
-<li><p>P-value</p></li>
-<li><p>Alpha</p></li>
-<li><p>Errores de tipo 1 y 2</p></li>
+<li><p>La pregunta ahora es como determinamos que un <strong>p-value</strong> es pequeño. Es ¿0,5 pequeño?, ¿es 0,01 pequeño?</p></li>
+<li><p>Necesitamos una referencia contra la cual comparar nuestro <strong>p-value</strong></p></li>
+<li><p>A este valor referencial, o nivel de significancia, se le llama <strong>alpha</strong> y su definición es bastante arbitraria aunque en general se establece <strong>0,05</strong> como valor estándar</p></li>
+<li><p>Entonces se dice que si el <strong>p-value es menor a alpha</strong> los datos a mano aportan evidencias suficientes para rechazar la hipótesis H0 en favor de HA</p></li>
+<li><p>También el nivel de significancia indica como se va a desempeñar la prueba estadística si se realiza repetidamente con diferentes muestras del mismo tamaño. Por ejemplo, un nivel de significancia alpha de 0,05 indica que solo en el 5% de los casos rechazaremos la hipótesis nula H0 de manera equivocada</p></li>
 </ul>
 
   </article>
@@ -168,14 +185,14 @@
 
 <slide class="" id="slide-8" style="background:;">
   <hgroup>
-    <h2>T-tests</h2>
+    <h2>Poder estadístico de la prueba</h2>
   </hgroup>
   <article data-timings="">
     <ul>
-<li><p>Grados de libertad</p></li>
-<li><p>Tamaño del efecto</p></li>
-<li><p>Error estándar</p></li>
-<li><p>Muestras independientes</p></li>
+<li><p>El poder estadístico de una prueba es la probabilidad de tomar la decisión correcta (rechazar la hipótesis nula H0) cuando la hipótesis nula H0 es falsa (error del Tipo I, falso negativo)</p></li>
+<li><p>Cuanto más poder tiene una prueba estadística más sensible es a detectar correctamente hipótesis nula H0 falsas</p></li>
+<li><p>Esto muestra que conviene siempre elegir niveles de significancia alpha bajos</p></li>
+<li><p>Sin embargo, cuando la cantidad de datos a mano es poca niveles de significancia alpha muy bajos nos pueden llevar a cometer errores del Tipo II (falso positivo) debido a que la prueba estadística no tiene suficiente poder</p></li>
 </ul>
 
   </article>
@@ -184,13 +201,15 @@
 
 <slide class="" id="slide-9" style="background:;">
   <hgroup>
-    <h2>ANOVA</h2>
+    <h2>T-test y la distrubción T</h2>
   </hgroup>
   <article data-timings="">
     <ul>
-<li><p>Estadística F</p></li>
-<li><p>ANOVA bidireccional</p></li>
+<li><p>En los tests de hipótesis, la herramienta que frecuentemente se utiliza para realizar análisis de significancia es el <strong>t-test</strong></p></li>
+<li><p>El t-test se vale de la <strong>distribución t</strong> (o también llamada student&#39;s t) que se usa para aproximar a la distribución normal la distribución resultante de aplicar estadísticas (ej., promedios, varianza) a muestras. La distribución t es bastante robuzta, incluso en situaciones donde el tamaño de la muestra es pequeño</p></li>
 </ul>
+
+<p><img class=center src="../assets/img/t-distribution.png" height=300 /></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -198,12 +217,252 @@
 
 <slide class="" id="slide-10" style="background:;">
   <hgroup>
+    <h2>T-test en R</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>En R la función para realizar un análisis de t-test es <code>t.test</code></p></li>
+<li><p>Ejemplo. Diferencia en los meses de estudio entre los que becarios de la capital y el resto </p>
+
+<ul>
+<li><strong>H0</strong>: No existe diferencia en los meses de estudio entre los becarios de la capital y el resto</li>
+<li><strong>HA</strong>: Existe diferencia en los meses de estudio entre los becarios de la capital y el resto</li>
+</ul></li>
+</ul>
+
+<pre><code class="r">t.test(estudios_capital, estudios_resto, alternative = &quot;two.sided&quot;)
+</code></pre>
+
+<pre><code>## 
+##  Welch Two Sample t-test
+## 
+## data:  estudios_capital and estudios_resto
+## t = 4.9992, df = 555.95, p-value = 7.728e-07
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  2.222666 5.099731
+## sample estimates:
+## mean of x mean of y 
+##  18.71714  15.05594
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>ANOVA</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>T-test es muy útil para comparar 2 grupos de datos, pero, ¿qué pasaría si tuvieramos que <strong>comparar más de 2 grupos</strong>?</p></li>
+<li><p>En caso de tener más de 2 grupos, el procedimiento estadístico que se utiliza para comprobar la significancia estadística en la diferencia entre estos se llama <strong>Análisis de Varianza</strong> o <strong>ANOVA</strong></p></li>
+<li><p>ANOVA está basado en la prueba <strong>estadística F</strong> la cual mide la proporción de la varianza entre los grupos y la varianza intra grupos. </p></li>
+<li><p>Si el resultado de la estadística F es menor a 1 (la varianza intra grupos es mayor a la entre grupos) no existe diferencia entre los grupos</p></li>
+<li><p>Mientras, que si el resultado de la estadística F es mayor a 1 (la varianza entre grupos es mayor a la varianza intra grupos) existe diferencia entre los grupos</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>ANOVA en R</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>En R la función para realizar un análisis ANOVA es <code>aov</code></p></li>
+<li><p>Ejemplo. Diferencia en meses de estudio entre los de capital, central, e interior del país</p>
+
+<ul>
+<li>H0: No existe diferencia en meses de estudio entre los becarios residentes en capital, central, e interior del país</li>
+<li>HA: Existe diferencia en meses de estudio entre los becarios residentes en capital, central, e interior del país</li>
+</ul></li>
+</ul>
+
+<pre><code class="r">summary(aov(meses_estudio ~ localidad, data=aov_estudios))
+</code></pre>
+
+<pre><code>##              Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+## localidad     2   3341  1670.7    20.8 1.55e-09 ***
+## Residuals   801  64325    80.3                     
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
     <h2>Chi-square Test</h2>
   </hgroup>
   <article data-timings="">
-    <p class='..</p>
+    <ul>
+<li><p>Hasta el momento vimos como estudiar relaciones entre variables categóricas (ej., lugar de residencia) y variables discretas (ej., meses de estudio), pero como haríamos si quisieramos evaluar la relación de dos variables categóricas (ej., sexo y lugar de residencia)?</p></li>
+<li><p>Para el análisis de variables categóricas se utiliza el <strong>test chi-squared</strong> que evalua si las variables de interés son independientes unas de otra</p></li>
+<li><p>Chi-square se basa en comparar el número de valores observados (los datos) contra el número de valores esperados asumiendo que las variables son independientes</p></li>
+</ul>
 
- '></article>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Chi-square Test</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Ejemplo. Relación entre sexo de becarios y categoría de universidad (top 10, top 50, etc.)
+
+<ul>
+<li>H0: Existe igual cantidad de becarios y becarias en las universidades top 10 y top 50</li>
+<li>HA: El número de mujeres y hombres en las universidades top 10 y top 50 es diferente</li>
+</ul></li>
+</ul>
+
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>Valores observados</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Tipo Univ/Sexo</th>
+<th>top 10</th>
+<th>top 50</th>
+<th>Total</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Femenino</td>
+<td>12</td>
+<td>56</td>
+<td>68</td>
+</tr>
+<tr>
+<td>Masculino</td>
+<td>5</td>
+<td>39</td>
+<td>44</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>17</td>
+<td>95</td>
+<td>112</td>
+</tr>
+</tbody></table>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>Valores esperados</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Tipo Univ/Sexo</th>
+<th>top 10</th>
+<th>top 50</th>
+<th>Total</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Femenino</td>
+<td>10</td>
+<td>58</td>
+<td>68  (0,6)</td>
+</tr>
+<tr>
+<td>Masculino</td>
+<td>7</td>
+<td>37</td>
+<td>44  (0,4)</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>17</td>
+<td>95</td>
+<td>112 (1,0)</td>
+</tr>
+</tbody></table>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Chi-square en R</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>En R el test chi-square se realiza por medio de la función <code>chisq.test</code></p>
+
+<pre><code class="r">chisq.test(table(becarios_top_50$sexo,droplevels(becarios_top_50$categoriauni)))
+</code></pre>
+
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
+## 
+## data:  table(becarios_top_50$sexo, droplevels(becarios_top_50$categoriauni))
+## X-squared = 0.40386, df = 1, p-value = 0.5251
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Tests y tipos de variables</h2>
+  </hgroup>
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>Dependiente/Independiente</th>
+<th>Categórica</th>
+<th>Ordinal</th>
+<th>Discreta</th>
+<th>Continua</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Categórica</td>
+<td>Chi-square</td>
+<td>Chi-square</td>
+<td>T-test/ANOVA</td>
+<td>T-test/ANOVA</td>
+</tr>
+<tr>
+<td>Ordinal</td>
+<td>Chi-square</td>
+<td>Chi-square</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Discreta</td>
+<td></td>
+<td></td>
+<td>Correlación</td>
+<td></td>
+</tr>
+<tr>
+<td>Continua</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Correlación</td>
+</tr>
+</tbody></table>
+
+  </article>
   <!-- Presenter Notes -->
 </slide>
 
@@ -213,7 +472,7 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Análisis Inferencial'>
+        data-slide=1 title='NA'>
          1
       </a>
     </li>
@@ -243,32 +502,68 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='Test de Hipótesis en R'>
+        data-slide=6 title='P-value y significancia estadística'>
          6
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='Significancia estadística y p-values'>
+        data-slide=7 title='Nivel de significancia alpha'>
          7
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='T-tests'>
+        data-slide=8 title='Poder estadístico de la prueba'>
          8
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title='ANOVA'>
+        data-slide=9 title='T-test y la distrubción T'>
          9
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=10 title='Chi-square Test'>
+        data-slide=10 title='T-test en R'>
          10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='ANOVA'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='ANOVA en R'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Chi-square Test'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Chi-square Test'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Chi-square en R'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Tests y tipos de variables'>
+         16
       </a>
     </li>
   </ul>

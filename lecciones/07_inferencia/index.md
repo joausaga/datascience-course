@@ -17,6 +17,14 @@ knit        : slidify::knit2slides
 
 
 
+<style type="text/css">
+code.r{ /* Code block */
+    font-size: 18px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 16px;
+}
+</style>
 
 ## Análisis Inferencial
 
@@ -88,42 +96,192 @@ knit        : slidify::knit2slides
 
 ---
 
-## Test de Hipótesis en R
+## P-value y significancia estadística
 
-...
+* Luego de colectar las evidencias llega el momento de la deliberar si las mismas son suficientes para rechazar nuestra hipótesis nula (H0)
+
+* En estadística la herramienta que se utiliza en la deliberación se llama **P-value**. El **p-value** transforma una prueba estadística a una escala probabilística
+
+* **P-value** es un número entre 0 y 1 que cuantifica la solidez de las evidencias en contra de la hipótesis nula (H0)
+
+* Cuanto más pequeño el **p-value** más sólidas las evidencias en contra de la hipótesis nula (H0)
+
+* Lo que el **p-value** nos dice es que tan probable serían los resultados de la prueba estadística si la hipótesis nula (H0) fuera verdad
+
+* Si la evidencias son lo "suficientemente sólidas", es decir si tenemos un **p-value** pequeño, decimos que la pruba estadística es **estadísticamente significativa**
 
 ---
 
-## Significancia estadística y p-values
+## Nivel de significancia alpha 
 
-* P-value
+* La pregunta ahora es como determinamos que un **p-value** es pequeño. Es ¿0,5 pequeño?, ¿es 0,01 pequeño?
 
-* Alpha
+* Necesitamos una referencia contra la cual comparar nuestro **p-value**
 
-* Errores de tipo 1 y 2
+* A este valor referencial, o nivel de significancia, se le llama **alpha** y su definición es bastante arbitraria aunque en general se establece **0,05** como valor estándar
+
+* Entonces se dice que si el **p-value es menor a alpha** los datos a mano aportan evidencias suficientes para rechazar la hipótesis H0 en favor de HA
+
+* También el nivel de significancia indica como se va a desempeñar la prueba estadística si se realiza repetidamente con diferentes muestras del mismo tamaño. Por ejemplo, un nivel de significancia alpha de 0,05 indica que solo en el 5% de los casos rechazaremos la hipótesis nula H0 de manera equivocada
 
 ---
 
-## T-tests
+## Poder estadístico de la prueba
 
-* Grados de libertad
+* El poder estadístico de una prueba es la probabilidad de tomar la decisión correcta (rechazar la hipótesis nula H0) cuando la hipótesis nula H0 es falsa (error del Tipo I, falso negativo)
 
-* Tamaño del efecto
+* Cuanto más poder tiene una prueba estadística más sensible es a detectar correctamente hipótesis nula H0 falsas
 
-* Error estándar
+* Esto muestra que conviene siempre elegir niveles de significancia alpha bajos
 
-* Muestras independientes
+* Sin embargo, cuando la cantidad de datos a mano es poca niveles de significancia alpha muy bajos nos pueden llevar a cometer errores del Tipo II (falso positivo) debido a que la prueba estadística no tiene suficiente poder
+
+---
+
+## T-test y la distrubción T
+
+* En los tests de hipótesis, la herramienta que frecuentemente se utiliza para realizar análisis de significancia es el **t-test**
+
+* El t-test se vale de la **distribución t** (o también llamada student's t) que se usa para aproximar a la distribución normal la distribución resultante de aplicar estadísticas (ej., promedios, varianza) a muestras. La distribución t es bastante robuzta, incluso en situaciones donde el tamaño de la muestra es pequeño
+
+<img class=center src="../assets/img/t-distribution.png" height=300 />
+
+---
+
+## T-test en R
+
+* En R la función para realizar un análisis de t-test es ```t.test```
+
+* Ejemplo. Diferencia en los meses de estudio entre los que becarios de la capital y el resto 
+  * **H0**: No existe diferencia en los meses de estudio entre los becarios de la capital y el resto
+  * **HA**: Existe diferencia en los meses de estudio entre los becarios de la capital y el resto
+
+
+
+
+```r
+t.test(estudios_capital, estudios_resto, alternative = "two.sided")
+```
+
+```
+## 
+## 	Welch Two Sample t-test
+## 
+## data:  estudios_capital and estudios_resto
+## t = 4.9992, df = 555.95, p-value = 7.728e-07
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  2.222666 5.099731
+## sample estimates:
+## mean of x mean of y 
+##  18.71714  15.05594
+```
 
 ---
 
 ## ANOVA
 
-* Estadística F
+* T-test es muy útil para comparar 2 grupos de datos, pero, ¿qué pasaría si tuvieramos que **comparar más de 2 grupos**?
 
-* ANOVA bidireccional
+* En caso de tener más de 2 grupos, el procedimiento estadístico que se utiliza para comprobar la significancia estadística en la diferencia entre estos se llama **Análisis de Varianza** o **ANOVA**
+
+* ANOVA está basado en la prueba **estadística F** la cual mide la proporción de la varianza entre los grupos y la varianza intra grupos. 
+
+* Si el resultado de la estadística F es menor a 1 (la varianza intra grupos es mayor a la entre grupos) no existe diferencia entre los grupos
+
+* Mientras, que si el resultado de la estadística F es mayor a 1 (la varianza entre grupos es mayor a la varianza intra grupos) existe diferencia entre los grupos
+
+---
+
+## ANOVA en R
+
+* En R la función para realizar un análisis ANOVA es ```aov```
+
+* Ejemplo. Diferencia en meses de estudio entre los de capital, central, e interior del país
+  * H0: No existe diferencia en meses de estudio entre los becarios residentes en capital, central, e interior del país
+  * HA: Existe diferencia en meses de estudio entre los becarios residentes en capital, central, e interior del país
+
+
+
+
+```r
+summary(aov(meses_estudio ~ localidad, data=aov_estudios))
+```
+
+```
+##              Df Sum Sq Mean Sq F value   Pr(>F)    
+## localidad     2   3341  1670.7    20.8 1.55e-09 ***
+## Residuals   801  64325    80.3                     
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+```
 
 ---
 
 ## Chi-square Test
 
-...
+* Hasta el momento vimos como estudiar relaciones entre variables categóricas (ej., lugar de residencia) y variables discretas (ej., meses de estudio), pero como haríamos si quisieramos evaluar la relación de dos variables categóricas (ej., sexo y lugar de residencia)?
+
+* Para el análisis de variables categóricas se utiliza el **test chi-squared** que evalua si las variables de interés son independientes unas de otra
+
+* Chi-square se basa en comparar el número de valores observados (los datos) contra el número de valores esperados asumiendo que las variables son independientes
+
+--- &twocol
+
+## Chi-square Test
+
+* Ejemplo. Relación entre sexo de becarios y categoría de universidad (top 10, top 50, etc.)
+  * H0: Existe igual cantidad de becarios y becarias en las universidades top 10 y top 50
+  * HA: El número de mujeres y hombres en las universidades top 10 y top 50 es diferente
+
+*** =left
+
+* Valores observados
+
+Tipo Univ/Sexo | top 10 | top 50 | Total
+-------------- | ------ | ------ | -----
+Femenino       |  12    |  56    | 68
+Masculino      |  5     |  39    | 44
+Total          |  17    |  95    | 112
+
+*** =right
+
+* Valores esperados
+
+Tipo Univ/Sexo | top 10 | top 50 | Total
+-------------- | ------ | ------ | -----
+Femenino       |  10    |   58   | 68  (0,6)
+Masculino      |  7     |   37   | 44  (0,4)
+Total          |  17    |   95   | 112 (1,0)
+
+--- 
+
+## Chi-square en R
+
+
+
+En R el test chi-square se realiza por medio de la función ```chisq.test```
+
+
+```r
+chisq.test(table(becarios_top_50$sexo,droplevels(becarios_top_50$categoriauni)))
+```
+
+```
+## 
+## 	Pearson's Chi-squared test with Yates' continuity correction
+## 
+## data:  table(becarios_top_50$sexo, droplevels(becarios_top_50$categoriauni))
+## X-squared = 0.40386, df = 1, p-value = 0.5251
+```
+
+---
+
+## Tests y tipos de variables
+
+Dependiente/Independiente | Categórica | Ordinal    | Discreta     | Continua
+--------------------------|------------|------------|--------------|---------
+Categórica                | Chi-square | Chi-square | T-test/ANOVA | T-test/ANOVA
+Ordinal                   | Chi-square | Chi-square |              |
+Discreta                  |            |            | Correlación  |
+Continua                  |            |            |              | Correlación
